@@ -1,0 +1,133 @@
+/* ==========================================================================
+	 GLOBAL STYLES
+	 ===========================================================================*/
+*,
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+html{
+	// font-size: 62.5%;
+	font-size: 100%;
+	height: 100%;
+	@media screen and (max-width: 318px) {
+		width: 320px;
+		overflow-x:auto;
+	}
+}
+body {
+	position: relative;
+	//font-family: $font-family-base;
+	//@include font-size($fz-base);
+	//line-height: $lh-base;
+	//font-weight: $fw-base;
+	//color: $text-color;
+	//background:$body-bg;
+	overflow-x: hidden;
+
+	/* FLEX */
+	@include flexbox();
+	flex-flow:column;
+	min-height: 100vh;
+}
+.wrapper{
+	width: 100%;
+	height:100%;
+	@include flex(1 0 auto);
+}
+.content{
+	width: 100%;
+}
+/* CUSTOM STYLE FOR GRID */
+.container{
+	width: 100%;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/* list */
+nav ul,
+ul {
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	list-style: none;
+	li {
+		list-style: none;
+		list-style-type:none;
+	}
+}
+/* clearfix */
+.clearfix {
+	clear: both;
+	&:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+// images
+img,
+video {
+	max-width: 100%;
+	height: auto;
+	&.no-responsive{
+		max-width: none;
+	}
+}
+
+
+/* FOR SAFARI */
+input,
+textarea{
+	-webkit-overflow-scrolling: touch;
+	@include appearance(none);
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .search {
+        /* remove inner shadow on iOS input */
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+        background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+    }
+}
+[type=search]{
+	@include appearance(none);
+}
+
+/* address */
+address{
+	font-style: normal;
+}
+/* lock for ios */
+body.lock-position {
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+}
+
+/* ЗАПОЛНЯЕМ НЕОБХОДИМЫЕ АТРИБУТЫ ! */
+a:not([href]):after {
+	 content: 'Это должна быть ссылка или кнопка? Она никуда не ведёт!';
+	 display: block !important;
+	 background: pink !important;
+	 padding: 0.5em !important;
+	 font-family: 'comic sans ms', cursive !important;
+	 color: #000 !important;
+	 font-size: 16px !important;
+}
+a.button[class*="disabled"]:after,
+a.btn.disabled:after,
+a[class*="button"][class*="disabled"]:after {
+	 content: 'Ссылки нельзя отключать. Используйте элемент button с disabled="disabled".';
+	 /*… уродливый стиль …*/
+}
+form button:not([type]):after {
+	content: 'Это кнопка отправки информации, кнопка обнуления полей или что? Используйте type="submit", type="reset" или type="button"';
+}
+/* end global styles */

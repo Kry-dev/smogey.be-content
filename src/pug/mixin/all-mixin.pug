@@ -1,0 +1,31 @@
+//- link
+mixin link(href,text)
+	a(href= href )= text
+		block
+//- link item
+mixin nav-link(href,text)
+	li.nav-item
+		a.nav-link(href= href )= text
+
+//- link item
+mixin nav-link(href,text)
+	li.nav-item
+		a.nav-link(href= href )= text
+
+//- socials
+mixin socials(name, url)
+	ul.socials
+		- var socials = [{name: "fb", url: "#"},{name: "tw", url: "#"},{name: "in", url: "#"},{name:"pin",  url: "#"}];
+			each social in socials
+				li.socials-item
+					a.socials-link(href=`${social.url}`, target="_blank")
+						svg(class=`icon icon-${social.name}`)
+							use(xlink:href=`assets/img/sprite/sprite.min.svg#${social.name}`)
+
+//- sprite
+include svg-sprite
+//- breadcrumbs
+include breadcrumbs
+
+//- cards-mixin
+include cards-mixin

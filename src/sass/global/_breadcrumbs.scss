@@ -1,0 +1,23 @@
+/* ==========================================================================
+   BREADCRUMBS
+   ===========================================================================*/
+.breadcrumbs{
+	position: relative;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #f7f7f7;
+	@extend %clearfix;
+}
+.breadcrumbs-list{
+	display: block;
+	width: 100%;
+	li{
+		display: inline-block;
+		@include font-size(12px);
+		>a{
+			@include font-size(12px);
+		}
+	}
+}
+/* end breadcrumbs */

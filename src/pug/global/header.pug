@@ -1,0 +1,23 @@
+//header
+header.header.align-items-center
+	.container-fluid
+		nav.navbar.justify-content-between.align-items-center
+			a(href="/").navbar-brand spott
+			form.navbar-form
+				.icon-box
+					+icon('search')
+				input.form-control(placeholder='Search for movies, tv shows, brands or people', value='')
+				button.btn-search(type='submit')
+			a(href="#").btn.btn-primary Sign in
+nav.navbar.border-top.border-bottom
+	ul.navbar-nav
+		+nav-link('#','Summer')
+		+nav-link('#','Formal')
+		+nav-link('#','Casual')
+		+nav-link('#','Chill')
+		+nav-link('#','Activewear')
+		+nav-link('#','Bags')
+		+nav-link('#','Fun')
+		+nav-link('#','Sexy')
+		+nav-link('#','Jacket Accessories')
+	+socials

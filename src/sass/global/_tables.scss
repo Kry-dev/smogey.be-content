@@ -1,0 +1,121 @@
+/* ==========================================================================
+   TABLES
+   ===========================================================================*/
+
+//=========================
+//varibles
+//=========================
+$table-bg:#fff;
+$head-bg:#fff;
+
+
+.table-wrap{
+	width: 100%;
+	background-color: $table-bg;
+	margin-bottom: 20px;
+	@include clearfix();
+	overflow: hidden;
+	table{
+		width: 100%;
+		background-color:$table-bg;
+		border-collapse: collapse;
+		border-style: hidden;
+		overflow: hidden;
+		@include clearfix();
+	}
+	thead{
+		width:100%;
+		text-align: center;
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+	tbody{
+		width:100%;
+		text-align: center;
+	}
+	tr{
+		@include mq('tablet', 'max') {
+			display: block;
+			border: 1px solid #a7a7a7;
+			border-radius: 20px;
+			overflow:hidden;
+			&:not(:last-child){
+				margin-bottom: 20px;
+			}
+		}
+	}
+	th, td{
+		padding: 10px 12px;
+		//typ
+		@include font-size(14px);
+		color: $text-color;
+		font-weight: 400;
+		line-height: 21px;
+		text-align: center;
+	}
+	td{
+		border-top: 1px solid #a7a7a7;
+		&:first-child{
+			border-color: #3183b8;
+			@include mq('tablet', 'max') {
+				border-top: 0;
+			}
+		}
+		@include mq('tablet', 'max') {
+			position: relative;
+			display: block;
+			width: 100% !important;
+			height:auto;
+			padding-left: 45%;
+			padding-right: 10px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			text-align: left;
+			border-right: 0;
+			&:before{
+				content: '';
+				position: absolute;
+				bottom: -1px;
+				left: 0;
+				z-index: 3;
+				display:inline-block;
+				width: 38%;
+				height: 1px;
+				background-color: #fff;
+			}
+			&:after{
+				content: attr(data-label);
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 2;
+				display: block;
+				width: 43%;
+				height: 100%;
+				padding:0 10px;
+
+				float: left;
+				background: #2db9d4;
+				color: #fff;
+				@include font-size(11px);
+				line-height:17px;
+
+				// flex
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+	td,th{
+		&:not(:last-child){
+			@include mq('tablet') {
+				border-right: 1px solid #a7a7a7;
+			}
+		}
+	}
+}
+/* end tables*/
+
+
+
