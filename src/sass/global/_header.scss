@@ -4,6 +4,9 @@ $header-height : 60px;
 	height: $header-height;
 	display: flex;
 	box-sizing: border-box;
+	position: relative;
+	z-index: 100;
+	background: $white;
 	//@include media-breakpoint-down(xs){
 	//	min-height: 45px;
 	//}

@@ -36,6 +36,24 @@ mixin scrollTop
 	button#scrollTop.rounded-circle( title='Go to top')
 		+icon('down-arrow')
 
+//- Filter show button
+mixin filterShow
+	button#filterShow.filterShow(
+		type='button',
+		data-toggle='collapse',
+		data-target='#filterSidebar',
+		aria-expanded='false',
+		aria-controls='filterSidebar'
+	)
+		+icon('filter')
+		+icon('cancel')
+		span Filters
+
+//- scroll top button
+mixin filterHide
+	button#filterHide.rounded-circle
+		+icon('cancel')
+
 //- sprite
 include svg-sprite
 //- breadcrumbs

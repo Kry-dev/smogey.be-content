@@ -311,6 +311,10 @@
 	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
 	transition: box-shadow .4s ease-in-out;
 }
+@mixin box-shadow-hover{
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.4);
+	transition: box-shadow .4s ease-in-out;
+}
 @mixin title-shadow{
 	text-shadow: 0px -1px 30px #969696;
 

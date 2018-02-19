@@ -16,11 +16,11 @@
 //@import "../../node_modules/bootstrap/scss/badge";
 //@import "../../node_modules/bootstrap/scss/tooltip";
 @import "../../node_modules/bootstrap/scss/transitions";
-//@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/navbar";
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/forms";
-//@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/dropdown";
 //@import "../../node_modules/bootstrap/scss/type";
 @import "../../node_modules/bootstrap/scss/card";
 //@import "../../node_modules/bootstrap/scss/tables";
@@ -57,4 +57,5 @@
 @import "global/_cards-columns.scss";
 @import "global/_hero.scss";
 @import "global/_categories.scss";
+@import "global/_filter.scss";
 //@import "global/footer";
