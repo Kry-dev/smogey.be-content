@@ -1,0 +1,31 @@
+.likes{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	//font-size: 0.6875rem;
+	box-sizing: border-box;
+	text-align: center;
+	color: $gray;
+	padding: .1rem .5rem;
+	border: 1px solid $gray;
+	border-radius: 3px;
+	transition: all 0.2s ease;
+	.icon-like{
+		width: 12px;
+		height: 12px;
+		margin-right: 5px;
+		fill: $gray;
+	}
+	span{
+		font-size: 11px;
+	}
+	&:hover{
+		color: $dark;
+		border: 1px solid $dark;
+		text-decoration: none;
+		.icon-like{
+			fill: $dark;
+		}
+	}
+}
