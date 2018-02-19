@@ -1,8 +1,9 @@
-const $ = require('jquery'); // если будет нужен
-const slick = require('slick-carousel'); // если будет нужен
+const $ = require('jquery');
+const slick = require('slick-carousel');
+//const popper = require('popper');
+const bootstrap = require('bootstrap');
 
-//= ../../common/categoriesSlider.js;
-//= ../../node_modules/modernizr/bin/modernizr.js
+//import {scrollFunction, topFunction} from "common/scrollTop";
 
 //= ../../node_modules/jquery/dist/jquery.js
 //= ../../node_modules/popper.js/dist/umd/popper.js
@@ -12,10 +13,26 @@ const slick = require('slick-carousel'); // если будет нужен
 //= ../../node_modules/bootstrap/js/dist/modal.js
 //= ../../node_modules/bootstrap/js/dist/collapse.js
 //= ../../node_modules/bootstrap/js/dist/tab.js
-//= ../../node_modules/chart.js/dist/chart.
-//= ../../node_modules/slick-carousel/slick/slick.js
+const topFunction = function() {
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+
+};
 
 $(document).ready(function() {
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollTop").style.display = "block";
+        } else {
+            document.getElementById("scrollTop").style.display = "none";
+        }
+    };
+    $("#scrollTop").on("click", function () {
+        topFunction();
+    });
+
     $("#categories").slick({
         rows: 2,
         slidesToShow: 6,
@@ -44,4 +61,5 @@ $(document).ready(function() {
 
         }]
     });
+
 });
