@@ -1,6 +1,8 @@
 @import "global/_normalize";
 @import "global/helpers/_variables";
 
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
 @import "../../node_modules/bootstrap/scss/utilities/display";
@@ -33,7 +35,7 @@
 
 @import "global/helpers/helpers_all";
 //fonts
-// @import "global/fonts";
+@import "global/fonts";
 //global
 // @import "global/_fonts.scss";
 @import "global/global";
@@ -53,4 +55,5 @@
 @import "global/_likes.scss";
 @import "global/_cards-columns.scss";
 @import "global/_hero.scss";
+@import "global/_categories.scss";
 //@import "global/footer";
