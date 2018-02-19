@@ -17,10 +17,9 @@ const slick = require('slick-carousel'); // если будет нужен
 
 $(document).ready(function() {
     $("#categories").slick({
-
-        // normal options...
-        infinite: false,
-
+        rows: 2,
+        slidesToShow: 6,
+        centerMode: true,
         // the magic
         responsive: [{
 
