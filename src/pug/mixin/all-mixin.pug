@@ -21,6 +21,15 @@ mixin socials(name, url)
 					a.socials-link(href=`${social.url}`, target="_blank")
 						svg(class=`icon icon-${social.name}`)
 							use(xlink:href=`assets/img/sprite/sprite.min.svg#${social.name}`)
+//- socials
+mixin card-socials(name, url)
+	ul.socials.card-socials
+		- var socials = [{name: "fb", url: "#"},{name:"pin",  url: "#"},{name: "tw", url: "#"},{name: "dots", url: "#"}];
+			each social in socials
+				li.socials-item
+					a.socials-link(href=`${social.url}`, target="_blank")
+						svg(class=`icon icon-${social.name}`)
+							use(xlink:href=`assets/img/sprite/sprite.min.svg#${social.name}`)
 
 //- sprite
 include svg-sprite

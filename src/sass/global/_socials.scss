@@ -25,4 +25,25 @@
 		height: 100%;
 		fill: $gray;
 	}
+	&.card-socials{
+		width: 35%;
+		.socials-link{
+			display: block;
+			width: 18px;
+			height: 18px;
+			&:hover,
+			&:active,
+			&:focus{
+				.icon.icon-fb{
+					fill: #4a6ea9!important;
+				}
+				.icon.icon-pin{
+					fill: #bd191c!important;
+				}
+				.icon.icon-tw{
+					fill: #20b8ff!important;
+				}
+			}
+		}
+	}
 }
