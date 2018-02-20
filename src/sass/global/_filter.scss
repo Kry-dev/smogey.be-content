@@ -34,14 +34,16 @@
 }
 .filterSidebar{
 	display: block;
-	position: fixed;
+	position: absolute;
 	padding-top: 115px;
 	top: 0;
 	right: -400px;
 	background: $white;
 	width: 400px;
-	height: 100vh;
+	min-height: 100vh;
+	//height: 100%;
 	z-index: 50;
+	padding-bottom: 1rem;
 	@include box-shadow;
 	&.collapse.show{
 		right: 0;
@@ -128,7 +130,7 @@
 }
 .celebrity-list{
 	width: 100%;
-	margin: 1rem 0;
+	margin: .5rem 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;

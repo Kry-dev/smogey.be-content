@@ -1,7 +1,7 @@
 #filterSidebar.filterSidebar
     #accordion.filterSidebar-accordion
         .card
-            #headCelebrity.card-header
+            #headCelebrity.card-header.py-0
                 h5.mb-0
                     | Celebrity
                 button.btn.btn-link(data-toggle='collapse', data-target='#celebrity', aria-expanded='true', aria-controls='celebrity')
@@ -30,8 +30,8 @@
 
 
             #celebrity.collapse(aria-labelledby='headCelebrity', data-parent='#accordion')
-                .card-body
-                    .celebrity-list
+                .card-body.py-0
+                    .celebrity-list.m-0
                         a.celebrity-item(href="#")
                             .img-round
                                 img(src="assets/img/celebrity/celebrity-01.jpg")
@@ -83,7 +83,7 @@
 
 
         .card
-            #headColor.card-header
+            #headColor.card-header.py-0
                 h5.mb-0
                     | Color
                 button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#', aria-expanded='false',
@@ -102,33 +102,59 @@
 
 
         .card
-            #headMaterial.card-header
+            #headMaterial.card-header.pb-0
                 h5.mb-0
                     | Material
                 button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#material', aria-expanded='false',
                     aria-controls='material')
                     | More material options ...
+                ul.materials
+                    li.materials-item
+                        a(href="#").materials-link
+                            span Espadrilles
+                            img(src="assets/img/category/category-01.jpg")
+                    li.materials-item
+                        a(href="#").materials-link
+                            span Espadrilles
+                            img(src="assets/img/category/category-01.jpg")
+                    li.materials-item
+                        a(href="#").materials-link
+                            span Espadrilles
+                            img(src="assets/img/category/category-01.jpg")
+                    li.materials-item
+                        a(href="#").materials-link
+                            span Espadrilles
+                            img(src="assets/img/category/category-01.jpg")
+                    li.materials-item
+                        a(href="#").materials-link
+                            span Espadrilles
+                            img(src="assets/img/category/category-01.jpg")
+                    li.materials-item
+                        a(href="#").materials-link
+                            span Espadrilles
+                            img(src="assets/img/category/category-01.jpg")
             #material.collapse(aria-labelledby='headMaterial', data-parent='#accordion')
-                .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                .card-body.pt-0
+                    include materials
         .card
             #headPattern.card-header
                 h5.mb-0
                     | Pattern
-                button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#pattern', aria-expanded='false',
+                button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#', aria-expanded='false',
                     aria-controls='pattern')
                     | More patterns options ...
+                include patterns
             #pattern.collapse(aria-labelledby='headPattern', data-parent='#accordion')
                 .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         .card
             #headStyle.card-header
                 h5.mb-0
                     | Style
-                button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#style', aria-expanded='false', aria-controls='style')
+                button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#', aria-expanded='false', aria-controls='style')
                     | More Style options ...
+                include style
             #style.collapse(aria-labelledby='headStyle', data-parent='#accordion')
                 .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
 
     +filterShow
