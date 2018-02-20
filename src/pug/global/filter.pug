@@ -29,7 +29,7 @@
                         .celebriry-name John Doe
 
 
-            #celebrity.collapse.show(aria-labelledby='headCelebrity', data-parent='#accordion')
+            #celebrity.collapse(aria-labelledby='headCelebrity', data-parent='#accordion')
                 .card-body
                     .celebrity-list
                         a.celebrity-item(href="#")
@@ -86,12 +86,21 @@
             #headColor.card-header
                 h5.mb-0
                     | Color
-                button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#color', aria-expanded='false',
+                button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#', aria-expanded='false',
                     aria-controls='color')
                     | More color options ...
+                .colorlist
+                    a.color.dark-blue(href="#")
+                    a.color.blue(href="#")
+                    a.color.dark-brown(href="#")
+                    a.color.brown(href="#")
+                    a.color.light-brown(href="#")
+                    a.color.teal(href="#")
+                    a.color.pink(href="#")
+                    a.color.aqua(href="#")
             #color.collapse(aria-labelledby='headColor', data-parent='#accordion')
-                .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+
         .card
             #headMaterial.card-header
                 h5.mb-0

@@ -69,6 +69,7 @@
 	.card{
 		display: flex;
 		flex-direction: column;
+		border: 0;
 		&-header{
 			display: flex;
 			flex-direction: row;
@@ -171,4 +172,18 @@
 		}
 	}
 
+}
+
+.colorList{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	a.color{
+		display: flex;
+		width: 40px;
+		height: 40px;
+		&.dark-blue{
+			background: #033d55;
+		}
+	}
 }
