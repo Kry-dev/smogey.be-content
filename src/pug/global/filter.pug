@@ -1,3 +1,125 @@
 #filterSidebar.filterSidebar
-    h1  FILTER
+    #accordion.filterSidebar-accordion
+        .card
+            #headCelebrity.card-header
+                h5.mb-0
+                    | Celebrity
+                button.btn.btn-link(data-toggle='collapse', data-target='#celebrity', aria-expanded='true', aria-controls='celebrity')
+                    | More Celebrity ...
+                .navbar-form
+                    .icon-box
+                        +icon('search')
+                    input.form-control(placeholder='Search celebrity', value='')
+                .celebrity-list
+                    a.celebrity-item(href="#")
+                        .img-round
+                            img(src="assets/img/celebrity/celebrity-01.jpg")
+                        .celebriry-name John Doe
+                    a.celebrity-item(href="#")
+                        .img-round
+                            img(src="assets/img/celebrity/celebrity-01.jpg")
+                        .celebriry-name John Doe
+                    a.celebrity-item(href="#")
+                        .img-round
+                            img(src="assets/img/celebrity/celebrity-01.jpg")
+                        .celebriry-name John Doe
+                    a.celebrity-item(href="#")
+                        .img-round
+                            img(src="assets/img/celebrity/celebrity-01.jpg")
+                        .celebriry-name John Doe
+
+
+            #celebrity.collapse.show(aria-labelledby='headCelebrity', data-parent='#accordion')
+                .card-body
+                    .celebrity-list
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+
+
+        .card
+            #headColor.card-header
+                h5.mb-0
+                    | Color
+                button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#color', aria-expanded='false',
+                    aria-controls='color')
+                    | More color options ...
+            #color.collapse(aria-labelledby='headColor', data-parent='#accordion')
+                .card-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        .card
+            #headMaterial.card-header
+                h5.mb-0
+                    | Material
+                button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#material', aria-expanded='false',
+                    aria-controls='material')
+                    | More material options ...
+            #material.collapse(aria-labelledby='headMaterial', data-parent='#accordion')
+                .card-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        .card
+            #headPattern.card-header
+                h5.mb-0
+                    | Pattern
+                button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#pattern', aria-expanded='false',
+                    aria-controls='pattern')
+                    | More patterns options ...
+            #pattern.collapse(aria-labelledby='headPattern', data-parent='#accordion')
+                .card-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        .card
+            #headStyle.card-header
+                h5.mb-0
+                    | Style
+                button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#style', aria-expanded='false', aria-controls='style')
+                    | More Style options ...
+            #style.collapse(aria-labelledby='headStyle', data-parent='#accordion')
+                .card-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
     +filterShow
