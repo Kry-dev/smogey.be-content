@@ -67,5 +67,18 @@
 		}
 
 	}
+	@include media-breakpoint-down(sm){
+		padding: 0;
+		.card-previews,
+		.card-tags{
+			display: none;
+		}
+		.card-title{
+			font-size: 1rem;
+		}
+		.card-footer{
+			display: none;
+		}
+	}
 }
 

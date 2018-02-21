@@ -5,6 +5,9 @@
 		position: absolute;
 		right: 100px;
 	}
+	@include media-breakpoint-down(xs){
+		right: 70px;
+	}
 	.btn{
 		&:focus{
 			outline: none;

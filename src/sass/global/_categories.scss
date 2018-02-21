@@ -1,6 +1,9 @@
 .categories{
 	height: 180px;
 	width: 100%	;
+	@include media-breakpoint-down(sm){
+		height: auto;
+	}
 	&-item{
 		margin: 10px;
 	}
@@ -11,6 +14,10 @@
 		height: 70px;
 		border-radius: 4px;
 		overflow: hidden;
+		@include media-breakpoint-down(sm){
+			width: 150px;
+			height: 55px;
+		}
 
 		span {
 			position: absolute;
@@ -44,6 +51,13 @@
 	}
 	.slick-list{
 		position: relative;
+		@include media-breakpoint-down(sm){
+			overflow: hidden;
+			&:before,
+			&:after{
+				display: none;
+			}
+		}
 		&:before,
 		&:after{
 			content: "";
@@ -53,6 +67,7 @@
 			height: 100%;
 			z-index: 50;
 			top: 0;
+
 		}
 		&:before{
 			left: 0;

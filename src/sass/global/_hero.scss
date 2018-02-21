@@ -14,9 +14,24 @@
 		//letter-spacing: 5px;
 		margin-bottom: 3rem;
 		@include title-shadow;
+		@include media-breakpoint-down(sm){
+			padding-top: 50px;
+			font-size: 4rem;
+			text-align: center;
+			margin-bottom: 1rem;
+		}
 	}
 	&-descr{
 		font-size: .8rem;
-
+		@include media-breakpoint-down(sm){
+			text-align: center;
+		}
 	}
+	@include media-breakpoint-down(sm){
+		min-height: 200px;
+		.col-12{
+			padding: 0;
+		}
+	}
+
 }

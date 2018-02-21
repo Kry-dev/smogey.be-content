@@ -29,6 +29,11 @@ $header-sm-height : 60px;
 					right: 0;
 				}
 			}
+			@include media-breakpoint-down(xs){
+				.btn-primary{
+					font-size: .8rem;
+				}
+			}
 		}
 		.navbar-toggler {
 			display: none;
