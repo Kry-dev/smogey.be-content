@@ -4,6 +4,7 @@
 		display: flex;
 		position: absolute;
 		right: 100px;
+		top: 10px;
 	}
 	@include media-breakpoint-down(xs){
 		right: 70px;

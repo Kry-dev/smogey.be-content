@@ -2,14 +2,14 @@ $header-height : 80px;
 $header-sm-height : 60px;
 
 .header{
-	height: $header-height;
+	//height: $header-height;
 	display: flex;
 	box-sizing: border-box;
 	position: relative;
 	z-index: 100;
 	background: $white;
 	@include media-breakpoint-down(sm){
-		height: $header-sm-height;
+		//height: $header-sm-height;
 		border-bottom: 1px solid $gray-300;
 	}
 	.navbar {
@@ -19,14 +19,19 @@ $header-sm-height : 60px;
 			padding: 0;
 		}
 		&-header{
+			display: flex;
+			width: 100%;
+			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+			flex-wrap: wrap;
 			@include media-breakpoint-down(sm){
 				justify-content: flex-start;
 				.btn-primary{
 					display: block;
 					position: absolute;
 					right: 0;
+					top: 10px;
 				}
 			}
 			@include media-breakpoint-down(xs){
@@ -113,6 +118,22 @@ $header-sm-height : 60px;
 			}
 			@include media-breakpoint-down(sm){
 				width: 40px;
+			}
+		}
+		&.nav-link.show-sm{
+			display: none;
+		}
+		&-collapse{
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			&.show{
+				.navbar-nav{
+					flex-direction: column;
+					justify-content: flex-start;
+				}
+
 			}
 		}
 	}

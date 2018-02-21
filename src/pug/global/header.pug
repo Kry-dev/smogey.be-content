@@ -1,23 +1,20 @@
 //header
 header.header.align-items-center
 	.container-fluid
-		.row
-			.col-12
-				nav.navbar.navbar-header.navbar-expand-md
-					button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarMenu', aria-controls='navbarMenu',
-					aria-expanded='false', aria-label='Toggle navigation')
-						+icon('menu')
-					a(href="/").navbar-brand spott
-					form.navbar-form.mobile-hide
-						.icon-box
-							+icon('search')
-						input.form-control(placeholder='Search for movies, tv shows, brands or people', value='')
-						button.btn-search(type='submit')
-					+mobile-search
-					a(href="#").btn.btn-primary Sign in
-		.row.collapse.navbar-collapse
-			.col-10
-				ul#navbarMenu.navbar-nav.navbar-expand-md
+		nav.navbar.navbar-header.navbar-expand-md
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarMenu', aria-controls='navbarMenu',
+			aria-expanded='false', aria-label='Toggle navigation')
+				+icon('menu'
+			a(href="/").navbar-brand spott
+			form.navbar-form.mobile-hide
+				.icon-box
+					+icon('search')
+				input.form-control(placeholder='Search for movies, tv shows, brands or people', value='')
+				button.btn-search(type='submit')
+			+mobile-search
+			a(href="#").btn.btn-primary Sign in
+			#navbarMenu.collapse.navbar-collapse
+				ul.navbar-nav.navbar-expand-md
 					+nav-link('#','Summer')
 					+nav-link('#','Formal')
 					+nav-link('#','Casual')
@@ -27,9 +24,8 @@ header.header.align-items-center
 					+nav-link('#','Fun')
 					+nav-link('#','Sexy')
 					+nav-link('#','Jacket Accessories')
-					+nav-link('#','Sign in', 'sign')
-					+nav-link('#','Terms', 'border-top')
-					+nav-link('#','Privacy')
-			.col-2
+					+nav-link('#','Sign in', 'border-top border-bottom show-sm')
+					+nav-link('#','Terms', ' show-sm')
+					+nav-link('#','Privacy', 'show-sm')
 				+socials
 

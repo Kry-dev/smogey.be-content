@@ -26,36 +26,30 @@
     <!--header-->
     <header class="header align-items-center">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navbar navbar-header navbar-expand-md">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                  <svg class="icon icon-menu ">
-                    <use xlink:href="assets/img/sprite/sprite.min.svg#menu"></use>
+        <nav class="navbar navbar-header navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <svg class="icon icon-menu ">
+                <use xlink:href="assets/img/sprite/sprite.min.svg#menu"></use>
+              </svg>
+          </button><a class="navbar-brand" href="/">spott</a>
+          <form class="navbar-form mobile-hide">
+            <div class="icon-box">
+                <svg class="icon icon-search ">
+                  <use xlink:href="assets/img/sprite/sprite.min.svg#search"></use>
+                </svg>
+            </div>
+            <input class="form-control" placeholder="Search for movies, tv shows, brands or people" value=""/>
+            <button class="btn-search" type="submit"></button>
+          </form>
+            <div class="mobile-search">
+              <button class="btn" id="showSearch">
+                  <svg class="icon icon-search ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#search"></use>
                   </svg>
-              </button><a class="navbar-brand" href="/">spott</a>
-              <form class="navbar-form mobile-hide">
-                <div class="icon-box">
-                    <svg class="icon icon-search ">
-                      <use xlink:href="assets/img/sprite/sprite.min.svg#search"></use>
-                    </svg>
-                </div>
-                <input class="form-control" placeholder="Search for movies, tv shows, brands or people" value=""/>
-                <button class="btn-search" type="submit"></button>
-              </form>
-                <div class="mobile-search">
-                  <button class="btn" id="showSearch">
-                      <svg class="icon icon-search ">
-                        <use xlink:href="assets/img/sprite/sprite.min.svg#search"></use>
-                      </svg>
-                  </button>
-                </div><a class="btn btn-primary" href="#">Sign in</a>
-            </nav>
-          </div>
-        </div>
-        <div class="row collapse navbar-collapse">
-          <div class="col-10">
-            <ul class="navbar-nav navbar-expand-md" id="navbarMenu">
+              </button>
+            </div><a class="btn btn-primary" href="#">Sign in</a>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav navbar-expand-md">
                 <li class="nav-item"><a class="nav-link undefined" href="#">Summer</a></li>
                 <li class="nav-item"><a class="nav-link undefined" href="#">Formal</a></li>
                 <li class="nav-item"><a class="nav-link undefined" href="#">Casual</a></li>
@@ -65,12 +59,10 @@
                 <li class="nav-item"><a class="nav-link undefined" href="#">Fun</a></li>
                 <li class="nav-item"><a class="nav-link undefined" href="#">Sexy</a></li>
                 <li class="nav-item"><a class="nav-link undefined" href="#">Jacket Accessories</a></li>
-                <li class="nav-item"><a class="nav-link sign" href="#">Sign in</a></li>
-                <li class="nav-item"><a class="nav-link border-top" href="#">Terms</a></li>
-                <li class="nav-item"><a class="nav-link undefined" href="#">Privacy</a></li>
+                <li class="nav-item"><a class="nav-link border-top border-bottom show-sm" href="#">Sign in</a></li>
+                <li class="nav-item"><a class="nav-link  show-sm" href="#">Terms</a></li>
+                <li class="nav-item"><a class="nav-link show-sm" href="#">Privacy</a></li>
             </ul>
-          </div>
-          <div class="col-2">
               <ul class="socials">
                 <li class="socials-item"><a class="socials-link" href="#" target="_blank">
                     <svg class="icon icon-fb">
@@ -90,7 +82,7 @@
                     </svg></a></li>
               </ul>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
     <div class="wrapper">

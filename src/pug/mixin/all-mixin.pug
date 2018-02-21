@@ -8,7 +8,7 @@ mixin nav-link(href,text,mod)
 		a(class=`nav-link ${mod}` , href= href )= text
 
 //- socials
-mixin socials(name, url)
+mixin socials(name, url, mod)
 	ul.socials
 		- var socials = [{name: "fb", url: "#"},{name: "tw", url: "#"},{name: "in", url: "#"},{name:"pin",  url: "#"}];
 			each social in socials

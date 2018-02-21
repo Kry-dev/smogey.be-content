@@ -15,7 +15,11 @@ nav{
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
-		width: 80%;
+		width: 94%;
+		@include media-breakpoint-down(sm){
+			width: 100%;
+			border-top: 1px solid $gray;
+		}
 	}
 	.nav-item {
 		margin-right: 1rem;
@@ -23,12 +27,18 @@ nav{
 	.nav-link {
 		color: $gray-600;
 		font-size: .9rem;
-		&:hover,{
+		&:hover{
 			color: $dark;
 		}
 		&:active,
 		&.active{
 			color: $primary;
+		}
+		&.show-sm{
+			display: none;
+			@include media-breakpoint-down(sm){
+				display: flex;
+			}
 		}
 	}
 }
