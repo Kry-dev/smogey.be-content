@@ -1,0 +1,42 @@
+.mobile-search{
+	display: none;
+	@include media-breakpoint-down(sm){
+		display: flex;
+		position: absolute;
+		right: 100px;
+	}
+	.btn{
+		&:focus{
+			outline: none;
+			box-shadow: none;
+		}
+	}
+
+}
+.showSearch{
+	position: absolute;
+	left: 0;
+	top: $header-sm-height;
+	right: 0;
+	width: 100%;
+	display: none;
+	.navbar-form{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		padding: .5rem;
+		background: $white;
+		input:focus{
+			@include box-shadow;
+		}
+	}
+	.btn{
+		color: $primary;
+		background: transparent;
+		&:focus{
+			outline: none;
+			//box-shadow: none;
+
+		}
+	}
+}

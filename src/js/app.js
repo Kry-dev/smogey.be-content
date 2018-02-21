@@ -14,14 +14,21 @@ const bootstrap = require('bootstrap');
 //= ../../node_modules/bootstrap/js/dist/collapse.js
 //= ../../node_modules/bootstrap/js/dist/tab.js
 const topFunction = function() {
-    // document.body.scrollTop = 0;
-    // document.documentElement.scrollTop = 0;
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
 
 };
 
 $(document).ready(function() {
+    $("#hideSearch").on('click', function(){
+
+        console.log("click");
+        $(".showSearch").slideUp();
+    });
+
+    $("#showSearch").click(function(){
+        $(".showSearch").slideDown();
+    });
     window.onscroll = function() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("scrollTop").style.display = "block";
@@ -63,4 +70,6 @@ $(document).ready(function() {
     });
 
     $('[data-toggle="collapse"]').collapse('hide');
+
+
 });

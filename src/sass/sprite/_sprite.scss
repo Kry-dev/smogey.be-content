@@ -40,8 +40,20 @@
 }
 .icon-search {
 	font-size:(512/10)*1rem;
-	width:(512/512)*1em;
+	display: flex;
+	width: 20px;
+	height: 20px;
+	fill: $gray;
+	&:active{
+		fill: $dark;
+	}
 }
+//.icon-search{
+//	display: flex;
+//	width: 20px;
+//	height: 20px;
+//	fill: $gray;
+//}
 .icon-tw {
 	font-size:(512/10)*1rem;
 	width:(512/512)*1em;

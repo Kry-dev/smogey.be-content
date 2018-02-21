@@ -3,14 +3,9 @@ mixin link(href,text)
 	a(href= href )= text
 		block
 //- link item
-mixin nav-link(href,text)
+mixin nav-link(href,text,mod)
 	li.nav-item
-		a.nav-link(href= href )= text
-
-//- link item
-mixin nav-link(href,text)
-	li.nav-item
-		a.nav-link(href= href )= text
+		a(class=`nav-link ${mod}` , href= href )= text
 
 //- socials
 mixin socials(name, url)
@@ -54,8 +49,27 @@ mixin filterHide
 	button#filterHide.rounded-circle
 		+icon('cancel')
 
+
+//- mobile search
+mixin mobile-search
+	.mobile-search
+		//a.btn(data-toggle='modal', href='#showSearch', role='button', aria-expanded='false', aria-controls='collapseExample')
+		button#showSearch.btn
+			+icon('search')
+
+//- showSearch modal
+mixin showSearchModal
+	.showSearch
+		form.navbar-form
+			input.form-control(placeholder='Search celebrity ...', value='')
+			button(type="button")#hideSearch.btn cancel
+
+
+
+
 //- sprite
 include svg-sprite
+
 //- breadcrumbs
 include breadcrumbs
 

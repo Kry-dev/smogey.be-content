@@ -132,7 +132,7 @@ $font-size-sm:                ($font-size-base * .875);
 
 $fa-font-path: "../fonts/FontAwesome";
 $slick-font-path: "./fonts/slick";
-$slick-loader-path: "./fonts/slick";
+$slick-loader-path: "../fonts/slick/";
 
 //button global styles
 //$btn-border-radius:           2rem;
@@ -152,30 +152,6 @@ $container-max-widths: (
 
 
 
-
-//======================================
-//  5.MEDIA
-//======================================
-//MIXIN
-@mixin mq($width, $type: min) {
-  @if map_has_key($breakpoints, $width) {
-   $width: map_get($breakpoints, $width);
-   @if $type == max {
-    $width: $width - 1px;
-   }
-   @media only screen and (#{$type}-width: $width) {
-    @content;
-   }
-  }
-}
-//breakpoints
-$breakpoints: (
-  "phone":   481px,
-  "tablet-small": 601px,
-  "tablet":       768px,
-  "laptop":      980px,
-  "desktop":      1280px,
-);
 
 
 //======================================
@@ -202,7 +178,7 @@ $z-indexes: (
 //$navbar-padding-y:                  ($spacer / 2) !default;
 //$navbar-padding-x:                  $spacer !default;
 
-$navbar-nav-link-padding-x:         .5rem !default;
+$navbar-nav-link-padding-x:         .5rem;
 
 $navbar-brand-font-size:            2rem;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link

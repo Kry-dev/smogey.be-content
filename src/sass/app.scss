@@ -21,7 +21,7 @@
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/forms";
 @import "../../node_modules/bootstrap/scss/dropdown";
-//@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/type";
 @import "../../node_modules/bootstrap/scss/card";
 //@import "../../node_modules/bootstrap/scss/tables";
 @import "../../node_modules/bootstrap/scss/list-group";
@@ -49,6 +49,7 @@
 
 
 //global blocks
+@import "sprite/sprite.scss";
 @import "global/header";
 @import "global/_menu.scss";
 @import "global/_scrollTop.scss";
@@ -62,4 +63,6 @@
 @import "global/_materials.scss";
 @import "global/_patterns.scss";
 @import "global/_style.scss";
+@import "global/navbar-mobile.scss";
+@import "global/mobileSearch.scss";
 //@import "global/footer";

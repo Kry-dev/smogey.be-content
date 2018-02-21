@@ -1,4 +1,5 @@
-$header-height : 60px;
+$header-height : 80px;
+$header-sm-height : 60px;
 
 .header{
 	height: $header-height;
@@ -7,12 +8,40 @@ $header-height : 60px;
 	position: relative;
 	z-index: 100;
 	background: $white;
-	//@include media-breakpoint-down(xs){
-	//	min-height: 45px;
-	//}
+	@include media-breakpoint-down(sm){
+		height: $header-sm-height;
+		border-bottom: 1px solid $gray-300;
+	}
 	.navbar {
 		display: flex;
 		padding: .3rem 0;
+		@include media-breakpoint-down(sm){
+			padding: 0;
+		}
+		&-header{
+			justify-content: space-between;
+			align-items: center;
+			@include media-breakpoint-down(sm){
+				justify-content: flex-start;
+				.btn-primary{
+					display: block;
+					position: absolute;
+					right: 0;
+				}
+			}
+		}
+		.navbar-toggler {
+			display: none;
+			border-color: rgba(0,0,0,.1);
+			.icon-menu{
+				width: 24px;
+				height: 24px;
+				fill: $gray;
+			}
+			@include media-breakpoint-down(sm){
+				display: flex;
+			}
+		}
 		&-brand {
 			//display: flex;
 			font-size: 2rem;
@@ -21,6 +50,10 @@ $header-height : 60px;
 			&:hover{
 				cursor: pointer;
 				text-decoration: none;
+			}
+			@include media-breakpoint-down(sm){
+				margin-left: 1rem;
+				margin-right: 0;
 			}
 		}
 		&-form {
@@ -32,11 +65,10 @@ $header-height : 60px;
 			max-height: 40px;
 			align-items: center;
 			padding: 0 1rem;
-			.icon-search{
-				display: flex;
-				width: 20px;
-				height: 20px;
-				fill: $gray;
+			&.mobile-hide{
+				@include media-breakpoint-down(sm){
+					display: none;
+				}
 			}
 			.form-control{
 				border-radius: 0;
@@ -76,10 +108,8 @@ $header-height : 60px;
 			}
 			@include media-breakpoint-down(sm){
 				width: 40px;
-				.d-sm-none{
-					display: none;
-				}
 			}
 		}
 	}
+
 }
