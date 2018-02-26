@@ -1,5 +1,7 @@
 .celebrity{
 	&-title{
+		color: $gray-600;
+		font-family: "Raleway-SemiBold";
 		@include media-breakpoint-down(sm){
 			margin: 1rem auto;
 			text-align: center;
