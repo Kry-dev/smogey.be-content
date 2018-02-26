@@ -8,9 +8,6 @@
 	overflow: auto;
 	width: 100%;
 	@include box-shadow;
-	@include media-breakpoint-down(sm){
-		padding-top: 65px;
-	}
 	@include media-breakpoint-down(xs){
 		padding-top: 70px;
 		position: fixed;
