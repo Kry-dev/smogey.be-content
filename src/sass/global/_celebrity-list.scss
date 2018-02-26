@@ -10,6 +10,9 @@
 	h4{
 		color: $gray-600;
 		font-family: "Raleway";
+		@include media-breakpoint-down(sm){
+			text-align: center;
+		}
 	}
 	&-descr{
 		@include media-breakpoint-down(sm){
@@ -31,12 +34,14 @@
 		align-items: center;
 		text-decoration: none;
 		max-width: 90px;
+		margin-bottom: .5rem;
 		.img-round{
 			border-radius: 50%;
 			overflow: hidden;
 			background: red;
 			width: 65px;
 			height: 65px;
+			margin-bottom: .5rem;
 			@include media-breakpoint-down(sm){
 				width: 40px;
 				height: 40px;
@@ -52,6 +57,7 @@
 			font-size: .8rem;
 			text-transform: none;
 			text-align: center;
+			line-height: 1;
 		}
 		&:hover{
 			.img-round{
@@ -62,11 +68,5 @@
 			}
 		}
 	}
-	//.celebrity-item+.celebrity-item{
-	//	margin-left: 30px;
-	//	&:nth-child(4n + 1){
-	//		margin-left: 0;
-	//	}
-	//}
 
 }

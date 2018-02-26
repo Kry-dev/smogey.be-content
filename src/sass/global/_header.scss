@@ -1,5 +1,5 @@
 $header-height : 80px;
-$header-sm-height : 60px;
+$header-sm-height : 50px;
 
 .header{
 	//height: $header-height;
@@ -9,7 +9,6 @@ $header-sm-height : 60px;
 	z-index: 150;
 	background: $white;
 	@include media-breakpoint-down(sm){
-		//height: $header-sm-height;
 		border-bottom: 1px solid $gray-300;
 	}
 	.navbar {
@@ -28,6 +27,8 @@ $header-sm-height : 60px;
 			padding-top: 1.125rem;
 			padding-bottom: 0;
 			@include media-breakpoint-down(sm){
+				//height: $header-sm-height;
+				padding-top: 0;
 				justify-content: flex-start;
 				.btn-primary{
 					display: block;
@@ -52,14 +53,13 @@ $header-sm-height : 60px;
 			}
 			@include media-breakpoint-down(sm){
 				display: flex;
+				margin: .5rem 0;
 			}
 		}
 		&-brand {
 			display: flex;
-			height: 30px;
-			//font-size: 2rem;
+			height: 40px;
 			color: $black;
-			//text-transform: lowercase;
 			padding: 0;
 			margin-bottom: 1.125rem;
 			margin-right: 0;
@@ -72,8 +72,7 @@ $header-sm-height : 60px;
 				text-decoration: none;
 			}
 			@include media-breakpoint-down(sm){
-				margin-left: 1rem;
-				margin-right: 0;
+				margin: 0 0 0 1rem;
 			}
 		}
 		&-form {
@@ -88,6 +87,9 @@ $header-sm-height : 60px;
 		}
 		.btn-primary{
 			margin-bottom: 1.125rem;
+			@include media-breakpoint-down(sm){
+				margin-bottom: 0;
+			}
 		}
 		.btn-group {
 			flex: 1;
@@ -115,9 +117,10 @@ $header-sm-height : 60px;
 			justify-content: space-between;
 			align-items: center;
 			width: 100%;
-			border-top: 1px solid #dee2e6;
+			//border-top: 1px solid #dee2e6;
 			border-bottom: 1px solid #dee2e6;
-			padding: .5rem 0;
+			padding: 0;
+			background: $white;
 			&.show{
 				.navbar-nav{
 					flex-direction: column;

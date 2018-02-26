@@ -87,21 +87,21 @@ video {
 
 
 /* FOR SAFARI */
-input,
-textarea{
-	-webkit-overflow-scrolling: touch;
-	@include appearance(none);
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    .search {
-        /* remove inner shadow on iOS input */
-        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
-        background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
-    }
-}
-[type=search]{
-	@include appearance(none);
-}
+//input,
+//textarea{
+//	-webkit-overflow-scrolling: touch;
+//	@include appearance(none);
+//}
+//@media screen and (-webkit-min-device-pixel-ratio:0) {
+//    .search {
+//        /* remove inner shadow on iOS input */
+//        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+//        background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+//    }
+//}
+//[type=search]{
+//	@include appearance(none);
+//}
 
 /* address */
 address{
