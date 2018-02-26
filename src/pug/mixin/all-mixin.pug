@@ -57,7 +57,15 @@ mixin showSearchModal
 			input.form-control(placeholder='Search celebrity ...', value='')
 			button(type="button")#hideSearch.btn cancel
 
-
+//- celebrities
+mixin celebrities(count)
+	ul.celebrity-list
+		- for (i = 1; i <= count; i++)
+			li
+				a.celebrity-item(href="#")
+					.img-round
+						img(src="assets/img/celebrity/celebrity-01.jpg")
+					.celebriry-name Matthew McConaughey
 
 
 //- sprite
