@@ -25,6 +25,8 @@ $header-sm-height : 60px;
 			justify-content: space-between;
 			align-items: center;
 			flex-wrap: wrap;
+			padding-top: 1.125rem;
+			padding-bottom: 0;
 			@include media-breakpoint-down(sm){
 				justify-content: flex-start;
 				.btn-primary{
@@ -59,9 +61,10 @@ $header-sm-height : 60px;
 			color: $black;
 			//text-transform: lowercase;
 			padding: 0;
-			margin: 0;
+			margin-bottom: 1.125rem;
+			margin-right: 0;
 			.icon-spott{
-				height: 30px;
+				height: 40px;
 				width: 80px;
 			}
 			&:hover{
@@ -76,11 +79,15 @@ $header-sm-height : 60px;
 		&-form {
 			display: flex;
 			width: 75%;
+			margin-bottom: 1.125rem;
 			&.mobile-hide{
 				@include media-breakpoint-down(sm){
 					display: none;
 				}
 			}
+		}
+		.btn-primary{
+			margin-bottom: 1.125rem;
 		}
 		.btn-group {
 			flex: 1;
@@ -108,6 +115,9 @@ $header-sm-height : 60px;
 			justify-content: space-between;
 			align-items: center;
 			width: 100%;
+			border-top: 1px solid #dee2e6;
+			border-bottom: 1px solid #dee2e6;
+			padding: .5rem 0;
 			&.show{
 				.navbar-nav{
 					flex-direction: column;
