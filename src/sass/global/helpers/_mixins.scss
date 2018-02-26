@@ -37,34 +37,9 @@
 	}
 }
 // @include font-face("Roboto", "Roboto", '../fonts/', 'normal', 'normal');
+@include font-face("Raleway", "Raleway", '../fonts/Raleway/', 'normal', 'normal');
+@include font-face("Raleway-Bold", "Raleway-Bold", '../fonts/Raleway/', '700', 'normal');
 
-//===========//
-//REM
-//===========//
-
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
-}
-
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
-}
-//REM FZ
-// @mixin font-size($sizeValue: 1.6) {
-//   font-size: ($sizeValue * 10) + px;
-//   font-size: $sizeValue + rem;
-// }
-//USE
-// p {
-//   @include font-size(14px)
-// }
-// RESULT
-// p {
-//   font-size: 14px; //Will be overridden if browser supports rem
-//   font-size: 0.8rem;
-// }
 
 //===========//
 //APPEREANCE
@@ -88,8 +63,6 @@
 	align-content: $align-content;
 	align-items: $align-items;
 }
-
-
 
 //===========//
 //INLINE BLOCK WRAPPER
