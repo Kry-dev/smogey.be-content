@@ -8,9 +8,23 @@ $header-sm-height : 50px;
 	position: relative;
 	z-index: 150;
 	background: $white;
+	@include media-breakpoint-down(md){
+		.socials{
+			display: none;
+		}
+		.navbar{
+			&-nav{
+				width: 100%;
+			}
+			.nav-item{
+				margin-right: 0;
+			}
+		}
+	}
 	@include media-breakpoint-down(sm){
 		border-bottom: 1px solid $gray-300;
 	}
+
 	.navbar {
 		display: flex;
 		padding: .3rem 0;
@@ -117,10 +131,13 @@ $header-sm-height : 50px;
 			justify-content: space-between;
 			align-items: center;
 			width: 100%;
-			//border-top: 1px solid #dee2e6;
+			border-top: 1px solid #dee2e6;
 			border-bottom: 1px solid #dee2e6;
 			padding: 0;
 			background: $white;
+			@include media-breakpoint-down(sm){
+				border-top: none;
+			}
 			&.show{
 				.navbar-nav{
 					flex-direction: column;
