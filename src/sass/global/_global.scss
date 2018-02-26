@@ -17,12 +17,6 @@ html{
 }
 body {
 	position: relative;
-	//font-family: $font-family-base;
-	//@include font-size($fz-base);
-	//line-height: $lh-base;
-	//font-weight: $fw-base;
-	//color: $text-color;
-	//background:$body-bg;
 	overflow-x: hidden;
 
 	/* FLEX */
@@ -130,4 +124,8 @@ a[class*="button"][class*="disabled"]:after {
 form button:not([type]):after {
 	content: 'Это кнопка отправки информации, кнопка обнуления полей или что? Используйте type="submit", type="reset" или type="button"';
 }
+
+
+
+p
 /* end global styles */

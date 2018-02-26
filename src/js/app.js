@@ -70,7 +70,7 @@ $(document).ready(function() {
         }]
     });
 
-    // $('[data-toggle="collapse"]').collapse('hide');
+    $('[data-toggle="collapse"]').collapse('hide');
 
     $('body, html').not('#filterShow').click(function (e) {
         if($('#wrapper').hasClass('toggled') && !$(e.target).is('#filterShow. #sidebar-wrapper, #sidebar-wrapper *')){

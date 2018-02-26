@@ -7,12 +7,6 @@
 	padding-bottom: 1rem;
 	overflow: auto;
 	width: 100%;
-	@include media-breakpoint-down(xs){
-		padding-top: 70px;
-		position: fixed;
-		width: 80%;
-		right: -80%;
-	}
 }
 .filterSidebar-accordion{
 	.card{

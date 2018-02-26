@@ -16,11 +16,11 @@ button{
 	border-radius:  1.25rem 0 0 1.25rem;
 	background: $white;
 	transition: all .5s ease;
-	@include media-breakpoint-down(xs){
-		left: -62%;
-		transform: translateX(-50%);
+	@include media-breakpoint-down(sm){
+		top: 90vh;
+		right: 50%;
+		transform: translateX(50%);
 		border-radius: 1rem;
-		bottom: 50px;
 		height: 40px;
 	}
 	@include box-shadow;
