@@ -1,44 +1,4 @@
-.filterShow{
-	position: absolute;
-	width: 100px;
-	height: 60px;
-	bottom: 110px;
-	left: -100px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	border: none;
-	//z-index: 100;
-	border-radius:  1.25rem 0 0 1.25rem;
-	z-index: -1;
-	@include media-breakpoint-down(xs){
-		left: -62%;
-		transform: translateX(-50%);
-		border-radius: 1rem;
-		bottom: 50px;
-		height: 40px;
-	}
-	@include box-shadow;
-	.icon{
-		width: 20px;
-		height: 20px;
-		fill: $primary;
-		&-filter{
-			display: inline-block;
-		}
-		&-cancel{
-			display: none;
-		}
-	}
-	&:hover{
-		cursor: pointer;
-		@include box-shadow-hover;
-	}
-	&:focus{
-		outline: none;
-	}
-}
+
 .filterSidebar{
 	display: block;
 	position: fixed;

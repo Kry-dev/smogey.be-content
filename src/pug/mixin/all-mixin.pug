@@ -33,13 +33,7 @@ mixin scrollTop
 
 //- Filter show button
 mixin filterShow
-	button#filterShow.filterShow(
-		type='button',
-		data-toggle='collapse',
-		data-target='#filterSidebar',
-		aria-expanded='false',
-		aria-controls='filterSidebar'
-	)
+	a#filterShow.filterShow(href='#')
 		+icon('filter')
 		+icon('cancel')
 		span Filters
