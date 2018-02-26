@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="en")
+	include global/head
+	+head(
+		'SPOTT'
+	)
+	include mixin/all-mixin
+	body
+		include global/header-celebrity
+		//- wrapper
+		.wrapper
+			include global/content-celebrity
+			include global/filter
+			+scrollTop
+
+		include global/footer
+		+showSearchModal

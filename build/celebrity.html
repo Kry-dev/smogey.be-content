@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <title>SPOTT</title>
+      <meta name="keywords" content="keywords"/>
+      <meta name="description" content="description"/>
+      <!--favicon-->
+          <link rel="shortcut icon" sizes="" href="favicons/favicon.ico" type="image/x-icon"/>
+          <link rel="apple-touch-icon" sizes="" href="favicons/apple-touch-icon.png" type=""/>
+          <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png" type=""/>
+          <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" type=""/>
+          <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" type=""/>
+          <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png" type=""/>
+          <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png" type=""/>
+          <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png" type=""/>
+          <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png" type=""/>
+      <!--viewport-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
+      <!--styles-->
+      <link rel="stylesheet" type="text/css" href="https:////cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="assets/css/app.min.css"/>
+      <script src="assets/js/bundle.js"></script>
+    </head>
+  <body>
+    <!--header-->
+    <header class="header align-items-center">
+      <div class="container-fluid">
+        <nav class="navbar navbar-header navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <svg class="icon icon-menu ">
+                <use xlink:href="assets/img/sprite/sprite.min.svg#menu"></use>
+              </svg>
+          </button><a class="navbar-brand" href="/">spott</a>
+          <form class="navbar-form mobile-hide">
+            <div class="icon-box">
+                <svg class="icon icon-search ">
+                  <use xlink:href="assets/img/sprite/sprite.min.svg#search"></use>
+                </svg>
+            </div>
+            <input class="form-control" placeholder="Search for movies, tv shows, brands or people" value=""/>
+            <button class="btn-search" type="submit"></button>
+          </form>
+            <div class="mobile-search">
+              <button class="btn" id="showSearch">
+                  <svg class="icon icon-search ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#search"></use>
+                  </svg>
+              </button>
+            </div><a class="btn btn-primary" href="#">Sign in</a>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav navbar-expand-md">
+                <li class="nav-item"><a class="nav-link undefined" href="#">Summer</a></li>
+                <li class="nav-item"><a class="nav-link undefined" href="#">Formal</a></li>
+                <li class="nav-item"><a class="nav-link undefined" href="#">Casual</a></li>
+                <li class="nav-item"><a class="nav-link undefined" href="#">Chill</a></li>
+                <li class="nav-item"><a class="nav-link undefined" href="#">Activewear</a></li>
+                <li class="nav-item"><a class="nav-link undefined" href="#">Bags</a></li>
+                <li class="nav-item"><a class="nav-link undefined" href="#">Fun</a></li>
+                <li class="nav-item"><a class="nav-link undefined" href="#">Sexy</a></li>
+                <li class="nav-item"><a class="nav-link undefined" href="#">Jacket</a></li>
+                <li class="nav-item"><a class="nav-link undefined" href="#">Accessories</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Celebrity Style</a></li>
+                <li class="nav-item"><a class="nav-link border-top border-bottom show-sm" href="#">Sign in</a></li>
+                <li class="nav-item"><a class="nav-link  show-sm" href="#">Terms</a></li>
+                <li class="nav-item"><a class="nav-link show-sm" href="#">Privacy</a></li>
+            </ul>
+              <ul class="socials">
+                <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                    <svg class="icon icon-fb">
+                      <use xlink:href="assets/img/sprite/sprite.min.svg#fb"></use>
+                    </svg></a></li>
+                <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                    <svg class="icon icon-tw">
+                      <use xlink:href="assets/img/sprite/sprite.min.svg#tw"></use>
+                    </svg></a></li>
+                <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                    <svg class="icon icon-in">
+                      <use xlink:href="assets/img/sprite/sprite.min.svg#in"></use>
+                    </svg></a></li>
+                <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                    <svg class="icon icon-pin">
+                      <use xlink:href="assets/img/sprite/sprite.min.svg#pin"></use>
+                    </svg></a></li>
+              </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <section class="celebrity">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="celebrity-title">Summer</h1>
+              <p class="celebrity-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et domagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <ul class="categories" id="categories">
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="categories-item"><a class="categories-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container-fluid">
+        <div class="card-columns">
+          <div class="card"><img class="card-img-top img-fluid" src="assets/img/products/product-01.jpg" alt="Card image cap"/>
+            <div class="card-body">
+              <ul class="card-previews">
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-02-80-80.jpg"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+              </ul>
+              <h4 class="card-title">Chiara Ferragni wears a dress by Dodo Bar Or and black boots by R13</h4>
+              <ul class="card-tags">
+                <li><a href="#">Justin Timberlake</a></li>
+                <li><a href="#">adidas</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">White</a></li>
+              </ul>
+            </div>
+            <div class="card-footer"><a class="likes" href="#">
+                  <svg class="icon icon-like ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#like"></use>
+                  </svg><span>0</span></a>
+                <ul class="socials card-socials">
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-fb">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#fb"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-pin">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#pin"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-tw">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#tw"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-dots">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#dots"></use>
+                      </svg></a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="card"><img class="card-img-top img-fluid" src="assets/img/products/product-02.jpg" alt="Card image cap"/>
+            <div class="card-body">
+              <ul class="card-previews">
+                <li><a href="#"><img src="assets/img/products/product-02-80-80.jpg"/></a></li>
+              </ul>
+              <h4 class="card-title">Chiara Ferragni wears a dress by Dodo Bar Or and black boots by R13</h4>
+              <ul class="card-tags">
+                <li><a href="#">Justin Timberlake</a></li>
+                <li><a href="#">adidas</a></li>
+                <li><a href="#">Sneakers</a></li>
+              </ul>
+            </div>
+            <div class="card-footer"><a class="likes" href="#">
+                  <svg class="icon icon-like ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#like"></use>
+                  </svg><span>0</span></a>
+                <ul class="socials card-socials">
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-fb">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#fb"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-pin">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#pin"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-tw">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#tw"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-dots">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#dots"></use>
+                      </svg></a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="card"><img class="card-img-top img-fluid" src="assets/img/products/product-03.jpg" alt="Card image cap"/>
+            <div class="card-body">
+              <ul class="card-previews">
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-02-80-80.jpg"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+              </ul>
+              <h4 class="card-title">Chiara Ferragni wears a dress by Dodo Bar Or and black boots by R13</h4>
+              <ul class="card-tags">
+                <li><a href="#">Justin Timberlake</a></li>
+                <li><a href="#">adidas</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">White</a></li>
+              </ul>
+            </div>
+            <div class="card-footer"><a class="likes" href="#">
+                  <svg class="icon icon-like ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#like"></use>
+                  </svg><span>0</span></a>
+                <ul class="socials card-socials">
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-fb">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#fb"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-pin">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#pin"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-tw">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#tw"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-dots">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#dots"></use>
+                      </svg></a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="card"><img class="card-img-top img-fluid" src="assets/img/products/product-04.png" alt="Card image cap"/>
+            <div class="card-body">
+              <ul class="card-previews">
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-02-80-80.jpg"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+              </ul>
+              <h4 class="card-title">Chiara Ferragni wears a dress by Dodo Bar Or and black boots by R13</h4>
+              <ul class="card-tags">
+                <li><a href="#">Justin Timberlake</a></li>
+                <li><a href="#">adidas</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">White</a></li>
+              </ul>
+            </div>
+            <div class="card-footer"><a class="likes" href="#">
+                  <svg class="icon icon-like ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#like"></use>
+                  </svg><span>0</span></a>
+                <ul class="socials card-socials">
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-fb">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#fb"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-pin">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#pin"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-tw">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#tw"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-dots">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#dots"></use>
+                      </svg></a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="card"><img class="card-img-top img-fluid" src="assets/img/products/product-01.jpg" alt="Card image cap"/>
+            <div class="card-body">
+              <ul class="card-previews">
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-02-80-80.jpg"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+              </ul>
+              <h4 class="card-title">Chiara Ferragni wears a dress by Dodo Bar Or and black boots by R13</h4>
+              <ul class="card-tags">
+                <li><a href="#">Justin Timberlake</a></li>
+                <li><a href="#">adidas</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">White</a></li>
+              </ul>
+            </div>
+            <div class="card-footer"><a class="likes" href="#">
+                  <svg class="icon icon-like ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#like"></use>
+                  </svg><span>0</span></a>
+                <ul class="socials card-socials">
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-fb">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#fb"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-pin">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#pin"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-tw">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#tw"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-dots">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#dots"></use>
+                      </svg></a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="card"><img class="card-img-top img-fluid" src="assets/img/products/product-03.jpg" alt="Card image cap"/>
+            <div class="card-body">
+              <ul class="card-previews">
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-02-80-80.jpg"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+              </ul>
+              <h4 class="card-title">Chiara Ferragni wears a dress by Dodo Bar Or and black boots by R13</h4>
+              <ul class="card-tags">
+                <li><a href="#">Justin Timberlake</a></li>
+                <li><a href="#">adidas</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">White</a></li>
+              </ul>
+            </div>
+            <div class="card-footer"><a class="likes" href="#">
+                  <svg class="icon icon-like ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#like"></use>
+                  </svg><span>0</span></a>
+                <ul class="socials card-socials">
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-fb">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#fb"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-pin">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#pin"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-tw">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#tw"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-dots">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#dots"></use>
+                      </svg></a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="card"><img class="card-img-top img-fluid" src="assets/img/products/product-02.jpg" alt="Card image cap"/>
+            <div class="card-body">
+              <ul class="card-previews">
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-02-80-80.jpg"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+              </ul>
+              <h4 class="card-title">Chiara Ferragni wears a dress by Dodo Bar Or and black boots by R13</h4>
+              <ul class="card-tags">
+                <li><a href="#">Justin Timberlake</a></li>
+                <li><a href="#">adidas</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">White</a></li>
+              </ul>
+            </div>
+            <div class="card-footer"><a class="likes" href="#">
+                  <svg class="icon icon-like ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#like"></use>
+                  </svg><span>0</span></a>
+                <ul class="socials card-socials">
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-fb">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#fb"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-pin">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#pin"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-tw">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#tw"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-dots">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#dots"></use>
+                      </svg></a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="card"><img class="card-img-top img-fluid" src="assets/img/products/product-04.png" alt="Card image cap"/>
+            <div class="card-body">
+              <ul class="card-previews">
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-02-80-80.jpg"/></a></li>
+                <li><a href="#"><img src="assets/img/products/product-01-80-80.png"/></a></li>
+              </ul>
+              <h4 class="card-title">Chiara Ferragni wears a dress by Dodo Bar Or and black boots by R13</h4>
+              <ul class="card-tags">
+                <li><a href="#">Justin Timberlake</a></li>
+                <li><a href="#">adidas</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">White</a></li>
+              </ul>
+            </div>
+            <div class="card-footer"><a class="likes" href="#">
+                  <svg class="icon icon-like ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#like"></use>
+                  </svg><span>0</span></a>
+                <ul class="socials card-socials">
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-fb">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#fb"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-pin">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#pin"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-tw">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#tw"></use>
+                      </svg></a></li>
+                  <li class="socials-item"><a class="socials-link" href="#" target="_blank">
+                      <svg class="icon icon-dots">
+                        <use xlink:href="assets/img/sprite/sprite.min.svg#dots"></use>
+                      </svg></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterSidebar" id="filterSidebar">
+        <div class="filterSidebar-accordion" id="accordion">
+          <div class="card">
+            <div class="card-header py-0" id="headCelebrity">
+              <h5 class="mb-0">Celebrity</h5>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#celebrity" aria-expanded="true" aria-controls="celebrity">More Celebrity ...</button>
+              <div class="navbar-form">
+                <div class="icon-box">
+                    <svg class="icon icon-search ">
+                      <use xlink:href="assets/img/sprite/sprite.min.svg#search"></use>
+                    </svg>
+                </div>
+                <input class="form-control" placeholder="Search celebrity" value=""/>
+              </div>
+              <div class="celebrity-list"><a class="celebrity-item" href="#">
+                  <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                  <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                  <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                  <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                  <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                  <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                  <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                  <div class="celebriry-name">John Doe</div></a></div>
+            </div>
+            <div class="collapse" id="celebrity" aria-labelledby="headCelebrity" data-parent="#accordion">
+              <div class="card-body py-0">
+                <div class="celebrity-list m-0"><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                    <div class="celebriry-name">John Doe</div></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header py-0" id="headColor">
+              <h5 class="mb-0">Color</h5>
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="color">More color options ...</button>
+              <div class="colorlist"><a class="color dark-blue" href="#"></a><a class="color blue" href="#"></a><a class="color dark-brown" href="#"></a><a class="color brown" href="#"></a><a class="color light-brown" href="#"></a><a class="color teal" href="#"></a><a class="color pink" href="#"></a><a class="color aqua" href="#"></a></div>
+            </div>
+            <div class="collapse" id="color" aria-labelledby="headColor" data-parent="#accordion"></div>
+          </div>
+          <div class="card">
+            <div class="card-header pb-0" id="headMaterial">
+              <h5 class="mb-0">Material</h5>
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#material" aria-expanded="false" aria-controls="material">More material options ...</button>
+              <ul class="materials">
+                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="material" aria-labelledby="headMaterial" data-parent="#accordion">
+              <div class="card-body pt-0">
+                <ul class="materials" id="materials">
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headPattern">
+              <h5 class="mb-0">Pattern</h5>
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="pattern">More patterns options ...</button>
+              <ul class="patterns">
+                <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
+                <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
+                <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
+                <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
+                <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
+                <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
+                <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
+                <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
+                <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="pattern" aria-labelledby="headPattern" data-parent="#accordion">
+              <div class="card-body"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headStyle">
+              <h5 class="mb-0">Style</h5>
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="style">More Style options ...</button>
+              <ul class="style">
+                <li class="style-item"><a class="style-link" href="#"><span>Casual</span><img src="assets/img/style/style-01.jpg"/></a></li>
+                <li class="style-item"><a class="style-link" href="#"><span>Elegant</span><img src="assets/img/style/style-01.jpg"/></a></li>
+                <li class="style-item"><a class="style-link" href="#"><span>Bihemian</span><img src="assets/img/style/style-01.jpg"/></a></li>
+                <li class="style-item"><a class="style-link" href="#"><span>50s</span><img src="assets/img/style/style-01.jpg"/></a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="style" aria-labelledby="headStyle" data-parent="#accordion">
+              <div class="card-body"></div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center"><a class="btn btn-outline-primary" href="#">Aplly Filters</a></div>
+          <button class="filterShow" id="filterShow" type="button" data-toggle="collapse" data-target="#filterSidebar" aria-expanded="false" aria-controls="filterSidebar">
+              <svg class="icon icon-filter ">
+                <use xlink:href="assets/img/sprite/sprite.min.svg#filter"></use>
+              </svg>
+              <svg class="icon icon-cancel ">
+                <use xlink:href="assets/img/sprite/sprite.min.svg#cancel"></use>
+              </svg><span>Filters</span>
+          </button>
+      </div>
+        <button class="rounded-circle" id="scrollTop" title="Go to top">
+            <svg class="icon icon-down-arrow ">
+              <use xlink:href="assets/img/sprite/sprite.min.svg#down-arrow"></use>
+            </svg>
+        </button>
+    </div>
+    <!-- footer-->
+    <footer class="footer clearfix">
+      <div class="container"></div>
+    </footer>
+      <div class="showSearch">
+        <form class="navbar-form">
+          <input class="form-control" placeholder="Search celebrity ..." value=""/>
+          <button class="btn" type="button" id="hideSearch">cancel</button>
+        </form>
+      </div>
+  </body>
+</html>
