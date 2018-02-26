@@ -6,7 +6,7 @@ $header-sm-height : 60px;
 	display: flex;
 	box-sizing: border-box;
 	position: relative;
-	z-index: 100;
+	z-index: 150;
 	background: $white;
 	@include media-breakpoint-down(sm){
 		//height: $header-sm-height;
