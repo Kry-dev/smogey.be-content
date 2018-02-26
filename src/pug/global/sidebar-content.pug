@@ -1,0 +1,72 @@
+.sidebar-content
+    .filterSidebar
+        .card
+            .card-header.pb-0
+                h5.mb-0
+                    | Melania Trump is also wearing:
+            .card-body.pt-0
+                include materials
+        .card
+            .card-header.py-0
+                h5.mb-0
+                    | Celebrity
+
+            .card-body.py-0
+                    .navbar-form
+                        .icon-box
+                            +icon('search')
+                        input.form-control(placeholder='Search celebrity', value='')
+                    .celebrity-list.m-0
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+
+        .d-flex.justify-content-center
+            a.btn.btn-outline-primary(href="#") Aplly Filters
+
+    +filterShow

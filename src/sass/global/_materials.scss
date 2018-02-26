@@ -1,11 +1,12 @@
 .materials{
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-start;
+		justify-content: space-between;
 		flex-wrap: wrap;
 		width: 100%;
 		&-item{
-			padding: 5px;
+			padding: 5px 0;
+			width: 32%;
 		}
 		&-link{
 			display: block;

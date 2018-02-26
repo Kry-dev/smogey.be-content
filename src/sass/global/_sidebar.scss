@@ -14,7 +14,6 @@ $sidebar-w: 400px;
 	height: 100%;
 	margin-right: - $sidebar-w;
 	//overflow-y: auto;
-	background: #000;
 	transition: all .5s ease;
 }
 #wrapper{
@@ -59,5 +58,20 @@ $sidebar-w: 400px;
 		width: 100%;
 		height: 100%;
 		background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(7,20,35,0) 60%, rgba(0,1,2,0.3) 99%, rgba(0,0,0,0.3) 100%);
+	}
+	.card{
+		border: none;
+		&-header{
+			background: none;
+			border: none;
+			h5{
+				text-transform: uppercase;
+				color: $gray;
+				font-size: 1rem;
+			}
+		}
+		&-body{
+			border: none;
+		}
 	}
 }

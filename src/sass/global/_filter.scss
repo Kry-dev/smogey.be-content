@@ -1,35 +1,15 @@
 
 .filterSidebar{
 	display: block;
-	position: fixed;
-	padding-top: 115px;
-	top: 0;
-	right: -400px;
 	background: $white;
-	width: 400px;
-	min-height: 100vh;
 	height: 100%;
 	z-index: 50;
 	padding-bottom: 1rem;
+	overflow: auto;
+	width: 100%;
 	@include box-shadow;
 	@include media-breakpoint-down(sm){
 		padding-top: 65px;
-	}
-	&.collapse.show{
-		right: 0;
-		.icon{
-			&-filter{
-				display: none;
-			}
-			&-cancel{
-				display: inline-block;
-			}
-		}
-		@include media-breakpoint-down(xs){
-			.filterShow{
-				left: 10px;
-			}
-		}
 	}
 	@include media-breakpoint-down(xs){
 		padding-top: 70px;
