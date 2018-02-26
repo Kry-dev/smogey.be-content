@@ -1,10 +1,11 @@
 $sidebar-w: 400px;
+$sidebar-sm-w: 60%;
 
 .fixed{
 	overflow-y: hidden;
 }
 #sidebar-wrapper{
-	padding-top: 125px;
+	//padding-top: 95px;
 	z-index: 100;
 	display: block;
 	position: fixed;
@@ -15,7 +16,13 @@ $sidebar-w: 400px;
 	margin-right: - $sidebar-w;
 	transition: all .5s ease;
 	@include media-breakpoint-down(sm){
-		padding-top: 55px;
+		z-index: 200;
+		//padding-top: 55px;
+		margin-right: - $sidebar-sm-w;
+		right: $sidebar-sm-w;
+	}
+	h3{
+		color: $primary;
 	}
 }
 #wrapper{
@@ -24,14 +31,25 @@ $sidebar-w: 400px;
 	transition: all .5s ease;
 	&.toggled{
 		padding-right: $sidebar-w;
-
+		@include media-breakpoint-down(sm){
+			padding-right: $sidebar-sm-w;
+			.card-columns{
+				column-count: 2;
+			}
+		}
+		@include media-breakpoint-down(sm){
+			.card-columns{
+				column-count: 1;
+			}
+		}
 		#sidebar-wrapper{
 			width: $sidebar-w;
+			@include media-breakpoint-down(sm){
+				width: $sidebar-sm-w;
+			}
 		}
 		#filterShow{
-			//position: absolute;
 			right: $sidebar-w;
-			//top: 65vh;
 			transition: all .5s ease;
 			.icon{
 				&-filter{
@@ -40,6 +58,9 @@ $sidebar-w: 400px;
 				&-cancel{
 					display: inline-block;
 				}
+			}
+			@include media-breakpoint-down(sm){
+				right: $sidebar-sm-w;
 			}
 		}
 	}
@@ -51,6 +72,18 @@ $sidebar-w: 400px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	&-title{
+		height: 150px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		background: $white;
+		padding:  0 1.25rem;
+		@include media-breakpoint-down(sm){
+			height: 50px;
+		}
+	}
 	&:before{
 		content: "";
 		position: absolute;
@@ -74,6 +107,12 @@ $sidebar-w: 400px;
 		}
 		&-body{
 			border: none;
+		}
+	}
+	.celebrity-list{
+		justify-content: space-between;
+		.celebrity-item{
+			width: 24%;
 		}
 	}
 }
