@@ -6,7 +6,6 @@ $sidebar-xs-w: 60%;
 	overflow-y: hidden;
 }
 #sidebar-wrapper{
-	//padding-top: 95px;
 	z-index: 100;
 	display: block;
 	position: fixed;
@@ -18,13 +17,11 @@ $sidebar-xs-w: 60%;
 	transition: all .5s ease;
 	@include media-breakpoint-down(sm){
 		z-index: 200;
-		//padding-top: 55px;
 		margin-right: - $sidebar-sm-w;
 		right: $sidebar-sm-w;
 	}
 	@include media-breakpoint-down(sm){
 		z-index: 200;
-		//padding-top: 55px;
 		margin-right: - $sidebar-xs-w;
 		right: $sidebar-xs-w;
 	}
@@ -90,7 +87,7 @@ $sidebar-xs-w: 60%;
 	display: flex;
 	flex-direction: column;
 	&-title{
-		height: 150px;
+		height: 190px;
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
