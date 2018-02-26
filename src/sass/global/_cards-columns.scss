@@ -6,7 +6,7 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	.card-columns {column-count: 3;}
+	.card-columns {column-count: 4;}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -19,6 +19,7 @@
 		box-shadow: 0 2px 15px 0 rgba(0,0,0,.08);
 		transition: box-shadow .4s ease;
 		border: none;
+		max-width: 284px;
 		&:hover{
 			box-shadow: 0 2px 20px 0 rgba(0,0,0,.24);
 			//cursor: pointer;

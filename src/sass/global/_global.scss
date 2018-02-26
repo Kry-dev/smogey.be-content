@@ -14,6 +14,7 @@ html{
 		width: 320px;
 		overflow-x:auto;
 	}
+
 }
 body {
 	position: relative;
@@ -23,6 +24,9 @@ body {
 	@include flexbox();
 	flex-flow:column;
 	min-height: 100vh;
+	@include media-breakpoint-down(sm){
+		font-size: .75rem;
+	}
 }
 .wrapper{
 	width: 100%;
@@ -124,8 +128,17 @@ a[class*="button"][class*="disabled"]:after {
 form button:not([type]):after {
 	content: 'Это кнопка отправки информации, кнопка обнуления полей или что? Используйте type="submit", type="reset" или type="button"';
 }
-
-
-
-p
+h1{
+	@include media-breakpoint-down(sm){
+		font-size: 2rem;
+	}
+	@include media-breakpoint-down(sm){
+		font-size: 1.4rem;
+	}
+}
+h2,h3{
+	@include media-breakpoint-down(xs){
+		font-size: 1rem;
+	}
+}
 /* end global styles */

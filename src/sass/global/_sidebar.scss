@@ -1,6 +1,6 @@
 $sidebar-w: 400px;
-$sidebar-sm-w: 60%;
-$sidebar-xs-w: 85%;
+$sidebar-sm-w: 50%;
+$sidebar-xs-w: 60%;
 
 .fixed{
 	overflow-y: hidden;
@@ -49,6 +49,7 @@ $sidebar-xs-w: 85%;
 			.card-columns{
 				column-count: 1;
 			}
+
 		}
 		#sidebar-wrapper{
 			width: $sidebar-w;
@@ -100,6 +101,13 @@ $sidebar-xs-w: 85%;
 			height: 50px;
 			h3{
 				font-size: 1.2rem;
+			}
+		}
+		@include media-breakpoint-down(sm){
+			height: 30px;
+			h3{
+				font-size: 1rem;
+				margin-bottom: 0;
 			}
 		}
 	}

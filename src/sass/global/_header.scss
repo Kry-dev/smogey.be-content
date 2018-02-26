@@ -53,10 +53,17 @@ $header-sm-height : 60px;
 			}
 		}
 		&-brand {
-			//display: flex;
-			font-size: 2rem;
+			display: flex;
+			height: 30px;
+			//font-size: 2rem;
 			color: $black;
-			text-transform: lowercase;
+			//text-transform: lowercase;
+			padding: 0;
+			margin: 0;
+			.icon-spott{
+				height: 30px;
+				width: 80px;
+			}
 			&:hover{
 				cursor: pointer;
 				text-decoration: none;
