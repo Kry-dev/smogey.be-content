@@ -1,0 +1,163 @@
+.sidebar-content
+    #filterSidebar.filterSidebar
+        #accordion.filterSidebar-accordion
+            .card
+                #headCelebrity.card-header.py-0
+                    h5.mb-0
+                        | Celebrity
+                    button.btn.btn-link(data-toggle='collapse', data-target='#celebrity', aria-expanded='true', aria-controls='celebrity')
+                        | More Celebrity ...
+                    .navbar-form
+                        .icon-box
+                            +icon('search')
+                        input.form-control(placeholder='Search celebrity', value='')
+                    .celebrity-list
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+                        a.celebrity-item(href="#")
+                            .img-round
+                                img(src="assets/img/celebrity/celebrity-01.jpg")
+                            .celebriry-name John Doe
+
+
+                #celebrity.collapse(aria-labelledby='headCelebrity', data-parent='#accordion')
+                    .card-body.py-0
+                        .celebrity-list.m-0
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+                            a.celebrity-item(href="#")
+                                .img-round
+                                    img(src="assets/img/celebrity/celebrity-01.jpg")
+                                .celebriry-name John Doe
+
+
+            .card
+                #headColor.card-header.py-0
+                    h5.mb-0
+                        | Color
+                    button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#', aria-expanded='false',
+                    aria-controls='color')
+                        | More color options ...
+                    .colorlist
+                        a.color.dark-blue(href="#")
+                        a.color.blue(href="#")
+                        a.color.dark-brown(href="#")
+                        a.color.brown(href="#")
+                        a.color.light-brown(href="#")
+                        a.color.teal(href="#")
+                        a.color.pink(href="#")
+                        a.color.aqua(href="#")
+                #color.collapse(aria-labelledby='headColor', data-parent='#accordion')
+
+
+            .card
+                #headMaterial.card-header.pb-0
+                    h5.mb-0
+                        | Material
+                    button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#material', aria-expanded='false',
+                    aria-controls='material')
+                        | More material options ...
+                    ul.materials
+                        li.materials-item
+                            a(href="#").materials-link
+                                span Espadrilles
+                                img(src="assets/img/category/category-01.jpg")
+                        li.materials-item
+                            a(href="#").materials-link
+                                span Espadrilles
+                                img(src="assets/img/category/category-01.jpg")
+                        li.materials-item
+                            a(href="#").materials-link
+                                span Espadrilles
+                                img(src="assets/img/category/category-01.jpg")
+                        li.materials-item
+                            a(href="#").materials-link
+                                span Espadrilles
+                                img(src="assets/img/category/category-01.jpg")
+                        li.materials-item
+                            a(href="#").materials-link
+                                span Espadrilles
+                                img(src="assets/img/category/category-01.jpg")
+                        li.materials-item
+                            a(href="#").materials-link
+                                span Espadrilles
+                                img(src="assets/img/category/category-01.jpg")
+                #material.collapse(aria-labelledby='headMaterial', data-parent='#accordion')
+                    .card-body.pt-0
+                        include materials
+            .card
+                #headPattern.card-header
+                    h5.mb-0
+                        | Pattern
+                    button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#', aria-expanded='false',
+                    aria-controls='pattern')
+                        | More patterns options ...
+                    include patterns
+                #pattern.collapse(aria-labelledby='headPattern', data-parent='#accordion')
+                    .card-body
+            .card
+                #headStyle.card-header
+                    h5.mb-0
+                        | Style
+                    button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#', aria-expanded='false', aria-controls='style')
+                        | More Style options ...
+                    include style
+                #style.collapse(aria-labelledby='headStyle', data-parent='#accordion')
+                    .card-body
+
+        .d-flex.justify-content-center
+            a.btn.btn-outline-primary(href="#") Aplly Filters
+
+        +filterShow

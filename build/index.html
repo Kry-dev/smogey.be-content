@@ -88,7 +88,7 @@
         </nav>
       </div>
     </header>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
       <section class="hero">
         <div class="container-fluid pb-0">
           <div class="row">
@@ -449,147 +449,151 @@
           </div>
         </div>
       </div>
-      <div class="filterSidebar" id="filterSidebar">
-        <div class="filterSidebar-accordion" id="accordion">
-          <div class="card">
-            <div class="card-header py-0" id="headCelebrity">
-              <h5 class="mb-0">Celebrity</h5>
-              <button class="btn btn-link" data-toggle="collapse" data-target="#celebrity" aria-expanded="true" aria-controls="celebrity">More Celebrity ...</button>
-              <div class="navbar-form">
-                <div class="icon-box">
-                    <svg class="icon icon-search ">
-                      <use xlink:href="assets/img/sprite/sprite.min.svg#search"></use>
-                    </svg>
+      <div id="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="filterSidebar" id="filterSidebar">
+            <div class="filterSidebar-accordion" id="accordion">
+              <div class="card">
+                <div class="card-header py-0" id="headCelebrity">
+                  <h5 class="mb-0">Celebrity</h5>
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#celebrity" aria-expanded="true" aria-controls="celebrity">More Celebrity ...</button>
+                  <div class="navbar-form">
+                    <div class="icon-box">
+                        <svg class="icon icon-search ">
+                          <use xlink:href="assets/img/sprite/sprite.min.svg#search"></use>
+                        </svg>
+                    </div>
+                    <input class="form-control" placeholder="Search celebrity" value=""/>
+                  </div>
+                  <div class="celebrity-list"><a class="celebrity-item" href="#">
+                      <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                      <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                      <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                      <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                      <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                      <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                      <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                      <div class="celebriry-name">John Doe</div></a></div>
                 </div>
-                <input class="form-control" placeholder="Search celebrity" value=""/>
+                <div class="collapse" id="celebrity" aria-labelledby="headCelebrity" data-parent="#accordion">
+                  <div class="card-body py-0">
+                    <div class="celebrity-list m-0"><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
+                        <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
+                        <div class="celebriry-name">John Doe</div></a></div>
+                  </div>
+                </div>
               </div>
-              <div class="celebrity-list"><a class="celebrity-item" href="#">
-                  <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                  <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                  <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                  <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                  <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                  <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                  <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                  <div class="celebriry-name">John Doe</div></a></div>
-            </div>
-            <div class="collapse" id="celebrity" aria-labelledby="headCelebrity" data-parent="#accordion">
-              <div class="card-body py-0">
-                <div class="celebrity-list m-0"><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a><a class="celebrity-item" href="#">
-                    <div class="img-round"><img src="assets/img/celebrity/celebrity-01.jpg"/></div>
-                    <div class="celebriry-name">John Doe</div></a></div>
+              <div class="card">
+                <div class="card-header py-0" id="headColor">
+                  <h5 class="mb-0">Color</h5>
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="color">More color options ...</button>
+                  <div class="colorlist"><a class="color dark-blue" href="#"></a><a class="color blue" href="#"></a><a class="color dark-brown" href="#"></a><a class="color brown" href="#"></a><a class="color light-brown" href="#"></a><a class="color teal" href="#"></a><a class="color pink" href="#"></a><a class="color aqua" href="#"></a></div>
+                </div>
+                <div class="collapse" id="color" aria-labelledby="headColor" data-parent="#accordion"></div>
+              </div>
+              <div class="card">
+                <div class="card-header pb-0" id="headMaterial">
+                  <h5 class="mb-0">Material</h5>
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#material" aria-expanded="false" aria-controls="material">More material options ...</button>
+                  <ul class="materials">
+                    <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                    <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                    <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                    <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                    <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                    <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                  </ul>
+                </div>
+                <div class="collapse" id="material" aria-labelledby="headMaterial" data-parent="#accordion">
+                  <div class="card-body pt-0">
+                    <ul class="materials" id="materials">
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                      <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headPattern">
+                  <h5 class="mb-0">Pattern</h5>
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="pattern">More patterns options ...</button>
+                  <ul class="patterns">
+                    <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
+                    <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
+                    <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
+                    <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
+                    <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
+                    <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
+                    <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
+                    <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
+                    <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
+                  </ul>
+                </div>
+                <div class="collapse" id="pattern" aria-labelledby="headPattern" data-parent="#accordion">
+                  <div class="card-body"></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headStyle">
+                  <h5 class="mb-0">Style</h5>
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="style">More Style options ...</button>
+                  <ul class="style">
+                    <li class="style-item"><a class="style-link" href="#"><span>Casual</span><img src="assets/img/style/style-01.jpg"/></a></li>
+                    <li class="style-item"><a class="style-link" href="#"><span>Elegant</span><img src="assets/img/style/style-01.jpg"/></a></li>
+                    <li class="style-item"><a class="style-link" href="#"><span>Bihemian</span><img src="assets/img/style/style-01.jpg"/></a></li>
+                    <li class="style-item"><a class="style-link" href="#"><span>50s</span><img src="assets/img/style/style-01.jpg"/></a></li>
+                  </ul>
+                </div>
+                <div class="collapse" id="style" aria-labelledby="headStyle" data-parent="#accordion">
+                  <div class="card-body"></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header py-0" id="headColor">
-              <h5 class="mb-0">Color</h5>
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="color">More color options ...</button>
-              <div class="colorlist"><a class="color dark-blue" href="#"></a><a class="color blue" href="#"></a><a class="color dark-brown" href="#"></a><a class="color brown" href="#"></a><a class="color light-brown" href="#"></a><a class="color teal" href="#"></a><a class="color pink" href="#"></a><a class="color aqua" href="#"></a></div>
-            </div>
-            <div class="collapse" id="color" aria-labelledby="headColor" data-parent="#accordion"></div>
-          </div>
-          <div class="card">
-            <div class="card-header pb-0" id="headMaterial">
-              <h5 class="mb-0">Material</h5>
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#material" aria-expanded="false" aria-controls="material">More material options ...</button>
-              <ul class="materials">
-                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-              </ul>
-            </div>
-            <div class="collapse" id="material" aria-labelledby="headMaterial" data-parent="#accordion">
-              <div class="card-body pt-0">
-                <ul class="materials" id="materials">
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                  <li class="materials-item"><a class="materials-link" href="#"><span>Espadrilles</span><img src="assets/img/category/category-01.jpg"/></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headPattern">
-              <h5 class="mb-0">Pattern</h5>
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="pattern">More patterns options ...</button>
-              <ul class="patterns">
-                <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
-                <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
-                <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
-                <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
-                <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
-                <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
-                <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
-                <li class="patterns-item"><a class="patterns-link" href="#">Burnout</a></li>
-                <li class="patterns-item"><a class="patterns-link" href="#">Camourflage</a></li>
-              </ul>
-            </div>
-            <div class="collapse" id="pattern" aria-labelledby="headPattern" data-parent="#accordion">
-              <div class="card-body"></div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headStyle">
-              <h5 class="mb-0">Style</h5>
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="style">More Style options ...</button>
-              <ul class="style">
-                <li class="style-item"><a class="style-link" href="#"><span>Casual</span><img src="assets/img/style/style-01.jpg"/></a></li>
-                <li class="style-item"><a class="style-link" href="#"><span>Elegant</span><img src="assets/img/style/style-01.jpg"/></a></li>
-                <li class="style-item"><a class="style-link" href="#"><span>Bihemian</span><img src="assets/img/style/style-01.jpg"/></a></li>
-                <li class="style-item"><a class="style-link" href="#"><span>50s</span><img src="assets/img/style/style-01.jpg"/></a></li>
-              </ul>
-            </div>
-            <div class="collapse" id="style" aria-labelledby="headStyle" data-parent="#accordion">
-              <div class="card-body"></div>
-            </div>
+            <div class="d-flex justify-content-center"><a class="btn btn-outline-primary" href="#">Aplly Filters</a></div><a class="filterShow" id="filterShow" href="#">
+                  <svg class="icon icon-filter ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#filter"></use>
+                  </svg>
+                  <svg class="icon icon-cancel ">
+                    <use xlink:href="assets/img/sprite/sprite.min.svg#cancel"></use>
+                  </svg><span>Filters</span></a>
           </div>
         </div>
-        <div class="d-flex justify-content-center"><a class="btn btn-outline-primary" href="#">Aplly Filters</a></div><a class="filterShow" id="filterShow" href="#">
-              <svg class="icon icon-filter ">
-                <use xlink:href="assets/img/sprite/sprite.min.svg#filter"></use>
-              </svg>
-              <svg class="icon icon-cancel ">
-                <use xlink:href="assets/img/sprite/sprite.min.svg#cancel"></use>
-              </svg><span>Filters</span></a>
       </div>
         <button class="rounded-circle" id="scrollTop" title="Go to top">
             <svg class="icon icon-down-arrow ">
