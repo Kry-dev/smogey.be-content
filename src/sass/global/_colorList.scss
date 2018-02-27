@@ -18,4 +18,14 @@
 		&.pink{background: #ffb0a4;}
 		&.aqua{background: #add5da;}
 	}
+	@include media-breakpoint-down(sm){
+		height: auto;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		a.color{
+			width: 30px;
+			height: 30px;
+			margin: 5px;
+		}
+	}
 }

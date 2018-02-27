@@ -57,7 +57,7 @@ $sidebar-xs-w: 60%;
 				width: $sidebar-xs-w;
 			}
 		}
-		#filterShow{
+		.filterShow{
 			right: $sidebar-w;
 			transition: all .5s ease;
 			.icon{
@@ -73,7 +73,7 @@ $sidebar-xs-w: 60%;
 				transform: translateX(54px);
 				z-index: 30;
 			}
-			@include media-breakpoint-down(sm){
+			@include media-breakpoint-down(xs){
 				right: $sidebar-xs-w;
 			}
 		}

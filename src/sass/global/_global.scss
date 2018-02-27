@@ -37,6 +37,9 @@ body {
 	.container-fluid{
 		padding: 2rem;
 		max-width: 1360px;
+		@include media-breakpoint-down(sm){
+			padding: 1rem;
+		}
 	}
 }
 .content{

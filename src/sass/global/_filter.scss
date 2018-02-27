@@ -10,6 +10,14 @@
 }
 .filterSidebar-accordion{
 	padding-top: 120px;
+	position: relative;
+	z-index: 50;
+	@include media-breakpoint-down(sm){
+		padding-top: 15px;
+		#filterShow{
+			z-index: -1 !important;
+		}
+	}
 	.card{
 		display: flex;
 		flex-direction: column;

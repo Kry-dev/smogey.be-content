@@ -46,4 +46,9 @@
 			z-index: 2;
 		}
 	}
+	@include media-breakpoint-down(sm){
+		&-item{
+			width: 48%;
+		}
+	}
 }
