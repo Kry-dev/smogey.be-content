@@ -38,7 +38,7 @@ $sidebar-xs-w: 60%;
 		@include media-breakpoint-down(sm){
 			padding-right: $sidebar-sm-w;
 			.card-columns{
-				column-count: 2;
+				column-count: 2 !important;
 			}
 		}
 		@include media-breakpoint-down(xs){

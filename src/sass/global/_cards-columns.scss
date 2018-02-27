@@ -5,12 +5,12 @@
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-	.card-columns {column-count: 4;}
+@media (max-width: 992px) {
+	.card-columns {column-count: 3;}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1170px) {
+@media (min-width: 992px) {
 	.card-columns {column-count: 4;}
 }
 .card-columns {
@@ -102,7 +102,12 @@
 			flex-direction: row;
 			justify-content: space-between;
 		}
-
+		.celebrity-item{
+			max-width: 70px;
+			.celebriry-name{
+				font-size: .6rem;
+			}
+		}
 	}
 	@include media-breakpoint-down(sm){
 		padding: 0;
@@ -114,6 +119,9 @@
 			font-size: 1rem;
 		}
 		.card-footer{
+			display: none;
+		}
+		.celebrity-list{
 			display: none;
 		}
 	}
