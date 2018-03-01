@@ -12,6 +12,7 @@
 	}
 	&-col{
 		display: flex;
+		flex-direction: column;
 		@include media-breakpoint-down(sm){
 			display: block;
 			width: 100%;

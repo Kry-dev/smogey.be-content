@@ -4,9 +4,26 @@
 	background: $white;
 	height: 100%;
 	z-index: 50;
-	padding-bottom: 1rem;
 	overflow: auto;
 	width: 100%;
+	padding-bottom: 4rem;
+	position: relative;
+	.filter-sbm{
+		position: fixed;
+		display: flex;
+		width: $sidebar-w;
+		justify-content: center;
+		align-items: center;
+		bottom: 0;
+		height: 4rem;
+		background: $white;
+		.btn{
+			height: 2.5rem;
+		}
+		@include media-breakpoint-down(sm){
+			width: $sidebar-sm-w;
+		}
+	}
 }
 .filterSidebar-accordion{
 	padding-top: 120px;
