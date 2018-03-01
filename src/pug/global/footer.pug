@@ -1,4 +1,40 @@
-// footer
-footer.footer.clearfix
-	.container
+
+footer.footer
+	.wrapper
+		.container-fluid
+			.row
+				.footer-col.col
+					.footer-logo
+						+icon('spott')
+					.footer-description Discover your style
+					.footer-description © Spott 2018
+				.footer-col.col
+					h2.footer-subtitle Spott
+					nav.footer-nav
+						a.footer-nav__link(href="#") Homepage
+						a.footer-nav__link(href="#") For business
+						a.footer-nav__link(href="#") Terms
+						a.footer-nav__link(href="#") Privacy
+				.footer-col.col
+					h2.footer-subtitle Discover
+					nav.footer-nav
+						a.footer-nav__link(href="#") Movies
+						a.footer-nav__link(href="#") TV Shows
+						a.footer-nav__link(href="#") People
+						a.footer-nav__link(href="#") Characters
+						a.footer-nav__link(href="#") Brands
+						a.footer-nav__link(href="#") Stores
+				.footer-col.col
+					h2.footer-subtitle Follow us
+					+footer-socials
+				.footer-col.col
+					.dropdown
+						a#LangSelect.btn.dropdown-toggle(href='#', role='button', data-toggle='dropdown',
+						aria-haspopup='true',
+						aria-expanded='false')
+							| English
+						.dropdown-menu(aria-labelledby='LangSelect')
+							a.dropdown-item(href='#') Français
+							a.dropdown-item(href='#') Nederlands
+							a.dropdown-item(href='#') Portuguese
 

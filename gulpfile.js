@@ -59,11 +59,11 @@ function SVGSpriteBuild() {
             parserOptions: { xmlMode: true }
         }))
         .pipe(svgmin(function (file) {
-            // var prefix = path.basename(file.relative, path.extname(file.relative));
+            //var prefix = path.basename(file.relative, path.svgIcons(file.relative));
             return {
                 plugins: [{
                     cleanupIDs: {
-                        prefix: '-',
+                        //prefix: '-',
                         minify: true
                     }
                 }]

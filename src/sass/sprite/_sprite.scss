@@ -48,13 +48,21 @@
 		fill: $dark;
 	}
 }
-//.icon-search{
-//	display: flex;
-//	width: 20px;
-//	height: 20px;
-//	fill: $gray;
-//}
+
 .icon-tw {
 	font-size:(512/10)*1rem;
 	width:(512/512)*1em;
 }
+.icon-fb-color{
+	fill: #4460a0;
+}
+.icon-tw-color{
+	fill: #00aaec;
+}
+.icon-pin-color{
+	fill: #cc2128;
+}
+.icon-in-color {
+	fill: #2e368f;
+}
+
