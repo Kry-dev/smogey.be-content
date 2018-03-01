@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc168ba-2595-41b6-8ae5-fe49a44c1158" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/assets/css/app.min.css" afterPath="$PROJECT_DIR$/build/assets/css/app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/celebrity.html" afterPath="$PROJECT_DIR$/build/celebrity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/global/sidebar-celebrity.pug" afterPath="$PROJECT_DIR$/src/pug/global/sidebar-celebrity.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/global/sidebar-summer.pug" afterPath="$PROJECT_DIR$/src/pug/global/sidebar-summer.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/global/_filter.scss" afterPath="$PROJECT_DIR$/src/sass/global/_filter.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/global/_footer.scss" afterPath="$PROJECT_DIR$/src/sass/global/_footer.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/global/_sidebar.scss" afterPath="$PROJECT_DIR$/src/sass/global/_sidebar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/global/helpers/_variables.scss" afterPath="$PROJECT_DIR$/src/sass/global/helpers/_variables.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,24 +19,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_sidebar.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_sidebar.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/global/_sidebar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="360">
+              <caret line="99" column="16" lean-forward="false" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_filter.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_filter.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/global/_filter.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="285">
+              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
-                <element signature="e#629#1098#0" expanded="false" />
-                <element signature="e#1113#1754#0" expanded="false" />
+                <element signature="e#624#1093#0" expanded="false" />
+                <element signature="e#1108#1749#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -180,8 +173,8 @@
         <option value="$PROJECT_DIR$/src/pug/global/sidebar-celebrity.pug" />
         <option value="$PROJECT_DIR$/src/pug/global/sidebar-summer.pug" />
         <option value="$PROJECT_DIR$/src/sass/global/helpers/_variables.scss" />
-        <option value="$PROJECT_DIR$/src/sass/global/_filter.scss" />
         <option value="$PROJECT_DIR$/src/sass/global/_sidebar.scss" />
+        <option value="$PROJECT_DIR$/src/sass/global/_filter.scss" />
       </list>
     </option>
   </component>
@@ -505,12 +498,12 @@
       <workItem from="1519142275112" duration="17215000" />
       <workItem from="1519640782713" duration="31790000" />
       <workItem from="1519794639703" duration="255000" />
-      <workItem from="1519898142548" duration="12371000" />
+      <workItem from="1519898142548" duration="12804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111464000" />
+    <option name="totallyTimeSpent" value="111897000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -953,22 +946,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/global/_filter.scss">
+    <entry file="file://$PROJECT_DIR$/src/sass/global/_sidebar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="e#629#1098#0" expanded="false" />
-            <element signature="e#1113#1754#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="99" column="16" lean-forward="false" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/global/_sidebar.scss">
+    <entry file="file://$PROJECT_DIR$/src/sass/global/_filter.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#624#1093#0" expanded="false" />
+            <element signature="e#1108#1749#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

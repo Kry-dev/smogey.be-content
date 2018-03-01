@@ -17,6 +17,7 @@
 		bottom: 0;
 		height: 4rem;
 		background: $white;
+		z-index: 150;
 		.btn{
 			height: 2.5rem;
 		}
@@ -26,7 +27,6 @@
 	}
 }
 .filterSidebar-accordion{
-	padding-top: 120px;
 	position: relative;
 	z-index: 50;
 	@include media-breakpoint-down(sm){
