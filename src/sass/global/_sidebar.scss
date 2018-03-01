@@ -1,6 +1,7 @@
 $sidebar-w: 400px;
-$sidebar-sm-w: 50%;
-$sidebar-xs-w: 60%;
+$sidebar-sm-w: 80%;
+$sidebar-wrapper-w: 50%;
+$sidebar-xs-w: 80%;
 
 .fixed{
 	overflow-y: hidden;
@@ -36,13 +37,13 @@ $sidebar-xs-w: 60%;
 	&.toggled{
 		padding-right: $sidebar-w;
 		@include media-breakpoint-down(sm){
-			padding-right: $sidebar-sm-w;
+			padding-right: $sidebar-wrapper-w;
 			.card-columns{
 				column-count: 2 !important;
 			}
 		}
 		@include media-breakpoint-down(xs){
-			padding-right: $sidebar-xs-w;
+			padding-right: 35%;
 			.card-columns{
 				column-count: 1;
 			}

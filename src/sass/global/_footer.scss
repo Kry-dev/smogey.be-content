@@ -94,7 +94,7 @@
 		width: 176px;
 		height: 40px;
 		@include media-breakpoint-down(sm){
-			margin: 0 auto 20px;
+			margin: 0 auto 4rem;
 		}
 		&-toggle{
 			font-size: 1rem;

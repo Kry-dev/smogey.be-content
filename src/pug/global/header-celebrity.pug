@@ -1,34 +1,35 @@
 //header
 header.header.align-items-center
-	.container-fluid
-		nav.navbar.navbar-header.navbar-expand-md
-			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarMenu', aria-controls='navbarMenu',
-			aria-expanded='false', aria-label='Toggle navigation')
-				+icon('menu')
-			a(href="/").navbar-brand
-				+icon('spott')
-			form.navbar-form.mobile-hide
-				.icon-box
-					+icon('search')
-				input.form-control(placeholder='Search for movies, tv shows, brands or people', value='')
-				button.btn-search(type='submit')
-			+mobile-search
-			a(href="#").btn.btn-primary Sign in
-			#navbarMenu.collapse.navbar-collapse
-				ul.navbar-nav.navbar-expand-md
-					+nav-link('#','Summer')
-					+nav-link('#','Formal')
-					+nav-link('#','Casual')
-					+nav-link('#','Chill')
-					+nav-link('#','Activewear')
-					+nav-link('#','Bags')
-					+nav-link('#','Fun')
-					+nav-link('#','Sexy')
-					+nav-link('#','Jacket')
-					+nav-link('#','Accessories')
-					+nav-link('#','Celebrity Style', 'active')
-					+nav-link('#','Sign in', 'border-top border-bottom show-sm')
-					+nav-link('#','Terms', ' show-sm')
-					+nav-link('#','Privacy', 'show-sm')
-				+socials
+	.header-wrapper
+		.container-fluid
+			nav.navbar.navbar-header.navbar-expand-md
+				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarMenu', aria-controls='navbarMenu',
+				aria-expanded='false', aria-label='Toggle navigation')
+					+icon('menu')
+				a(href="/").navbar-brand
+					+icon('spott')
+				form.navbar-form.mobile-hide
+					.icon-box
+						+icon('search')
+					input.form-control(placeholder='Search for movies, tv shows, brands or people', value='')
+					button.btn-search(type='submit')
+				+mobile-search
+				a(href="#").btn.btn-primary Sign in
+				#navbarMenu.collapse.navbar-collapse
+					ul.navbar-nav.navbar-expand-md
+						+nav-link('#','Summer')
+						+nav-link('#','Formal')
+						+nav-link('#','Casual')
+						+nav-link('#','Chill')
+						+nav-link('#','Activewear')
+						+nav-link('#','Bags')
+						+nav-link('#','Fun')
+						+nav-link('#','Sexy')
+						+nav-link('#','Jacket')
+						+nav-link('#','Accessories')
+						+nav-link('#','Celebrity Style', 'active')
+						+nav-link('#','Sign in', 'border-top border-bottom show-sm')
+						+nav-link('#','Terms', ' show-sm')
+						+nav-link('#','Privacy', 'show-sm')
+					+socials
 
