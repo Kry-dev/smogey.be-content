@@ -7,7 +7,8 @@ const pug = require('gulp-pug');
 const svgmin = require('gulp-svgmin');
 const svgstore = require('gulp-svgstore');
 const cheerio = require('gulp-cheerio');
-// styles 
+const replace = require('gulp-replace');
+// styles
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
@@ -63,13 +64,14 @@ function SVGSpriteBuild() {
             return {
                 plugins: [{
                     cleanupIDs: {
-                        //prefix: '-',
+                        //prefix: prefix + '-',
                         minify: true
                     }
                 }]
             }
         }))
-        .pipe(svgstore())
+        .pipe(replace('&gt;', '>'))
+        .pipe(svgstore({ inlineSvg: true }))
         .pipe(rename({
             basename: "sprite",
             suffix: ".min"
