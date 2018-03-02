@@ -90,5 +90,10 @@ $(document).ready(function() {
         $('#wrapper').toggleClass('toggled');
 
     })
+    $('.navbar-toggler').click(function() {
+        console.log('click');
+        $('.menu-open').toggleClass('d-none');
+        $('.menu-close').toggleClass('d-block');
+    });
 
 });

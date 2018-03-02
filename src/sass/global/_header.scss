@@ -25,6 +25,9 @@ $header-sm-height : 50px;
 	}
 	@include media-breakpoint-down(sm){
 		border-bottom: 1px solid $gray-300;
+		.container-fluid{
+			padding: 0;
+		}
 	}
 	&-wrapper{
 		width: 100%;
@@ -36,7 +39,7 @@ $header-sm-height : 50px;
 		display: flex;
 		padding: .3rem 0;
 		@include media-breakpoint-down(sm){
-			padding: 0;
+			//padding: 0;
 		}
 		&-header{
 			display: flex;
@@ -54,27 +57,38 @@ $header-sm-height : 50px;
 				.btn-primary{
 					display: block;
 					position: absolute;
-					right: 0;
-					top: 10px;
+					right: 15px;
+					top: 5px;
 				}
 			}
 			@include media-breakpoint-down(xs){
 				.btn-primary{
 					font-size: .8rem;
+					top: 10px;
 				}
 			}
 		}
 		.navbar-toggler {
 			display: none;
 			border-color: rgba(0,0,0,.1);
-			.icon-menu{
+			&:focus{
+				outline: none;
+				cursor: pointer;
+			}
+			.icon{
 				width: 24px;
 				height: 24px;
 				fill: $gray;
+				&-menu{
+					display: block;
+				}
+				&-cancel{
+					display: none;
+				}
 			}
 			@include media-breakpoint-down(sm){
 				display: flex;
-				margin: .5rem 0;
+				margin: .5rem 0 .5rem 1rem;
 			}
 		}
 		&-brand {
@@ -144,11 +158,14 @@ $header-sm-height : 50px;
 			background: $white;
 			@include media-breakpoint-down(sm){
 				border-top: none;
+				position: absolute;
+				top: 50px;
 			}
 			&.show{
 				.navbar-nav{
 					flex-direction: column;
 					justify-content: flex-start;
+					padding: 0 1rem;
 				}
 
 			}
