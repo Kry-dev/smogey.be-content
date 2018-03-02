@@ -3,26 +3,13 @@ const slick = require('slick-carousel');
 //const popper = require('popper');
 const bootstrap = require('bootstrap');
 
-//import {scrollFunction, topFunction} from "common/scrollTop";
-
-//= ../../node_modules/jquery/dist/jquery.js
-//= ../../node_modules/popper.js/dist/umd/popper.js
-//= ../../node_modules/bootstrap/js/dist/util.js
-//= ../../node_modules/bootstrap/js/dist/tooltip.js
-//= ../../node_modules/bootstrap/js/dist/dropdown.js
-//= ../../node_modules/bootstrap/js/dist/modal.js
-//= ../../node_modules/bootstrap/js/dist/collapse.js
-//= ../../node_modules/bootstrap/js/dist/tab.js
 const topFunction = function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
-
 };
 
 $(document).ready(function() {
     $("#hideSearch").on('click', function(){
-
-        console.log("click");
         $(".showSearch").slideUp();
     });
 
@@ -61,16 +48,13 @@ $(document).ready(function() {
                 slidesToShow: 4,
                 infinite: true
             }
-
         }, {
-
             breakpoint: 768,
             settings: {
                 rows: 1,
                 centerMode: false,
                 slidesToShow: 3
             }
-
         }, {
 
             breakpoint: 500,
@@ -79,7 +63,6 @@ $(document).ready(function() {
                 centerMode: false,
                 slidesToShow: 2
             }
-
         }]
     });
 
@@ -89,11 +72,10 @@ $(document).ready(function() {
         $('body').toggleClass('fixed');
         $('#wrapper').toggleClass('toggled');
 
-    })
+    });
     $('.navbar-toggler').click(function() {
         console.log('click');
         $('.menu-open').toggleClass('d-none');
         $('.menu-close').toggleClass('d-block');
     });
-
 });

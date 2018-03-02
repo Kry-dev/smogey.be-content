@@ -8,6 +8,8 @@ const svgmin = require('gulp-svgmin');
 const svgstore = require('gulp-svgstore');
 const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
+//images
+const imagemin = require('gulp-imagemin');
 // styles
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
@@ -90,6 +92,7 @@ function templates() {
 function styles() {
     return gulp.src('./src/sass/app.scss')
         .pipe(sourcemaps.init())
+        //.pipe(autoprefixer())
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min'}))
@@ -111,6 +114,11 @@ function clean() {
 // copy images
 function images() {
     return gulp.src(paths.images.src)
+        .pipe(imagemin({
+            interlaced: true,
+            progressive: true,
+            optimizationLevel: 5
+        }))
         .pipe(gulp.dest(paths.images.dest));
 }
 // copy fonts
