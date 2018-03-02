@@ -8,7 +8,7 @@ $header-sm-height : 50px;
 	box-sizing: border-box;
 	position: relative;
 	justify-content: center;
-	z-index: 150;
+	//z-index: 150;
 	background: $white;
 	@include media-breakpoint-down(md){
 		.socials{

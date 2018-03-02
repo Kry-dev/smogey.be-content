@@ -4,7 +4,8 @@
 	overflow-y: hidden;
 }
 #sidebar-wrapper{
-	z-index: 100;
+
+	z-index: 300;
 	display: block;
 	position: fixed;
 	right: $sidebar-w;
@@ -31,6 +32,7 @@
 	position: relative;
 	overflow-y: none;
 	transition: all .5s ease;
+	//z-index: 50;
 	&.toggled{
 		padding-right: $sidebar-w;
 		@include media-breakpoint-down(sm){
