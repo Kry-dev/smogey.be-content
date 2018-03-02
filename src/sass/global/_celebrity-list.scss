@@ -4,20 +4,11 @@
 		font-family: "Raleway-SemiBold";
 		@include media-breakpoint-down(sm){
 			margin: 1rem auto;
-			text-align: center;
 		}
 	}
 	h4{
 		color: $gray-600;
 		font-family: "Raleway";
-		@include media-breakpoint-down(sm){
-			text-align: center;
-		}
-	}
-	&-descr{
-		@include media-breakpoint-down(sm){
-			text-align: center;
-		}
 	}
 
 }
@@ -30,6 +21,10 @@
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	@include media-breakpoint-down(sm){
+		flex-wrap: nowrap;
+		overflow: auto;
+	}
 	.celebrity-item{
 		display: flex;
 		flex-direction: column;

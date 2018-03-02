@@ -111,8 +111,14 @@
 		.card-tags{
 			display: none;
 		}
+		.card-body{
+			min-height: 80px;
+		}
 		.card-title{
 			font-size: 1rem;
+			&.celebrity-title{
+				display: none;
+			}
 		}
 		.card-footer{
 			display: none;
