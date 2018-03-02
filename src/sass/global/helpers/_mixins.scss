@@ -1,29 +1,6 @@
 
 //MIXINS
 
-//1==FONTS
-//2==REM
-//3==appereance
-//4==flexbox
-//5==inline block wrapper
-//6==clearfix
-//7==triangle
-//8==currency (usd,euro)
-//9==placeholder
-//10==scrollbar
-//11==hidden / visible
-//12==retina
-
-
-
-
-
-
-
-
-
-
-
 //===========//
 //MIXIN FONTS
 //===========//
@@ -37,11 +14,14 @@
 	}
 }
 // @include font-face("Roboto", "Roboto", '../fonts/', 'normal', 'normal');
-@include font-face("Raleway", "Raleway", '../fonts/Raleway/', 'normal', 'normal');
-@include font-face("Raleway-Bold", "Raleway-Bold", '../fonts/Raleway/', '700', 'normal');
-@include font-face("Raleway-Medium", "Raleway-Medium", '../fonts/Raleway/', '500', 'normal');
-@include font-face("Raleway-SemiBold", "Raleway-SemiBold", '../fonts/Raleway/', '600', 'normal');
 
+//@include font-face("Raleway", "Raleway", '../fonts/Raleway/', 'normal', 'normal');
+//@include font-face("Raleway-Bold", "Raleway-Bold", '../fonts/Raleway/', '700', 'normal');
+//@include font-face("Raleway-Medium", "Raleway-Medium", '../fonts/Raleway/', '500', 'normal');
+//@include font-face("Raleway-SemiBold", "Raleway-SemiBold", '../fonts/Raleway/', '600', 'normal');
+@include font-face("Gotham-Book", "Gotham-Book", '../fonts/Gotham/', 'normal', 'normal');
+@include font-face("Gotham-Medium", "Gotham-Medium", '../fonts/Gotham/', '500', 'normal');
+@include font-face("Gotham-Bold", "Gotham-Bold", '../fonts/Gotham/', '700', 'normal');
 
 //===========//
 //APPEREANCE

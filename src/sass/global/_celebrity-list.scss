@@ -1,14 +1,14 @@
 .celebrity{
 	&-title{
 		color: $gray-600;
-		font-family: "Raleway-SemiBold";
+		font-family: "Gotham-Book";
 		@include media-breakpoint-down(sm){
 			margin: 1rem auto;
 		}
 	}
 	h4{
 		color: $gray-600;
-		font-family: "Raleway";
+		font-family: "Gotham-Book";
 	}
 
 }

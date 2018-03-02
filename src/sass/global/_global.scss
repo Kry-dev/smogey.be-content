@@ -19,7 +19,7 @@ html{
 body {
 	position: relative;
 	overflow-x: hidden;
-
+	font-family: Gotham-Book;
 	/* FLEX */
 	@include flexbox();
 	flex-flow:column;
@@ -138,7 +138,7 @@ form button:not([type]):after {
 	content: 'Это кнопка отправки информации, кнопка обнуления полей или что? Используйте type="submit", type="reset" или type="button"';
 }
 h1{
-	font-family: 'Raleway-Bold';
+	font-family: 'Gotham-Bold';
 	@include media-breakpoint-down(sm){
 		font-size: 2rem;
 	}
@@ -147,12 +147,12 @@ h1{
 	}
 }
 h2,h3{
-	font-family: 'Raleway-Bold';
+	font-family: 'Gotham-Bold';
 	@include media-breakpoint-down(xs){
 		font-size: 1rem;
 	}
 }
 h4,h5{
-	font-family: 'Raleway-Bold';
+	font-family: 'Gotham-Bold';
 }
 /* end global styles */
