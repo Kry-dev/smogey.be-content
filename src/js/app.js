@@ -47,15 +47,24 @@ $(document).ready(function() {
         // the magic
         responsive: [{
 
+            breakpoint: 1170,
+            settings: {
+                rows: 2,
+                slidesToShow: 5,
+                infinite: true
+            }
+
+        },{
             breakpoint: 1024,
             settings: {
-                slidesToShow: 3,
+                rows: 1,
+                slidesToShow: 4,
                 infinite: true
             }
 
         }, {
 
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
                 rows: 1,
                 centerMode: false,
@@ -64,8 +73,12 @@ $(document).ready(function() {
 
         }, {
 
-            breakpoint: 300,
-            settings: "unslick" // destroys slick
+            breakpoint: 500,
+            settings: {
+                rows: 1,
+                centerMode: false,
+                slidesToShow: 2
+            }
 
         }]
     });

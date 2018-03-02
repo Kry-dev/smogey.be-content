@@ -4,13 +4,12 @@
     <list default="true" id="9bc168ba-2595-41b6-8ae5-fe49a44c1158" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/assets/css/app.min.css" afterPath="$PROJECT_DIR$/build/assets/css/app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/celebrity.html" afterPath="$PROJECT_DIR$/build/celebrity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/assets/js/bundle.js" afterPath="$PROJECT_DIR$/build/assets/js/bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/mixin/card-columns.pug" afterPath="$PROJECT_DIR$/src/pug/mixin/card-columns.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/global/_cards-columns.scss" afterPath="$PROJECT_DIR$/src/sass/global/_cards-columns.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/global/categories.pug" afterPath="$PROJECT_DIR$/src/pug/global/categories.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/global/_categories.scss" afterPath="$PROJECT_DIR$/src/sass/global/_categories.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/global/_celebrity-list.scss" afterPath="$PROJECT_DIR$/src/sass/global/_celebrity-list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/global/_hero.scss" afterPath="$PROJECT_DIR$/src/sass/global/_hero.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/global/_sidebar.scss" afterPath="$PROJECT_DIR$/src/sass/global/_sidebar.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,15 +24,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_filter.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/global/_filter.scss">
+      <file leaf-file-name="_sidebar.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sass/global/_sidebar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-              <folding>
-                <element signature="e#624#1093#0" expanded="false" />
-                <element signature="e#1108#1749#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="271">
+              <caret line="86" column="21" lean-forward="false" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,18 +37,18 @@
       <file leaf-file-name="all-mixin.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pug/mixin/all-mixin.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="285">
               <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="card-columns.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pug/mixin/card-columns.pug">
+      <file leaf-file-name="categories.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pug/global/categories.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="209" column="34" lean-forward="false" selection-start-line="209" selection-start-column="34" selection-end-line="209" selection-end-column="34" />
+            <state relative-caret-position="385">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,32 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_cards-columns.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/global/_cards-columns.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
-              <caret line="114" column="22" lean-forward="false" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_hero.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/global/_hero.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_categories.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_categories.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/global/_categories.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="73" column="76" lean-forward="false" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
-              <caret line="78" column="77" lean-forward="false" selection-start-line="78" selection-start-column="77" selection-end-line="78" selection-end-column="77" />
+            <state relative-caret-position="15">
+              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -164,6 +149,7 @@
       <find>instagramGradient</find>
       <find>stroke</find>
       <find>+celebrities(3)</find>
+      <find>img(src=&quot;assets/img/category/category-01.jpg&quot;)</find>
     </findStrings>
     <replaceStrings>
       <replace>.card-title Chiara Ferragni wears a dress by Dodo Bar Or and black boots by R13</replace>
@@ -183,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pug/global/filter.pug" />
         <option value="$PROJECT_DIR$/src/sass/global/navbar-mobile.scss" />
         <option value="$PROJECT_DIR$/src/svg/menu.svg" />
         <option value="$PROJECT_DIR$/src/sass/global/helpers/_sidebar.scss" />
@@ -192,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/sass/global/celebrity-list.scss" />
         <option value="$PROJECT_DIR$/src/pug/global/sidebar-content.pug" />
         <option value="$PROJECT_DIR$/src/sass/global/_materials.scss" />
-        <option value="$PROJECT_DIR$/src/js/app.js" />
         <option value="$PROJECT_DIR$/src/sass/global/_fonts.scss" />
         <option value="$PROJECT_DIR$/src/sass/global/helpers/_mixins.scss" />
         <option value="$PROJECT_DIR$/src/pug/global/hero-section.pug" />
@@ -227,13 +211,15 @@
         <option value="$PROJECT_DIR$/src/pug/global/sidebar-celebrity.pug" />
         <option value="$PROJECT_DIR$/src/pug/global/sidebar-summer.pug" />
         <option value="$PROJECT_DIR$/src/sass/global/helpers/_variables.scss" />
-        <option value="$PROJECT_DIR$/src/sass/global/_sidebar.scss" />
         <option value="$PROJECT_DIR$/src/sass/global/_filter.scss" />
         <option value="$PROJECT_DIR$/src/sass/global/_celebrity-list.scss" />
         <option value="$PROJECT_DIR$/src/pug/mixin/card-columns.pug" />
         <option value="$PROJECT_DIR$/src/sass/global/_cards-columns.scss" />
         <option value="$PROJECT_DIR$/src/sass/global/_hero.scss" />
+        <option value="$PROJECT_DIR$/src/pug/global/categories.pug" />
+        <option value="$PROJECT_DIR$/src/js/app.js" />
         <option value="$PROJECT_DIR$/src/sass/global/_categories.scss" />
+        <option value="$PROJECT_DIR$/src/sass/global/_sidebar.scss" />
       </list>
     </option>
   </component>
@@ -405,6 +391,46 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spott-prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spott-prototype" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pug" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="global" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spott-prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spott-prototype" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -558,12 +584,12 @@
       <workItem from="1519640782713" duration="31790000" />
       <workItem from="1519794639703" duration="255000" />
       <workItem from="1519898142548" duration="13442000" />
-      <workItem from="1519947595432" duration="1043000" />
+      <workItem from="1519947595432" duration="2383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113578000" />
+    <option name="totallyTimeSpent" value="114918000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -614,13 +640,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/global/helpers/_helpers_all.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -646,13 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="42" column="82" lean-forward="false" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pug/global/categories.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -914,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/global/_sidebar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="99" column="16" lean-forward="false" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/global/_filter.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -949,26 +953,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pug/mixin/all-mixin.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/global/_likes.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pug/mixin/card-columns.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="209" column="34" lean-forward="false" selection-start-line="209" selection-start-column="34" selection-end-line="209" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -997,11 +985,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/mixin/card-columns.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1336">
+          <caret line="209" column="34" lean-forward="false" selection-start-line="209" selection-start-column="34" selection-end-line="209" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/mixin/all-mixin.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/global/categories.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/global/_categories.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="73" column="76" lean-forward="false" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
-          <caret line="78" column="77" lean-forward="false" selection-start-line="78" selection-start-column="77" selection-end-line="78" selection-end-column="77" />
+        <state relative-caret-position="15">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/global/_sidebar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="86" column="21" lean-forward="false" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
           <folding />
         </state>
       </provider>

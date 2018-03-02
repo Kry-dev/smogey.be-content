@@ -1,22 +1,27 @@
 .categories{
-	height: 180px;
+	height: 170px;
 	width: 100%	;
 	@include media-breakpoint-down(sm){
 		height: auto;
 	}
 	&-item{
-		margin: 10px;
+		margin: 5px;
+		padding: 2px;
 	}
 	&-link{
 		display: block;
 		position: relative;
-		width: 200px;
+		//width: 200px;
 		height: 70px;
 		border-radius: 4px;
 		overflow: hidden;
+		background: url('/assets/img/category/category-01.jpg') no-repeat center;
+		@include media-breakpoint-down(lg){
+			//width: 180px;
+		}
 		@include media-breakpoint-down(sm){
-			width: 150px;
-			height: 55px;
+			//width: 150px;
+			//height: 55px;
 		}
 
 		span {
@@ -70,12 +75,12 @@
 
 		}
 		&:before{
-			left: 0;
+			left: -5px;
 			background: linear-gradient(to left, rgba(255,255,255,0.01) 0%, #fff 60%)
 		}
 		&:after{
 
-			right: 0;
+			right: -5px;
 			background: linear-gradient(to right, rgba(255,255,255,0.01) 0%, #fff 60%)
 		}
 	}
