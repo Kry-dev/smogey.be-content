@@ -94,7 +94,7 @@ function styles() {
         .pipe(sourcemaps.init())
         //.pipe(autoprefixer())
         .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(paths.styles.dest))       
 }
