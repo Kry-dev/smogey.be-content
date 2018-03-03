@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     $("#categories").slick({
         rows: 2,
-        slidesToShow: 6,
+        slidesToShow: 7,
         centerMode: true,
         // the magic
         responsive: [{
@@ -37,7 +37,7 @@ $(document).ready(function() {
             breakpoint: 1170,
             settings: {
                 rows: 2,
-                slidesToShow: 5,
+                slidesToShow: 8,
                 infinite: true
             }
 
@@ -61,7 +61,7 @@ $(document).ready(function() {
             settings: {
                 rows: 1,
                 centerMode: false,
-                slidesToShow: 2
+                slidesToShow: 3
             }
         }]
     });
