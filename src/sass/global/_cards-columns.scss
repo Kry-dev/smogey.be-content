@@ -18,9 +18,15 @@
 			box-shadow: 0 2px 20px 0 rgba(0,0,0,.24);
 			//cursor: pointer;
 		}
+		&.card-text{
+			box-shadow: none;
+			display: none;
+		}
 		.card-img-top{
 			position: relative;
 			//display: flex;
+			border-radius: .25rem .25rem 0 0;
+			overflow: hidden;
 			&:before{
 				display: block;
 				content: "";
@@ -116,15 +122,12 @@
 		}
 		.card-title{
 			font-size: 1rem;
-			&.celebrity-title{
-				display: none;
-			}
 		}
 		.card-footer{
 			display: none;
 		}
-		.celebrity-list{
-			display: none;
+		.card.card-text{
+			display: block;
 		}
 	}
 }

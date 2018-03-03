@@ -137,6 +137,7 @@
 	}
 	.celebrity-list{
 		justify-content: space-between;
+		flex-wrap: wrap;
 		.celebrity-item{
 			width: 24%;
 		}
