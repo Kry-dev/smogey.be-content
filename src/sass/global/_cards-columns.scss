@@ -108,6 +108,9 @@
 			max-width: 70px;
 			.celebriry-name{
 				font-size: .6rem;
+				@include media-breakpoint-down(xs){
+					display: none;
+				}
 			}
 		}
 	}

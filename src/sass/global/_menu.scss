@@ -43,6 +43,9 @@ nav{
 					min-height: 150px;
 					z-index: 500;
 				}
+				@include media-breakpoint-down(sm){
+					padding: 0;
+				}
 			}
 			.categories{
 				display: flex;

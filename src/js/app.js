@@ -78,4 +78,21 @@ $(document).ready(function() {
         $('.menu-open').toggleClass('d-none');
         $('.menu-close').toggleClass('d-block');
     });
+
+
+    //products menu in home page. Scroll effect on mobile
+    var item = document.getElementsByClassName('productsMenu-item');
+
+
+
+    $(window).scroll(function(){
+        for (var i = 0; i < item.length; i++) {
+            if ((item[i].getBoundingClientRect().top > 90) || (item[i].getBoundingClientRect().top < 20)) {
+                $(item[i]).removeClass('active');
+            } else {
+                console.log('scroll');
+                $(item[i]).addClass('active');
+            }
+        }
+    })
 });
