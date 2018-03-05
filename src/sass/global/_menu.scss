@@ -48,7 +48,7 @@ nav{
 				}
 			}
 			.categories{
-				display: flex;
+				display: none;
 				flex-direction: row;
 				justify-content: space-between;
 				width: 100%;
@@ -66,6 +66,7 @@ nav{
 			.categories-link{
 				height: 50px;
 			}
+
 		}
 	}
 
@@ -76,11 +77,6 @@ nav{
 		&:hover{
 			color: $dark;
 
-		}
-		&.dropdown-toggle:hover{
-			.dropdown-menu{
-				display: block;
-			}
 		}
 		&:active,
 		&.active{
@@ -93,6 +89,11 @@ nav{
 			}
 		}
 
+	}
+	.nav-item:hover{
+		.dropdown-menu{
+			display: flex;
+		}
 	}
 }
 

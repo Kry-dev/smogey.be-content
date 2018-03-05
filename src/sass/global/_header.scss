@@ -2,13 +2,11 @@ $header-height : 80px;
 $header-sm-height : 50px;
 
 .header{
-	//height: $header-height;
 	width: 100%;
 	display: flex;
 	box-sizing: border-box;
 	position: relative;
 	justify-content: center;
-	//z-index: 150;
 	background: $white;
 	@include media-breakpoint-down(md){
 		.socials{
@@ -38,9 +36,6 @@ $header-sm-height : 50px;
 	.navbar {
 		display: flex;
 		padding: .3rem 0;
-		@include media-breakpoint-down(sm){
-			//padding: 0;
-		}
 		&-header{
 			display: flex;
 			width: 100%;
@@ -51,7 +46,6 @@ $header-sm-height : 50px;
 			padding-top: 1.125rem;
 			padding-bottom: 0;
 			@include media-breakpoint-down(sm){
-				//height: $header-sm-height;
 				padding-top: 0;
 				justify-content: flex-start;
 				.btn-primary{
