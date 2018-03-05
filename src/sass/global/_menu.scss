@@ -75,6 +75,12 @@ nav{
 		font-size: .9rem;
 		&:hover{
 			color: $dark;
+
+		}
+		&.dropdown-toggle:hover{
+			.dropdown-menu{
+				display: block;
+			}
 		}
 		&:active,
 		&.active{
