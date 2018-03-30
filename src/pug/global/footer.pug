@@ -1,40 +1,49 @@
-
-footer.footer
-	.wrapper
-		.container-fluid
-			.row
-				.footer-col.col
-					.footer-logo
-						+icon('spott')
-					.footer-description Discover your style
-					.footer-description © Spott 2018
-				.footer-col.col
-					h2.footer-subtitle Spott
-					nav.footer-nav
-						a.footer-nav__link(href="#") Homepage
-						a.footer-nav__link(href="#") For business
-						a.footer-nav__link(href="#") Terms
-						a.footer-nav__link(href="#") Privacy
-				.footer-col.col
-					h2.footer-subtitle Discover
-					nav.footer-nav
-						a.footer-nav__link(href="#") Movies
-						a.footer-nav__link(href="#") TV Shows
-						a.footer-nav__link(href="#") People
-						a.footer-nav__link(href="#") Characters
-						a.footer-nav__link(href="#") Brands
-						a.footer-nav__link(href="#") Stores
-				.footer-col.col
-					h2.footer-subtitle Follow us
-					+footer-socials
-				.footer-col.col
-					.dropdown
-						a#LangSelect.btn.dropdown-toggle(href='#', role='button', data-toggle='dropdown',
-						aria-haspopup='true',
-						aria-expanded='false')
-							| English
-						.dropdown-menu(aria-labelledby='LangSelect')
-							a.dropdown-item(href='#') Français
-							a.dropdown-item(href='#') Nederlands
-							a.dropdown-item(href='#') Portuguese
-
+footer#footer.line
+	.container
+		// Logos
+		#footer_left
+			.moduletable
+				.custom
+					p
+						img(src='https://www.tournai.be/images/template/footerLogo.png', alt='footerLogo')
+		// Menus + FB
+		#footer_right
+			.moduletable
+				h3 Ville de Tournai
+				ul.menu
+					li.item-512
+						a(href='#') Adresses et services
+					li.item-513
+						a(href='#') Tournai et ses 29 villages
+					li.item-847
+						a(href='#') Capitale de la Wallonie picarde
+					li.item-515
+						a(href='#') Magazine Tournai info
+			.moduletable
+				h3 Informations
+				ul.menu
+					li.item-516
+						a(href='#') Editeur responsable et crédits
+					li.item-517
+						a(href='#') Utilisation des cookies
+					li.item-518
+						a(href='#') Conditions d'utilisation
+					li.item-1112
+						a(href='#') Solutions techniques
+					li.item-838
+						a(href='#') Plan du site
+			.moduletable
+				h3 Réseaux sociaux
+				ul#resosocio.menu
+					li.item-649
+						a(href='#', target='_blank')
+							img(src='https://www.tournai.be/images/template/logo-footer-facebook-color.png', alt='Facebook')
+					li.item-650
+						a(href='#', target='_blank')
+							img(src='https://www.tournai.be/images/template/logo-footer-twitter-color.png', alt='Twitter')
+					li.item-1350
+						a(href='#', target='_blank')
+							img(src='https://www.tournai.be/images/template/logo-footer-pinterest-color.png', alt='Pinterest')
+					li.item-851
+						a(href='#', target='_blank')
+							img(src='https://www.tournai.be/images/template/logo-footer-youtube-color.png', alt='Youtube')

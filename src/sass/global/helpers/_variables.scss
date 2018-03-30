@@ -1,17 +1,17 @@
 //
 // Color system
 //
-$blue: #234B8D;
+$blue: #00bfe3;
 $indigo:  #6610f2;
-$pink:    #ff4d5e;
-$purple: #a56478;
+$pink:    #d92988;
+$pink-dark: #a90c45;
 $red:     #B50E0B;
 $orange:  #fd7e14;
-$yellow: #f5aa69;
-$green: #a1b868;
+$yellow: #fdb32a;
+$green: #96B314;
 $teal: #16a085;
 $cyan:    #17a2b8;
-$gray: #9999a1;
+$gray: #f4f3f3;
 $dark: #2a2a2f;
 
 
@@ -31,16 +31,12 @@ $gray-middle: #EEEEEE;
 $black: #000;
 
 
-$footer-link-color: #858590;
-$footer-subtitle-color: #4e4e5d;
-
-
 $colors: () ;
 $colors: map-merge((
         "blue":       $blue,
         "indigo":     $indigo,
-        "purple":     $purple,
         "pink":       $pink,
+        "pink-dark":  $pink-dark,
         "red":        $red,
         "orange":     $orange,
         "yellow":     $yellow,
@@ -52,15 +48,16 @@ $colors: map-merge((
         "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $pink;
+$primary:       $blue;
 $secondary:     $gray-600;
 $success:       $green;
+$pink:       		$pink;
+$pink-dark:     $pink-dark;
 $info:          $blue;
 $warning:       $yellow;
 $danger:        $primary;
 $light:         $gray-100;
 $dark:          $gray-800;
-$rosewood:      $purple;
 
 
 $theme-colors: ();
@@ -73,13 +70,13 @@ $theme-colors: map-merge((
         "danger":     $danger,
         "light":      $light,
         "dark":       $dark,
-        "rosewood":   $rosewood,
+        "pink":   		$pink,
+        "pink-dark":  $pink-dark,
         "teal":       $teal
 ), $theme-colors);
 
 .blue        {color:$blue;}
 .indigo      {color:$indigo;}
-.purple      {color:$purple;}
 .pink        {color:$pink;}
 .red         {color:$red;}
 .orange      {color:$orange;}
@@ -112,36 +109,10 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white;
-$body-color:                $dark ;
-
-
-// Links
-//
-// Style anchor elements.
-
-//$link-color:                $blue;
-$link-decoration:           none;
-//$link-hover-color:          darken($link-color, 15%);
-$link-hover-decoration:     underline;
 
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
-
-// stylelint-disable value-keyword-case
-$font-family-base: 'Gotham-Book';
-//$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-size-base:              1rem;
-$font-size-lg:                ($font-size-base * 1.25);
-$font-size-sm:                ($font-size-base * .875);
-
-$fa-font-path: "../fonts/FontAwesome";
-$slick-font-path: "./fonts/slick";
-$slick-loader-path: "../fonts/slick/";
-
-//button global styles
-//$btn-border-radius:           2rem;
 
 $btn-transition: all .15s ease-in-out;
 // Forms
@@ -156,39 +127,11 @@ $container-max-widths: (
         xl: 1140px
 );
 
+$btn-border-radius:           0;
+$input-bg:									$gray;
+$input-border-radius:					0;
 
-$sidebar-w: 400px;
-$sidebar-sm-w: 80%;
-$sidebar-wrapper-w: 50%;
-$sidebar-xs-w: 80%;
-
-
-//======================================
-//  Z-INDEX
-//======================================
-//z-index
-@function z($name) {
-  @if index($z-indexes, $name) {
-   @return (length($z-indexes) - index($z-indexes, $name)) + 1;
-  } @else {
-   @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
-   @return null;
-  }
-}
-$z-indexes: (
-  "outdated-browser",
-  "modal",
-  "site-header",
-  "page-wrapper",
-  "site-footer"
-);
-// Navbar
-
-//$navbar-padding-y:                  ($spacer / 2) !default;
-//$navbar-padding-x:                  $spacer !default;
-
-$navbar-nav-link-padding-x:         .5rem;
-
-$navbar-brand-font-size:            2rem;
-// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
-$navbar-brand-height:               2rem;
+$fa-font-path: "../fonts/FontAwesome";
+$slick-font-path: "./fonts/slick/";
+$slick-loader-path: "../fonts/slick/";
+$slick-font-family: FontAwesome;

@@ -1,68 +1,36 @@
-button{
-	background: $white;
-}
-.filterShow{
-	position: fixed;
-	width: 100px;
-	height: 60px;
-	top: 80vh;
-	right: 0;
+.btn{
+	font-size: inherit;
+	height: 42px;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 18px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
 	align-items: center;
-	border: none;
-	z-index: 100;
-	border-radius:  1.25rem 0 0 1.25rem;
-	background: $white;
-	transition: all .5s ease;
-	@include media-breakpoint-down(sm){
-		top: 90vh;
-		right: 50%;
-		transform: translateX(50%);
-		border-radius: 1rem;
-		height: 40px;
-		z-index: 30;
-	}
-	@include box-shadow;
-	.icon{
-		width: 20px;
-		height: 20px;
-		fill: $primary;
-		&-filter{
-			display: inline-block;
-		}
-		&-cancel{
-			display: none;
-		}
-	}
-	&:hover{
-		cursor: pointer;
-		@include box-shadow-hover;
-	}
-	&:focus{
-		outline: none;
+	font-weight: bold;
+	text-decoration: none;
+	.fa{
+		font-size: 30px;
+		margin-right: 10px;
 	}
 }
-.back-to-menu{
-	background: none;
-	color: $primary;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	border: none;
-	svg{
-		transform: rotate(90deg);
-		width: 10px;
-		height: 10px;
-		margin-right: 5px;
+.btn-search{
+	position: absolute;
+	right: 8px;
+	background: transparent;
+	margin: 0;
+	width: 23px;
+	height: 23px;
+	padding: 0;
+	.fa{
+		font-size: 21px;
+		color: rgba($black, .5);
 	}
 	&:hover,
 	&:focus{
-		outline: none;
-		cursor: pointer;
-		text-decoration: underline;
-
+		border: 0;
+		outline: 0 !important;
+		box-shadow: none;
 	}
+
 }

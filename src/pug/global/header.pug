@@ -1,34 +1,131 @@
-//header
-header.header.align-items-center
-	.header-wrapper
-		.container-fluid
-			nav.navbar.navbar-header.navbar-expand-md
-				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarMenu', aria-controls='navbarMenu',
-				aria-expanded='false', aria-label='Toggle navigation')
-					+icon('menu', 'menu-open')
-					+icon('cancel', 'menu-close')
-				a(href="/").navbar-brand
-					+icon('spott')
-				form.navbar-form.mobile-hide
-					.icon-box
-						+icon('search')
-					input.form-control(placeholder='Search for movies, tv shows, brands or people', value='')
-					button.btn-search(type='submit')
-				+mobile-search
-				a(href="#").btn.btn-primary Sign in
-				#navbarMenu.collapse.navbar-collapse
-					ul.navbar-nav.navbar-expand-md
-						+nav-link('#','Summer', 'active')
-						+nav-link('#','Formal')
-						+nav-link('#','Casual')
-						+nav-link('#','Chill')
-						+nav-link('#','Activewear')
-						+nav-link('#','Bags')
-						+nav-link('#','Fun')
-						+nav-link('#','Sexy')
-						+nav-link('#','Jacket Accessories')
-						+nav-link('#','Sign in', 'border-top border-bottom show-sm')
-						+nav-link('#','Terms', ' show-sm')
-						+nav-link('#','Privacy', 'show-sm')
-					+socials
-
+header#header.line.v2
+	.container
+		#header_top
+			.moduletable
+				.mod-languages
+					ul.lang-inline
+						li(style='margin: 0 2px 0 0')
+							a(href='#', target='_blank') Nl
+						li(style='margin: 0 0px 0 0')
+							a(href='#', target='_blank') En
+			.moduletable.login
+				ul.menu
+					li.item-655
+						span.separator MYTOURNAI.be :
+					li.item-502
+						a(href='#') Créer un compte ou se connecter
+					li.item-869
+						a(href='#') Newsletter
+		// Logo
+		a.logo_link(href='#')
+			img.logo1(src='https://www.tournai.be//images/template/logov21.png', alt='logo1')
+			img.logo2(src='https://www.tournai.be//templates/tournaiv2/images/logo2.png', alt='logo2')
+		// Navigation
+		#sticky_nav
+			nav#navigation
+				.menu-mobile Menu
+				.moduletable
+					ul.menu
+						li.item-503.current.active
+							a(href='/') Accueil
+						li.item-505.deeper.parent
+							span.separator Services aux citoyens
+							ul
+								li.item-708
+									a(href='#') Aides et actions sociales
+								li.item-710
+									a(href='#') Collecte des déchets
+								li.item-1709
+									a(href='#') Permanences sociales
+								li.item-712
+									a(href='#') Règlements communaux
+								li.item-714
+									a(href='#') Services communaux
+								li.item-721
+									a(href='#') Services communaux dans les villages
+								li.item-713
+									a(href='#') Services de secours
+								li.item-711
+									a(href='#') Taxes et redevances communales
+						li.item-507.deeper.parent
+							span.separator Vivre ma ville
+							ul
+								li.item-723
+									a(href='#') Bibliothèque communale
+								li.item-724
+									a(href='#') Conservatoire de musique
+								li.item-1697
+									a(href='#') Covoiturage avec Carpoolplaza
+								li.item-706
+									a(href='#') Crèches
+								li.item-707
+									a(href='#') Enseignement
+								li.item-716
+									a(href='#') Hôpitaux
+								li.item-866
+									a(href='#') Infrastructures sportives et de loisirs
+								li.item-717
+									a(href='#') Justice
+								li.item-725
+									a(href='#') Maison de la culture
+								li.item-1696
+									a(href='#') Maison des Associations et de l'Événementiel
+								li.item-718
+									a(href='#') Marchés hebdomadaires
+								li.item-726
+									a(href='#') Parc des expositions (Tournai Expo)
+								li.item-720
+									a(href='#') Parking et stationnement
+						li.item-508.deeper.parent
+							span.separator Découvrir Tournai
+							ul
+								li.item-692
+									a(href='#') Beffroi (patrimoine mondial de l'Unesco)
+								li.item-693
+									a(href='#') Cathédrale (patrimoine mondial de l'Unesco)
+								li.item-691
+									a(href='#') Histoire
+								li.item-694
+									a(href='#') Musées
+								li.item-871
+									a(href='#') Parcs et espaces publics
+								li.item-696
+									a(href='#') Patrimoine civil et militaire
+								li.item-697
+									a(href='#') Patrimoine religieux
+								li.item-699
+									a(href='#') Traditions et folklore
+								li.item-1000
+									a(href='#') VISITTOURNAI.be
+						li.item-506.deeper.parent
+							span.separator Vie politique
+							ul
+								li.item-703
+									a(href='#') Collège communal
+								li.item-702
+									a(href='#') Conseil communal
+								li.item-988
+									a(href='#') Conseil communal (dates et archives)
+								li.item-1693
+									a(href='#') Conseil communal (ordres du jour)
+								li.item-730
+									a(href='#') Commissions communales
+								li.item-701
+									a(href='#') Déclaration de politique communale 2012-2018
+								li.item-715
+									a(href='#') Programme stratégique transversal
+								li.item-875
+									a(href='#') Plans communaux de développement
+								li.item-1691
+									a(href='#') Comité "Au Tour du Pont"
+								li.item-1694
+									a(href='#') Avis de publication
+			// Quick navigation
+			#quicknav
+				.menu-mobile Extras
+				.moduletable
+					ul.menu
+						li.item-509
+							a.lien1(href='#') Commerces
+						li.item-510
+							a.lien2(href='#') Associations

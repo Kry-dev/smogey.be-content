@@ -8,18 +8,10 @@ mixin head(title)
 		//-mixin
 		mixin favicon(rel, sizes, href, type)
 			link(rel= rel, sizes= sizes, href= href, type= type)
-		//-include
-		+favicon('shortcut icon', '', 'favicons/favicon.ico', 'image/x-icon')
-		+favicon('apple-touch-icon', '', 'favicons/apple-touch-icon.png', '')
-		+favicon('apple-touch-icon', '57x57', 'favicons/apple-touch-icon-57x57.png', '')
-		+favicon('apple-touch-icon', '72x72', 'favicons/apple-touch-icon-72x72.png', '')
-		+favicon('apple-touch-icon', '114x114', 'favicons/apple-touch-icon-114x114.png', '')
-		+favicon('apple-touch-icon', '120x120', 'favicons/apple-touch-icon-120x120.png', '')
-		+favicon('apple-touch-icon', '144x144', 'favicons/apple-touch-icon-144x144.png', '')
-		+favicon('apple-touch-icon', '152x152', 'favicons/apple-touch-icon-152x152.png', '')
-		+favicon('apple-touch-icon', '180x180', 'favicons/apple-touch-icon-180x180.png', '')
 		//viewport
 		meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
 		//- meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		//styles
 		link(rel="stylesheet" type="text/css" href="assets/css/app.min.css")
+		script(src="assets/js/bundle.js")
+
