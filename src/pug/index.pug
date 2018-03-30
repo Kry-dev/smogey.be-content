@@ -22,7 +22,8 @@ html(lang="en")
 											.card-header
 												h5.card-title.text-center Mobilité
 											.card-footer
-												a.btn.btn-pink.w-100(href='#') En savoir plus
+												button.btn.btn-pink.w-100(data-toggle="modal", data-target="#en-savoir-plus")
+													| En savoir plus
 									.col-md-4.px-1
 										.card
 											.card-body
@@ -30,7 +31,8 @@ html(lang="en")
 											.card-header
 												h5.card-title.text-center Réduction des déchets
 											.card-footer
-												a.btn.btn-success.w-100(href='#') En savoir plus
+												button.btn.btn-success.w-100(data-toggle="modal", data-target="#en-savoir-plus")
+													| En savoir plus
 									.col-md-4.px-1
 										.card
 											.card-body
@@ -38,7 +40,8 @@ html(lang="en")
 											.card-header
 												h5.card-title.text-center Economie locale
 											.card-footer
-												a.btn.btn-warning.w-100(href='#') En savoir plus
+												button.btn.btn-warning.w-100(data-toggle="modal", data-target="#en-savoir-plus")
+													| En savoir plus
 								.row.mx-0.mb-20
 									.col-md-6.px-1
 										a(href="#").btn.btn-primary.btn-block
@@ -56,4 +59,29 @@ html(lang="en")
 												i.fa.fa-search
 								.row.mx-0.mb-20
 									include global/slider
+		#en-savoir-plus.modal.fade(tabindex='-1')
+			.modal-dialog.modal-lg
+				.modal-header.bg-pink.text-white
+					h5.modal-title Je suis
+					button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
+						span.fa.fa-close.text-white(aria-hidden='true')
+
+				.modal-content.p-3
+					.row
+						.col
+							.card
+								.card-body
+									img(src='assets/img/initi/initi-modal-01.png', alt='#')
+								.card-header
+								.card-footer
+									button.btn.btn-success.w-100
+										| Entreprise
+						.col
+							.card
+								.card-body
+									img(src='assets/img/initi/initi-modal-02.png', alt='#')
+								.card-header
+								.card-footer
+									button.btn.btn-warning.w-100
+										| Citoyen
 

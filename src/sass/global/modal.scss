@@ -1,0 +1,9 @@
+.modal{
+	&-header{
+		border-bottom: 0;
+	}
+	&-content{
+		border-radius: 0;
+		border: 0;
+	}
+}

@@ -1,40 +1,41 @@
 .initiv-cards{
 	display: flex;
 	width: 100%;
-	.card{
-		border-radius: 0;
-		border: 0;
-		background: $gray;
-		min-height: 300px;
-		&-header{
-			border-bottom: 0;
-		}
-		&-title{
-			margin-bottom: 0;
-			font-size: 14px;
-		}
-		&-body{
+
+}
+.card{
+	border-radius: 0;
+	border: 0;
+	background: $gray;
+	min-height: 300px;
+	&-header{
+		border-bottom: 0;
+	}
+	&-title{
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+	&-body{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		img{
 			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			img{
-				display: flex;
-				max-height: 110px;
-			}
+			max-height: 110px;
 		}
-		&-header,
-		&-body,
-		&-footer{
-			border: 0;
-			background: transparent;
-			padding: .75rem;
-		}
-		.btn{
-			color: $white;
-			font-size: 14px;
-			text-transform: capitalize;
-			justify-content: center;
-		}
+	}
+	&-header,
+	&-body,
+	&-footer{
+		border: 0;
+		background: transparent;
+		padding: .75rem;
+	}
+	.btn{
+		color: $white;
+		font-size: 14px;
+		text-transform: capitalize;
+		justify-content: center;
 	}
 }

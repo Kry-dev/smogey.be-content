@@ -28,7 +28,9 @@
                       <div class="card-header">
                         <h5 class="card-title text-center">Mobilité</h5>
                       </div>
-                      <div class="card-footer"><a class="btn btn-pink w-100" href="#">En savoir plus</a></div>
+                      <div class="card-footer">
+                        <button class="btn btn-pink w-100" data-toggle="modal" data-target="#en-savoir-plus">En savoir plus</button>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-4 px-1">
@@ -37,7 +39,9 @@
                       <div class="card-header">
                         <h5 class="card-title text-center">Réduction des déchets</h5>
                       </div>
-                      <div class="card-footer"><a class="btn btn-success w-100" href="#">En savoir plus</a></div>
+                      <div class="card-footer">
+                        <button class="btn btn-success w-100" data-toggle="modal" data-target="#en-savoir-plus">En savoir plus</button>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-4 px-1">
@@ -46,7 +50,9 @@
                       <div class="card-header">
                         <h5 class="card-title text-center">Economie locale</h5>
                       </div>
-                      <div class="card-footer"><a class="btn btn-warning w-100" href="#">En savoir plus</a></div>
+                      <div class="card-footer">
+                        <button class="btn btn-warning w-100" data-toggle="modal" data-target="#en-savoir-plus">En savoir plus</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -81,6 +87,36 @@
           </article>
         </div>
       </section>
+    </div>
+    <div class="modal fade" id="en-savoir-plus" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-header bg-pink text-white">
+          <h5 class="modal-title">Je suis</h5>
+          <button class="btn-close" type="button" data-dismiss="modal" aria-label="Close"><span class="fa fa-close text-white" aria-hidden="true"></span></button>
+        </div>
+        <div class="modal-content p-3">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body"><img src="assets/img/initi/initi-modal-01.png" alt="#"/></div>
+                <div class="card-header"></div>
+                <div class="card-footer">
+                  <button class="btn btn-success w-100">Entreprise</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body"><img src="assets/img/initi/initi-modal-02.png" alt="#"/></div>
+                <div class="card-header"></div>
+                <div class="card-footer">
+                  <button class="btn btn-warning w-100">Citoyen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
