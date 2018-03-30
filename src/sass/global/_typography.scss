@@ -26,6 +26,18 @@ b{
 .no-upercouse{
 	text-transform: none;
 }
+.quote{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding: .5rem;
+	.fa{
+		font-size: 30px;
+		margin-right: 10px;
+	}
+}
 
 /* LINKS */
 a {

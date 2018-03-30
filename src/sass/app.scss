@@ -33,15 +33,18 @@
 @import "global/_typography";
 @import "global/fonts";
 @import "global/forms";
+@import "global/cards";
 @import "global/modal";
 @import "global/_buttons";
 
 
 //pages styles
 @import "global/news-slider";
+@import "global/initiv-cards";
+
 
 @import "sprite/sprite";
-@import "global/initiv-cards";
+
 @import "global/header";
 
 //@import "global/_footer";
