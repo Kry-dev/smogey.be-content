@@ -1,0 +1,18 @@
+.category-box{
+	background: $gray-200;
+	max-height: 180px;
+	&__text{
+		height: 150px;
+		overflowY: scroll;
+	}
+	.card{
+		min-height: 180px;
+	}
+	.card-title{
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.fa{
+		font-size: 1.5rem	;
+	}
+}

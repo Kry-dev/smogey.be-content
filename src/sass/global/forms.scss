@@ -26,3 +26,10 @@
 		}
 	}
 }
+.custom-select{
+	background: $gray-200;
+	border-radius: 0;
+	-webkit-appearance: none;
+	select::-ms-expand;
+	select:-moz-focusring;
+}
