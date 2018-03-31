@@ -53,14 +53,14 @@ const paths = {
 function SVGSpriteBuild() {
     return gulp
         .src(paths.svgIcons.src)
-        .pipe(cheerio({
-            run: function ($) {
-                $('[fill]').removeAttr('fill');
-                $('[stroke]').removeAttr('stroke');
-                $('[style]').removeAttr('style');
-            },
-            parserOptions: { xmlMode: true }
-        }))
+        // .pipe(cheerio({
+        //     run: function ($) {
+        //         $('[fill]').removeAttr('fill');
+        //         $('[stroke]').removeAttr('stroke');
+        //         $('[style]').removeAttr('style');
+        //     },
+        //     parserOptions: { xmlMode: true }
+        // }))
         .pipe(svgmin(function (file) {
             //var prefix = path.basename(file.relative, path.svgIcons(file.relative));
             return {

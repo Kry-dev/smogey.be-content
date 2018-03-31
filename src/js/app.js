@@ -9,4 +9,11 @@ $( document ).ready(function(){
         nextArrow: '<button class="right"><i class="fa fa-arrow-right"></i></button>',
         prevArrow: '<button class="left"><i class="fa fa-arrow-left"></i></button>'
     });
+    $('.brands-slider').slick({
+        arrows: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        nextArrow: '<button class="right"><i class="fa fa-arrow-right"></i></button>',
+        prevArrow: '<button class="left"><i class="fa fa-arrow-left"></i></button>'
+    });
 });
