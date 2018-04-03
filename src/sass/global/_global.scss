@@ -42,3 +42,14 @@ article{
 	margin-left: -20px;
 	margin-bottom: -20px;
 }
+.card-img-overlay{
+	&.ov-primary{  background: rgba($primary, .7) !important;}
+	&.ov-success{  background: rgba($success, .7) !important;}
+	&.ov-danger{  background: rgba($danger, .7) !important;}
+	&.ov-warning{  background: rgba($warning, .7) !important;}
+	&.ov-pink{  background: rgba($pink, .7) !important;}
+	&.ov-pink-dark{  background: rgba($pink-dark, .7) !important;}
+	&.ov-secondary{  background: rgba($secondary, .7) !important;}
+	&.ov-info{  background: rgba($info, .7) !important;}
+	&.ov-teal{  background: rgba($teal, .7) !important;}
+}

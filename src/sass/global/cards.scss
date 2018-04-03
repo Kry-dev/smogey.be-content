@@ -36,4 +36,9 @@
 		text-transform: capitalize;
 		justify-content: center;
 	}
+	&-img-overlay{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }
