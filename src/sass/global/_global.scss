@@ -6,13 +6,34 @@ ul,li{
 	padding: 0;
 	list-style: none;
 }
-.mb-20{
-	margin-bottom: 20px;
-}
+.mb-20{  margin-bottom: 20px;  }
+.mb-40{  margin-bottom: 40px;  }
 article{
 	width: 100%;
 }
 .main{
 	display: flex;
 	flex-direction: column;
+}
+.lt-20{
+	margin-left: -20px;
+	margin-top: -20px;
+}
+.ab_lt-10{
+	position: absolute;
+	left:-10px;
+	top:-10px;
+}
+.rb-20{
+	margin-right: -20px;
+	margin-bottom: -20px;
+}
+.ab_rb-10{
+	position: absolute;
+	right:-10px;
+	bottom:-10px;
+}
+.lb-20{
+	margin-left: -20px;
+	margin-bottom: -20px;
 }
