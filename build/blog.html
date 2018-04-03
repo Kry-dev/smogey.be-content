@@ -19,83 +19,39 @@
       <section class="main">
         <div class="container">
           <article>
-            <div class="card-list">
+            <div class="blog-list">
               <div class="container-fluid p-0">
-                <div class="row mb-20">
+                <div class="row mb-40">
                   <div class="col-md-3 pl-0">
-                    <select class="custom-select mb-3">
-                      <option selected="">Catégories</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
+                    <form class="initiv-search" action="" method="post" id="initiv-search">
+                      <input class="form-control" type="text" size="60" placeholder="Rechercher..."/>
+                      <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
                   </div>
                   <div class="col-md-9 pr-0">
                     <nav class="bread" aria-label="breadcrumb">
                       <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Le blog du développement durable</li>
                       </ol>
                       <div class="btn btn-warning" role="button">Retour</div>
                     </nav>
                   </div>
                 </div>
-                <div class="row mb-40 px-2">
-                  <div class="category-box">
-                    <div class="col-md-3 category-box__img"><img class="ab_lt-10" src="assets/img/ambasad/cat-img-01.jpg"/></div>
-                    <div class="col-md-6 category-box__info">
-                      <p class="category-box__text">
-                        Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, maiselle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des
-                        emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des
-                        bocaux consignés.
-                      </p><a class="btn btn-primary" href="#">Catégorie</a>
-                    </div>
-                    <div class="col-md-3 d-flex position-relative">
-                      <div class="text-white bg-success card ab_rb-10">
-                        <h5 class="card-title text-white">Contact</h5><a class="card-text text-white" href="#">0 800 200 32 23</a><a class="card-text text-white" href="#">ili@mail.com<a class="card-text text-white" href="#">www.lili-bulk.com</a>
-                          <div class="icons justify-content-between w-50"><a class="text-white text-white" href="#"><i class="fa fa-facebook-square"></i></a><a class="text-white text-white" href="#"><i class="fa fa-twitter-square"></i></a><a class="text-white text-white" href="#"><i class="fa fa-linkedin-square"></i></a></div></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mb-40 px-2">
-                  <div class="category-box">
-                    <div class="col-md-3 category-box__img"><img class="ab_lt-10" src="assets/img/ambasad/cat-img-02.jpg"/></div>
-                    <div class="col-md-6 category-box__info">
-                      <p class="category-box__text">
-                        Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, maiselle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des
-                        emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des
-                        bocaux consignés.
-                      </p><a class="btn btn-primary" href="#">Catégorie</a>
-                    </div>
-                    <div class="col-md-3 d-flex position-relative">
-                      <div class="text-white bg-success card ab_rb-10">
-                        <h5 class="card-title text-white">Contact</h5><a class="card-text text-white" href="#">0 800 200 32 23</a><a class="card-text text-white" href="#">ili@mail.com<a class="card-text text-white" href="#">www.lili-bulk.com</a>
-                          <div class="icons justify-content-between w-50"><a class="text-white text-white" href="#"><i class="fa fa-facebook-square"></i></a><a class="text-white text-white" href="#"><i class="fa fa-twitter-square"></i></a><a class="text-white text-white" href="#"><i class="fa fa-linkedin-square"></i></a></div></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mb-40 px-2">
-                  <div class="category-box">
-                    <div class="col-md-3 category-box__img"><img class="ab_lt-10" src="assets/img/ambasad/cat-img-03.jpg"/></div>
-                    <div class="col-md-6 category-box__info">
-                      <p class="category-box__text">
-                        Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, maiselle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des
-                        emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des
-                        bocaux consignés.
-                      </p><a class="btn btn-primary" href="#">Catégorie</a>
-                    </div>
-                    <div class="col-md-3 d-flex position-relative">
-                      <div class="text-white bg-success card ab_rb-10">
-                        <h5 class="card-title text-white">Contact</h5><a class="card-text text-white" href="#">0 800 200 32 23</a><a class="card-text text-white" href="#">ili@mail.com<a class="card-text text-white" href="#">www.lili-bulk.com</a>
-                          <div class="icons justify-content-between w-50"><a class="text-white text-white" href="#"><i class="fa fa-facebook-square"></i></a><a class="text-white text-white" href="#"><i class="fa fa-twitter-square"></i></a><a class="text-white text-white" href="#"><i class="fa fa-linkedin-square"></i></a></div></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div class="row">
-                  <div class="btn btn-warning" href="#">See more</div>
+                  <div class="blog bg-gray ml-3">
+                    <div class="row">
+                      <div class="col-md-6 pl-0"><a class="blog-img ab_r-0_t-15" href="#"><img src="assets/img/blog/blog-01.jpg"/></a></div>
+                      <div class="col-md-6">
+                        <div class="card-header">
+                          <div class="text-muted">08/02/2018  |  by Smogey</div>
+                          <h2 class="card-title text-uppercase">BIO ET VRAC, LA CONSOMMATION SELON LILI BULK</h2>
+                        </div>
+                        <div class="card-body">Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des bocaux consignés...</div>
+                        <div class="card-footer"><a class="btn btn-primary" href="#">Life</a></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,0 +1,34 @@
+.blog-list{
+	display: flex;
+	width: 100%;
+}
+.blog{
+	display: flex;
+	width: 100%;
+	&-img{
+		//display: flex;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		img{
+			width: 100%;
+		}
+	}
+	.text-muted{
+		font-size: 0.875rem;
+	}
+	.card-header{
+		padding: 1.5rem 0;
+	}
+	.card-body{
+		height: 100px;
+		overflow-y: auto;
+		padding: 0 2rem;
+		font-size: 0.875rem;
+	}
+	.btn{
+		font-size: 14px;
+		display: block;
+		max-width: 100px;
+	}
+}
