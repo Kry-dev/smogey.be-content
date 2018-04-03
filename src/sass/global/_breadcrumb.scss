@@ -1,0 +1,16 @@
+.bread{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: $gray-200;
+	height: 40px;
+}
+.breadcrumb{
+	border-radius: 0;
+	&-item{
+		font-size: 14px;
+	}
+	a{
+		color: inherit;
+	}
+}

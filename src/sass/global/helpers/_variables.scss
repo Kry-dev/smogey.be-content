@@ -139,3 +139,15 @@ $fa-font-path: "../fonts/FontAwesome";
 $slick-font-path: "./fonts/slick/";
 $slick-loader-path: "../fonts/slick/";
 $slick-font-family: FontAwesome;
+
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .5rem;
+$breadcrumb-padding-x:              1rem;
+$breadcrumb-item-padding:           .5rem;
+$breadcrumb-margin-bottom:          0;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-divider-color:          $gray-600;
+$breadcrumb-active-color:           $gray-600;
+$breadcrumb-divider:                "/";

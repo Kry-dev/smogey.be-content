@@ -11,7 +11,7 @@
 //@import "../../node_modules/bootstrap/scss/grid";
 @import "../../node_modules/bootstrap/scss/buttons";
 //@import "../../node_modules/bootstrap/scss/button-group";
-//@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
 //@import "../../node_modules/bootstrap/scss/transitions";
 @import "../../node_modules/bootstrap/scss/modal";
 //@import "../../node_modules/bootstrap/scss/navbar";
@@ -32,6 +32,7 @@
 @import "global/helpers/helpers_all";
 @import "global/global";
 @import "global/_typography";
+@import "global/_breadcrumb";
 @import "global/fonts";
 @import "global/forms";
 @import "global/cards";

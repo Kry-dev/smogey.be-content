@@ -15,18 +15,20 @@ html(lang="en")
 						.card-list
 							.container-fluid.p-0
 								.row.mb-20
-									.col-md-12.px-0
-										.d-flex.bg-warning.p-2.justify-content-between.align-items-center
-											h5.text-white.mb-0 Réduction des déchets
-											.btn-group
-												.btn.btn-outline-warning(role="button") Retour
-								.row.mb-20
-									.col-md-3.px-0
+									.col-md-3.pl-0
 										select.custom-select.mb-3
 											option(selected='') Catégories
 											option(value='1') One
 											option(value='2') Two
 											option(value='3') Three
+									.col-md-9.pr-0
+										nav(aria-label='breadcrumb').bread
+											ol.breadcrumb.mb-0
+												li.breadcrumb-item
+													a(href='#') Home
+												li.breadcrumb-item.active(aria-current='page') Library
+
+											.btn.btn-warning(role="button") Retour
 								.row.mb-40.px-2
 									.category-box
 										.col-md-3.category-box__img
