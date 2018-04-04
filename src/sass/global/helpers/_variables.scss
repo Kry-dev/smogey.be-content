@@ -14,7 +14,6 @@ $cyan:    #17a2b8;
 $gray: #f4f3f3;
 $dark: #2a2a2f;
 
-
 $error: #dd0000 ;
 $success: #008f00;
 $white: #fff;
@@ -55,7 +54,7 @@ $pink:       		$pink;
 $pink-dark:     $pink-dark;
 $info:          $blue;
 $warning:       $yellow;
-$danger:        $primary;
+$danger:        $red;
 $light:         $gray-100;
 $dark:          $gray-800;
 $dark:          $gray-800;
@@ -111,11 +110,6 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-
-// Fonts
-//
-// Font, line-height, and color for body text, headings, and more.
-
 $btn-transition: all .15s ease-in-out;
 // Forms
 
@@ -134,14 +128,10 @@ $input-bg:									$gray;
 $input-border-radius:					0;
 $custom-select-border-radius:  0;
 
-
-
-
 $fa-font-path: "../fonts/FontAwesome";
 $slick-font-path: "./fonts/slick/";
 $slick-loader-path: "../fonts/slick/";
 $slick-font-family: FontAwesome;
-
 
 // Breadcrumbs
 
