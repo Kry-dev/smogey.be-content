@@ -168,7 +168,7 @@ $( document ).ready(function(){
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
-    var infowindow = new google.maps.InfoWindow();
+    // var infowindow = new google.maps.InfoWindow();
     var marker, i;
     for (i = 0; i < locations.length; i++) {
         marker = new google.maps.Marker({
@@ -177,15 +177,33 @@ $( document ).ready(function(){
             icon: iconSrc[locations[i][2]]
         });
 
+
         markers.push(marker);
+
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-                infowindow.setContent(locations[i][0] + "<br />" + locations[i][2] + "<br />" + locations[i][1]);
+                var contentString =
+                    '<div class="map-tooltip">'+
+                    '<div class="map-tooltip-header">'+
+                    '<h4 id="map-tooltip-title" class="map-tooltip-title">Naturalia Tolbiac</h4>'+
+                    '</div>'+
+                    '<div class="map-tooltip-content">'+
+                    '<div class="map-tooltip-content-left">' +
+                    '<p>71, rue de Tolbiac,<br /> PARIS 75013,<br /> Magasin vrac </p>'+
+                    '<a href="#" class="btn btn-warning">'+ 'More information</a>'+
+                    '</div>'+
+                    '<div class="map-tooltip-content-right"><img src="assets/img/map/map-pin-01.png"></div>'+
+                    '</div>'+
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+                // infowindow.setContent(contentString + locations[i][0] + "<br />" + locations[i][2] + "<br />" + locations[i][1]);
                 infowindow.open(map, marker);
             }
         })(marker, i));
     }
-
     // == shows all markers of a particular category, and ensures the checkbox is checked ==
     function show(category) {
         for (var i = 0; i < locations.length; i++) {
@@ -208,15 +226,13 @@ $( document ).ready(function(){
 
     hide("Magasin-vrac");
     hide("Producteurs-locaux");
-    hide("Potager collectif ");
-    hide("Seconde main ");
+    hide("Potager collectif");
+    hide("Seconde main");
+    hide("GAC");
 
     $(".checkbox").click(function() {
-
         var cat = $(this).attr("value");
-
         // If checked
-
         if ($(this).is(":checked")) {
             show(cat);
         } else {
