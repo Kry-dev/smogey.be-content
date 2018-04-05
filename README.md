@@ -1,4 +1,4 @@
-## Spott online store based on: Bootstrap 4 / SASS / PUG / GULP / WEBPACK
+## Smogey content based on: Bootstrap 4 / SASS / PUG / GULP / WEBPACK
 
 #### Need to be installed
 * npm 5
