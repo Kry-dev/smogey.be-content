@@ -61,23 +61,30 @@
                           <div class="tab-pane-header">
                             <h4 class="tab-pane-title">Economie locale</h4>
                           </div>
-                          <div class="list-group">
-                            <div class="list-group-item list-group-item-action"><img class="map-pin" src="assets/img/map/map-pin-01.png"/>
-                              <div class="text-left">Magasin vrac</div><a class="map-pin-btn" href="#"><i class="fa fa-plus-circle"></i></a>
-                            </div>
-                            <div class="list-group-item list-group-item-action"><img class="map-pin" src="assets/img/map/map-pin-02.png"/>
-                              <div class="text-left">Producteurs locaux</div><a class="map-pin-btn" href="#"><i class="fa fa-plus-circle"></i></a>
-                            </div>
-                            <div class="list-group-item list-group-item-action"><img class="map-pin" src="assets/img/map/map-pin-03.png"/>
-                              <div class="text-left">Potager collectif</div><a class="map-pin-btn" href="#"><i class="fa fa-plus-circle"></i></a>
-                            </div>
-                            <div class="list-group-item list-group-item-action"><img class="map-pin" src="assets/img/map/map-pin-04.png"/>
-                              <div class="text-left">Seconde main</div><a class="map-pin-btn" href="#"><i class="fa fa-minus-circle"></i></a>
-                            </div>
-                            <div class="list-group-item list-group-item-action"><img class="map-pin" src="assets/img/map/map-pin-05.png"/>
-                              <div class="text-left">GAC</div><a class="map-pin-btn" href="#"><i class="fa fa-minus-circle"></i></a>
-                            </div>
-                          </div>
+                          <form class="list-group" id="form">
+                            <fieldset>
+                              <div class="form-group"><img class="map-pin" src="assets/img/map/map-pin-01.png"/>
+                                <label class="text-left" for="Magasin-vrac">Magasin vrac</label>
+                                <input class="checkbox" id="Magasin-vrac" name="Magasin-vrac" type="checkbox" value="Magasin-vrac"/>
+                              </div>
+                              <div class="form-group"><img class="map-pin" src="assets/img/map/map-pin-02.png"/>
+                                <label for="Producteurs-locaux">Producteurs-locaux</label>
+                                <input class="checkbox" id="Producteurs-locaux" name="Producteurs-locaux" type="checkbox" value="Producteurs-locaux"/>
+                              </div>
+                              <div class="form-group"><img class="map-pin" src="assets/img/map/map-pin-03.png"/>
+                                <label for="Potager collectif">Potager collectif</label>
+                                <input class="checkbox" id="Potager collectif" name="Potager collectif" type="checkbox" value="Potager collectif"/>
+                              </div>
+                              <div class="form-group"><img class="map-pin" src="assets/img/map/map-pin-04.png"/>
+                                <label for="Seconde main">Seconde main</label>
+                                <input class="checkbox" id="Seconde main" name="Seconde main" type="checkbox" value="Seconde main"/>
+                              </div>
+                              <div class="form-group"><img class="map-pin" src="assets/img/map/map-pin-05.png"/>
+                                <label for="GAC">GAC</label>
+                                <input class="checkbox" id="GAC" name="GAC" type="checkbox" value="GAC"/>
+                              </div>
+                            </fieldset>
+                          </form>
                         </div>
                         <div class="tab-pane fade" id="map-tab-4" role="tabpanel">
                           <div class="tab-pane-header">
@@ -94,24 +101,6 @@
                     <div class="map-content">
                       <div class="btn btn-warning" role="button">Retour</div>
                       <div class="btn btn-pink" role="button"><i class="fa fa-plus-circle"></i>Ajouter une initiative</div>
-                      <fieldset id="form">
-                        <p>
-                          <input class="checkbox" id="Dial-a-Ride" name="Dial-a-Ride" type="checkbox" value="Dial-a-Ride"/>
-                          <label for="Dial-a-Ride">Dial-a-Ride</label>
-                        </p>
-                        <p>
-                          <input class="checkbox" id="American Legion" name="American Legion" type="checkbox" value="American Legion"/>
-                          <label for="American Legion">American Legion</label>
-                        </p>
-                        <p>
-                          <input class="checkbox" id="Veterans of Foreign Wars" name="Veterans of Foreign Wars" type="checkbox" value="Veterans of Foreign Wars"/>
-                          <label for="Veterans of Foreign Wars">Veterans of Foreign Wars</label>
-                        </p>
-                        <p>
-                          <input class="checkbox" id="Nutrition" name="Nutrition" type="checkbox" value="Nutrition"/>
-                          <label for="Nutrition">Nutrition</label>
-                        </p>
-                      </fieldset>
                       <div id="map" style="width: 100%; height: 600px;"></div>
                     </div>
                   </div>

@@ -32,32 +32,28 @@
         #map-tab-3.tab-pane.fade.show.active(role='tabpanel')
             .tab-pane-header
                 h4.tab-pane-title Economie locale
-            .list-group
-                .list-group-item.list-group-item-action
-                    img.map-pin(src='assets/img/map/map-pin-01.png')
-                    .text-left Magasin vrac
-                    a(href="#").map-pin-btn
-                        i.fa.fa-plus-circle
-                .list-group-item.list-group-item-action
-                    img.map-pin(src='assets/img/map/map-pin-02.png')
-                    .text-left Producteurs locaux
-                    a(href="#").map-pin-btn
-                        i.fa.fa-plus-circle
-                .list-group-item.list-group-item-action
-                    img.map-pin(src='assets/img/map/map-pin-03.png')
-                    .text-left Potager collectif
-                    a(href="#").map-pin-btn
-                        i.fa.fa-plus-circle
-                .list-group-item.list-group-item-action
-                    img.map-pin(src='assets/img/map/map-pin-04.png')
-                    .text-left Seconde main
-                    a(href="#").map-pin-btn
-                        i.fa.fa-minus-circle
-                .list-group-item.list-group-item-action
-                    img.map-pin(src='assets/img/map/map-pin-05.png')
-                    .text-left GAC
-                    a(href="#").map-pin-btn
-                        i.fa.fa-minus-circle
+            form#form.list-group
+                fieldset
+                    .form-group
+                        img.map-pin(src='assets/img/map/map-pin-01.png')
+                        label(for='Magasin-vrac').text-left Magasin vrac
+                        input#Magasin-vrac.checkbox(name='Magasin-vrac', type='checkbox', value='Magasin-vrac')
+                    .form-group
+                        img.map-pin(src='assets/img/map/map-pin-02.png')
+                        label(for='Producteurs-locaux') Producteurs-locaux
+                        input.checkbox(id='Producteurs-locaux', name='Producteurs-locaux', type='checkbox', value='Producteurs-locaux')
+                    .form-group
+                        img.map-pin(src='assets/img/map/map-pin-03.png')
+                        label(for='Potager collectif') Potager collectif
+                        input.checkbox(id='Potager collectif', name='Potager collectif', type='checkbox', value='Potager collectif')
+                    .form-group
+                        img.map-pin(src='assets/img/map/map-pin-04.png')
+                        label(for='Seconde main') Seconde main
+                        input.checkbox(id="Seconde main", name='Seconde main', type='checkbox', value='Seconde main')
+                    .form-group
+                        img.map-pin(src='assets/img/map/map-pin-05.png')
+                        label(for='GAC') GAC
+                        input.checkbox(id="GAC", name='GAC', type='checkbox', value='GAC')
 
         #map-tab-4.tab-pane.fade(role='tabpanel')
             .tab-pane-header
