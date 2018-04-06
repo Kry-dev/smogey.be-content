@@ -153,11 +153,13 @@ $border-radius: 0;
 			position: absolute;
 			right: 0;
 			top: 0;
+			z-index: 50;
 		}
 		.btn-pink{
 			position: absolute;
 			left: 0;
 			bottom: 0;
+			z-index: 50;
 		}
 		iframe{
 			width: 100%;
@@ -276,4 +278,12 @@ html, body {
 	font-family: 'Roboto','sans-serif';
 	line-height: 30px;
 	padding-left: 10px;
+}
+
+.pac-container {
+	background-color: #FFF;
+	z-index: 20;
+	position: fixed;
+	display: inline-block;
+	float: left;
 }

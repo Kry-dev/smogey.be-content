@@ -1,9 +1,11 @@
 .modal{
+	&-dialog{
+		min-width: 600px;
+	}
 	&-header{
 		border-bottom: 0;
 	}
 	&-content{
-		border-radius: 0;
 		border: 0;
 	}
 }
