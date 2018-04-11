@@ -1,0 +1,50 @@
+.calendar{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background: transparent;
+	box-sizing: border-box;
+	background: $gray;
+	&-header{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+	&-day{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 80px;
+		background: $white;
+		&.border{
+			border: 2px solid $gray !important;
+		}
+		.date{
+			font-size: 1rem;
+		}
+	}
+	&-events{
+		display: flex;
+		flex-direction: row-reverse;
+		width: 100%;
+		justify-content: flex-start;
+		align-items: flex-end;
+		flex: auto;
+		flex-wrap: wrap;
+	}
+	.event{
+		display: flex;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		border: 2px solid $white;
+		margin-left: -4px;
+		position: relative;
+		z-index: 10;
+		&:hover{
+			cursor: pointer;
+			z-index: 15;
+			transform: scale(1.2);
+		}
+	}
+}

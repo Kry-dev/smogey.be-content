@@ -8,7 +8,8 @@
 #### steps to install
 1. clone this repo
 2. npm i (or npm install)
-3. gulp 
+3. npm install "gulpjs/gulp#4.0" --save-dev
+4. gulp 
 
 
 ## How to run

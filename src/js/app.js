@@ -4,6 +4,8 @@ const slick = require('slick-carousel');
 const bootstrap = require('bootstrap');
 
 $( document ).ready(function(){
+
+
     $('.new-slider').slick({
         dots: true,
         nextArrow: '<button class="right"><i class="fa fa-arrow-right"></i></button>',
@@ -296,4 +298,9 @@ $( document ).ready(function(){
             infowindow.open(map, marker);
         });
     })();
+
+
+
+
+
 });

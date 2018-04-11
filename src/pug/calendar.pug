@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+html(lang="en")
+    include global/head
+    +head('Smogey Calendar')
+
+    include mixin/all-mixin
+    body.homepage
+        .wrapper
+            .header-template
+                img(src="/assets/img/global/header.jpg")
+            section.main
+                .container
+                    article
+                        .calendar
+                            .container-fluid
+                                .row.mb-20
+                                    .col-md-12.px-0
+                                        .d-flex.bg-warning.p-2.justify-content-between.align-items-center
+                                            h5.text-white.mb-0 L'agenda des initiatives dans votre commune
+                                            .btn-group
+                                                .btn.btn-outline-warning(role="button") Retour
+                                .row
+                                    #calendar.calendar
+                                        header.calendar-header
+                                            .calendar-title.p-2.bg-success.text-white
+                                                h4.mb-0.text-center January 2018
+                                            .row.d-none.d-sm-flex.px-2.pt-2.mx-0
+                                                h5.col-sm.mb-0.pl-2 Su
+                                                h5.col-sm.mb-0.pl-2 Mo
+                                                h5.col-sm.mb-0.pl-2 Tu
+                                                h5.col-sm.mb-0.pl-2 We
+                                                h5.col-sm.mb-0.pl-2 Th
+                                                h5.col-sm.mb-0.pl-2 Fr
+                                                h5.col-sm.mb-0.pl-2 Sa
+                                        .row.mx-0.px-1
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 29
+                                                    small.col.d-sm-none.text-center.text-muted Sunday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 30
+                                                    small.col.d-sm-none.text-center.text-muted Monday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 31
+                                                    small.col.d-sm-none.text-center.text-muted Tuesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 1
+                                                    small.col.d-sm-none.text-center.text-muted Wednesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 2
+                                                    small.col.d-sm-none.text-center.text-muted Thursday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 3
+                                                    small.col.d-sm-none.text-center.text-muted Friday
+                                                    span.col-1
+                                                .calendar-events
+                                                    a.event.bg-primary(title="event 3.01")
+                                                    a.event.bg-success(title="event 3.02")
+                                                    a.event.bg-warning(title="event 3.03")
+                                                    a.event.bg-pink(title="event 3.04")
+                                                    a.event.bg-info(title="event 3.05")
+                                                    a.event.bg-secondary(title="event 3.06")
+                                                    a.event.bg-pink-dark(title="event 3.07")
+                                                    a.event.bg-danger(title="event 3.08")
+                                                    a.event.bg-dark(title="event 3.09")
+                                                    a.event.bg-primary(title="event 3.10")
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 4
+                                                    small.col.d-sm-none.text-center.text-muted Saturday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .w-100
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 5
+                                                    small.col.d-sm-none.text-center.text-muted Sunday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 6
+                                                    small.col.d-sm-none.text-center.text-muted Monday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 7
+                                                    small.col.d-sm-none.text-center.text-muted Tuesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 8
+                                                    small.col.d-sm-none.text-center.text-muted Wednesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    a.event.bg-success(title="event 8.01")
+                                                    a.event.bg-danger(title="event 8.02")
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 9
+                                                    small.col.d-sm-none.text-center.text-muted Thursday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 10
+                                                    small.col.d-sm-none.text-center.text-muted Friday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 11
+                                                    small.col.d-sm-none.text-center.text-muted Saturday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .w-100
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 12
+                                                    small.col.d-sm-none.text-center.text-muted Sunday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 13
+                                                    small.col.d-sm-none.text-center.text-muted Monday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 14
+                                                    small.col.d-sm-none.text-center.text-muted Tuesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 15
+                                                    small.col.d-sm-none.text-center.text-muted Wednesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 16
+                                                    small.col.d-sm-none.text-center.text-muted Thursday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 17
+                                                    small.col.d-sm-none.text-center.text-muted Friday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 18
+                                                    small.col.d-sm-none.text-center.text-muted Saturday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .w-100
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 19
+                                                    small.col.d-sm-none.text-center.text-muted Sunday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 20
+                                                    small.col.d-sm-none.text-center.text-muted Monday
+                                                    span.col-1
+                                                .calendar-events
+                                                    a.event.bg-primary(title="event 20")
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 21
+                                                    small.col.d-sm-none.text-center.text-muted Tuesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 22
+                                                    small.col.d-sm-none.text-center.text-muted Wednesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 23
+                                                    small.col.d-sm-none.text-center.text-muted Thursday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 24
+                                                    small.col.d-sm-none.text-center.text-muted Friday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 25
+                                                    small.col.d-sm-none.text-center.text-muted Saturday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .w-100
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 26
+                                                    small.col.d-sm-none.text-center.text-muted Sunday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 27
+                                                    small.col.d-sm-none.text-center.text-muted Monday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 28
+                                                    small.col.d-sm-none.text-center.text-muted Tuesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 29
+                                                    small.col.d-sm-none.text-center.text-muted Wednesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate
+                                                h5.row.align-items-center
+                                                    span.date.col-1 30
+                                                    small.col.d-sm-none.text-center.text-muted Thursday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 1
+                                                    small.col.d-sm-none.text-center.text-muted Friday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 2
+                                                    small.col.d-sm-none.text-center.text-muted Saturday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .w-100
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 3
+                                                    small.col.d-sm-none.text-center.text-muted Sunday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 4
+                                                    small.col.d-sm-none.text-center.text-muted Monday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 5
+                                                    small.col.d-sm-none.text-center.text-muted Tuesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 6
+                                                    small.col.d-sm-none.text-center.text-muted Wednesday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 7
+                                                    small.col.d-sm-none.text-center.text-muted Thursday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 8
+                                                    small.col.d-sm-none.text-center.text-muted Friday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+                                            .calendar-day.col-sm.p-2.border.text-truncate.d-none.d-sm-inline-block.text-muted
+                                                h5.row.align-items-center
+                                                    span.date.col-1 9
+                                                    small.col.d-sm-none.text-center.text-muted Saturday
+                                                    span.col-1
+                                                .calendar-events
+                                                    p.d-sm-none No events
+
+
