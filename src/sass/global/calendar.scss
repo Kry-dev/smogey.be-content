@@ -1,7 +1,6 @@
 .calendar{
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	background: transparent;
 	box-sizing: border-box;
 	background: $gray;
@@ -16,6 +15,7 @@
 		justify-content: space-between;
 		min-height: 80px;
 		background: $white;
+		overflow: inherit;
 		&.border{
 			border: 2px solid $gray !important;
 		}
@@ -39,12 +39,81 @@
 		border-radius: 50%;
 		border: 2px solid $white;
 		margin-left: -4px;
-		position: relative;
 		z-index: 10;
-		&:hover{
+		position: relative;
+		&:hover,
+		&:focus{
 			cursor: pointer;
 			z-index: 15;
 			transform: scale(1.2);
+			.calendar-tooltip{
+				display: block;
+				transform: scale(.8);
+			}
+		}
+	}
+	.calendar-tooltip{
+		z-index: 1000;
+		border-radius: 5px;
+		position: absolute;
+		display: none;
+		width: 250px;
+		bottom: 0;
+		left: -125px;
+		min-height: 200px;
+		flex-direction: column;
+		background: $white;
+		-webkit-box-shadow: -2px 2px 68px -1px rgba(0,0,0,0.4);
+		-moz-box-shadow: -2px 2px 68px -1px rgba(0,0,0,0.4);
+		box-shadow: -2px 2px 68px -1px rgba(0,0,0,0.4);
+		&:after{
+			content: "\f0c8";
+			font-family: FontAwesome;
+			color: $white;
+			text-align: center;
+			width: 20px;
+			height: 20px;
+			font-size: 25px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: rotate(45deg);
+		}
+		&-header{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: .5rem;
+			height: 50px;
+			border-radius: 5px 5px 0 0;
+		}
+		&-title{
+			font-size: 14px;
+			text-align: left;
+			margin-bottom: 0;
+		}
+		&-content{
+			padding: 1rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			align-items: flex-start;
+			&-left{  width: 80% !important;  }
+			&-right{  width: 20% !important;
+				img{
+					width: 30px;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			p{
+				margin-bottom: 1rem;
+			}
+		}
+		.btn{
+			position: relative;
+			display: block;
 		}
 	}
 }
