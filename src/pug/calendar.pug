@@ -19,7 +19,7 @@ html(lang="en")
                                             h5.text-white.mb-0 L'agenda des initiatives dans votre commune
                                             .btn-group
                                                 .btn.btn-outline-warning(role="button") Retour
-                                .row
+                                .row.mb-20
                                     #calendar.calendar
                                         header.calendar-header
                                             .calendar-title.p-2.bg-success.text-white
@@ -75,23 +75,21 @@ html(lang="en")
                                                     span.col-1
                                                 .calendar-events
                                                     a.event.btn-danger
-                                                        +calendar-tooltip
+                                                        +calendar-tooltip('#mapMarkerModal')
                                                     a.event.bg-success
-                                                        +calendar-tooltip
+                                                        +calendar-tooltip('#mapMarkerModal-02')
                                                     a.event.bg-warning
-                                                        +calendar-tooltip
+                                                        +calendar-tooltip('#mapMarkerModal')
                                                     a.event.bg-pink
-                                                        +calendar-tooltip
+                                                        +calendar-tooltip('#mapMarkerModal-02')
                                                     a.event.bg-info
-                                                        +calendar-tooltip
+                                                        +calendar-tooltip('#mapMarkerModal')
                                                     a.event.bg-secondary
-                                                        +calendar-tooltip
+                                                        +calendar-tooltip('#mapMarkerModal-02')
                                                     a.event.bg-pink-dark
-                                                        +calendar-tooltip
+                                                        +calendar-tooltip('#mapMarkerModal')
                                                     a.event.bg-danger
-                                                        +calendar-tooltip
-
-
+                                                        +calendar-tooltip('#mapMarkerModal-02')
                                             .calendar-day.col-sm.p-2.border
                                                 h5.row.align-items-center
                                                     span.date.col-1 4
@@ -128,9 +126,9 @@ html(lang="en")
                                                     span.col-1
                                                 .calendar-events
                                                     a.event.bg-success(title="event 8.01")
-                                                        +calendar-tooltip
+                                                        +calendar-tooltip('#mapMarkerModal')
                                                     a.event.bg-danger(title="event 8.02")
-                                                        +calendar-tooltip
+                                                        +calendar-tooltip('#mapMarkerModal-02')
                                             .calendar-day.col-sm.p-2.border
                                                 h5.row.align-items-center
                                                     span.date.col-1 9
@@ -217,7 +215,7 @@ html(lang="en")
                                                     span.col-1
                                                 .calendar-events
                                                     a.event.bg-primary(title="event 20")
-                                                        +calendar-tooltip
+                                                        +calendar-tooltip('#mapMarkerModal-02')
                                             .calendar-day.col-sm.p-2.border
                                                 h5.row.align-items-center
                                                     span.date.col-1 21
@@ -354,24 +352,73 @@ html(lang="en")
                                                 .calendar-events
                                                     p.d-sm-none No events
 
+                                .row.mx-0.mb-20
+                                    a.btn.btn-pink(href='#plus-initiative', data-toggle='modal')
+                                        i.fa.fa-plus-circle
+                                        | Voir toute les initiatives
+                            // Modal
+                            #mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
+                                .modal-dialog(role='document')
+                                    .modal-content
+                                        .modal-header.bg-pink.text-white
+                                            h5.modal-title Naturalia Tolbiac
+                                            button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
+                                                span.fa.fa-close.text-white(aria-hidden='true')
+                                        .modal-body
+                                            .d-flex.justify-content-between.mb-20
+                                                img(src='assets/img/map/map-modal-01.jpg')
+                                                img(src='assets/img/map/map-modal-03.jpg')
+                                            p.mb-0
+                                                |Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.
+                                        .modal-footer.border-0.justify-content-start
+                                            button.btn.btn-primary(type='button') En savoir plus
 
-// Modal
-#mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
-    .modal-dialog(role='document')
-        .modal-content
-            .modal-header.bg-pink.text-white
-                h5.modal-title Naturalia Tolbiac
-                button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
-                    span.fa.fa-close.text-white(aria-hidden='true')
-            .modal-body
-                .d-flex.justify-content-between.mb-20
-                    img(src='assets/img/map/map-modal-01.jpg')
-                    img(src='assets/img/map/map-modal-02.jpg')
-                p.mb-0
-                    |Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles n’a aucunement été modifié. Certains habitants confondent certainement les dates de ce ramassage avec l’enlèvement des PMC et des papiers réalisés par Fost Plus, dont certaines tournées ont récemment.
-            .modal-footer.border-0.justify-content-start
-                button.btn.btn-primary(type='button') En savoir plus
+                            // Modal
+                            #mapMarkerModal-02.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
+                                .modal-dialog(role='document')
+                                    .modal-content
+                                        .modal-header.bg-pink.text-white
+                                            h5.modal-title Naturalia Tolbiac
+                                            button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
+                                                span.fa.fa-close.text-white(aria-hidden='true')
+                                        .modal-body
+                                            .row
+                                                .col
+                                                    p.mb-0
+                                                        | Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.
 
+                                                .col
+                                                    .d-flex.justify-content-between.mb-20
+                                                        img(src='assets/img/map/map-modal-03.jpg')
+                                            .modal-footer.border-0.justify-content-start
+                                            button.btn.btn-primary(type='button') En savoir plus
+                            // Modal
+                            #plus-initiative.modal.fade.show(tabindex='-1', role='dialog', aria-labelledby='plus-initiativeTitle', aria-hidden='true')
+                                .modal-dialog(role='document')
+                                    form.modal-content.plus-init-form
+                                        .modal-header.bg-pink.text-white
+                                            h5.modal-title Ajouter une initiative
+                                            button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
+                                                span.fa.fa-close.text-white(aria-hidden='true')
+                                        .modal-body
+                                            .form-group
+                                                i.fa.fa-user
+                                                input.form-control(id="init-title", type='text', placeholder='Titre')
+                                            .form-group
+                                                i.fa.fa-pencil-square-o
+                                                input.form-control(id="init-descr", type='text', placeholder='Detail')
+                                            .form-group
+                                                i.fa.fa-map-marker
+                                                input.form-control(id="pac-input", type='text', name='keyword' placeholder='Localisation')
+                                                button.btn.btn-warning.text-white
+                                                    i.fa.fa-location-arrow
+                                                    | Localiser
+                                            .form-group
+                                                i.fa.fa-list-alt
+                                                input.form-control(id="init-commitment", type='text', placeholder='Quand')
+
+                                        .modal-footer.border-0.justify-content-center
+                                            button.btn.btn-pink Ajouter
 
 
 

@@ -76,7 +76,7 @@ mixin card-text
 
 
 //calendar-tooltip
-mixin calendar-tooltip
+mixin calendar-tooltip(link)
 	.calendar-tooltip
 		.calendar-tooltip-header.bg-pink.text-white
 			h4#map-tooltip-title.map-tooltip-title Naturalia Tolbiac
@@ -89,7 +89,7 @@ mixin calendar-tooltip
 					br
 					|  Magasin vrac
 				button.btn.btn-success(type='button', data-toggle='modal',
-				data-target='#mapMarkerModal')
+				data-target=link)
 					| More
 					| information
 			.calendar-tooltip-content-right

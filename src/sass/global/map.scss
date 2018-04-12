@@ -10,9 +10,7 @@ $border-radius: 0;
 		flex-flow: column nowrap;
 		background: $primary;
 	}
-
 	&--left {
-
 		.nav-link {
 			transition: border-color .125s ease-in;
 			white-space: nowrap;
@@ -24,17 +22,8 @@ $border-radius: 0;
 				border-color: transparent;
 			}
 		}
-
 		.nav-link.active {
 				border-left: 5px solid $primary;
-			//border-bottom-color: $color-border;
-			//border-right-color: $color-body;
-			//margin-right: -1px;
-			//
-			//&:hover {
-			//	background-color: $color-body;
-			//	border-color: $color-link $color-body $color-link $color-link;
-			//}
 		}
 	}
 }
