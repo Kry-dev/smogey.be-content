@@ -71,28 +71,23 @@
 		outline: none;
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 	}
-
 	#pac-input {
 		text-overflow: ellipsis;
 		position: relative !important;
 	}
-
 	#type-selector {
 		color: #fff;
 		background-color: #4d90fe;
 		padding: 5px 11px 0px 11px;
 		left: 50px;
 	}
-
 	#type-selector label {
 		font-family: Roboto;
 		font-size: 13px;
 		font-weight: 300;
 	}
-
 }
 .homepage{
-	//.pac-container.pac-logo.hdpi{
 	.pac-container{
 		left: 0;
 		z-index: 1050;
