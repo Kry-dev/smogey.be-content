@@ -1,9 +1,7 @@
 .btn{
 	font-size: inherit;
 	color: #fff;
-	line-height: 1;
 	height: 40px;
-	display: block;
 	flex-direction: row;
 	font-weight: bold;
 	text-decoration: none;
@@ -25,6 +23,10 @@
 	&:active:focus{
 		outline: 0;
 		box-shadow: none;
+	}
+	&-block{
+		display: block;
+		line-height: 16px;
 	}
 }
 .btn-search{
