@@ -15,7 +15,7 @@ html(lang="en")
 						.card-list
 							.container-fluid.p-0
 								.row.mx-0.mb-20
-									.col-md-4.px-1
+									.col-xs-4.px-1
 										.card.pt-4
 											.card-body.mb-5
 												img(src='assets/img/initi/initi-01.png', alt='#')
@@ -24,7 +24,7 @@ html(lang="en")
 											.card-footer
 												button.btn.btn-pink.w-100.text-center(data-toggle="modal", data-target="#en-savoir-plus")
 													span En savoir plus
-									.col-md-4.px-1
+									.col-xs-4.px-1
 										.card.pt-4
 											.card-body.mb-5
 												img(src='assets/img/initi/initi-02.png', alt='#')
@@ -33,7 +33,7 @@ html(lang="en")
 											.card-footer
 												button.btn.btn-success.w-100.text-center(data-toggle="modal", data-target="#en-savoir-plus")
 													span En savoir plus
-									.col-md-4.px-1
+									.col-xs-4.px-1
 										.card.pt-4
 											.card-body.mb-5
 												img(src='assets/img/initi/initi-03.png', alt='#')
@@ -43,44 +43,42 @@ html(lang="en")
 												button.btn.btn-warning.w-100.text-center(data-toggle="modal", data-target="#en-savoir-plus")
 													span En savoir plus
 								.row.mx-0.mb-20
-									.col-md-6.px-1
+									.col-xs-6.px-1
 										a(href="#").btn.btn-primary.btn-block
 											i.fa.fa-map-marker
 											span.text-uppercase Voir toute les initiatives
-									.col-md-6.px-1
+									.col-xs-6.px-1
 										a(href="#").btn.btn-pink-dark.btn-block
 											i.fa.fa-user
 											span.text-uppercase Trouver un ambassadeur
 								.row.mx-0.mb-20
-									.col-md-12.px-1
+									.col-xs-12.px-1
 										form(action='', method='post')#initiv-search.initiv-search
 											input.form-control(type='text', size='60', placeholder="Rechercher une initiative sur Tournai")
 											button.btn.btn-search(type='submit')
 												i.fa.fa-search
 								.row.mx-0.mb-20
 									include global/slider
-		#en-savoir-plus.modal.fade(tabindex='-1', role="dialog")
+		#en-savoir-plus.modal.fade(role="dialog")
 			.modal-dialog.modal-lg
 				.modal-header.bg-pink.text-white
-					h5.modal-title Je suis
+					h4.modal-title Je suis
 					button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
 						span.fa.fa-close.text-white(aria-hidden='true')
 
 				.modal-content.p-3
 					.row
-						.col
+						.col-xs-6
 							.card
 								.card-body
 									img(src='assets/img/initi/initi-modal-01.png', alt='#')
-								.card-header
 								.card-footer
 									button.btn.btn-success.w-100
 										span.text-uppercase Entreprise
-						.col
+						.col-xs-6
 							.card
 								.card-body
 									img(src='assets/img/initi/initi-modal-02.png', alt='#')
-								.card-header
 								.card-footer
 									button.btn.btn-warning.w-100
 										span.text-uppercase Citoyen

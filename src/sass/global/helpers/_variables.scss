@@ -48,21 +48,6 @@ $brand-info:            $info;
 $brand-warning:         $warning;
 $brand-danger:          $danger;
 
-$theme-colors: ();
-$theme-colors: map-merge((
-        "primary":    $primary,
-        "secondary":  $secondary,
-        "success":    $success,
-        "info":       $info,
-        "warning":    $warning,
-        "danger":     $danger,
-        "light":      $light,
-        "dark":       $dark,
-        "pink":   		$pink,
-        "pink-dark":  $pink-dark,
-        "teal":       $teal
-), $theme-colors);
-
 .blue        {color:$blue;}
 .indigo      {color:$indigo;}
 .pink        {color:$pink;}
@@ -78,6 +63,26 @@ $theme-colors: map-merge((
 .black   {color:$black;}
 
 .bg-gray{background-color: $gray}
+.bg-blue        {background-color:$blue;}
+.bg-indigo      {background-color:$indigo;}
+.bg-pink        {background-color:$pink;}
+.bg-red         {background-color:$red;}
+.bg-orange      {background-color:$orange;}
+.bg-yellow      {background-color:$yellow;}
+.bg-green       {background-color:$green;}
+.bg-teal        {background-color:$teal;}
+.bg-cyan        {background-color:$cyan;}
+.bg-white       {background-color:$white;}
+.bg-gray        {background-color:$gray-600;}
+.bg-gray-dark   {background-color:$gray-800;}
+.bg-black   {background-color:$black;}
+.bg-primary         {background-color: $primary;}
+.bg-success         {background-color: $success;}
+.bg-info            {background-color: $info;}
+.bg-warning         {background-color: $warning;}
+.bg-danger          {background-color: $danger;}
+.bg-pink						{background-color: $pink;}
+.bg-pink-dark						{background-color: $pink-dark;}
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: (
         10: 10%,

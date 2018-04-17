@@ -1,18 +1,6 @@
-//= ../../../node_modules/jquery/dist/jquery.js
-//= ../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap
-//= ../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap-sprockets
-//= ../../../node_modules/slick-carousel/slick/slick.js
-
-
-const $ = require('jquery');
-// const bootstrap = require('bootstrap-sass');
-// const bootstrap-sprockets = require('bootstrap-sass/j');
-// // const popper = require('popper.js');
-// // const util = require('util');
-const slick = require('slick-carousel');
-
-
-
+var $ = require('jquery');
+// const bootstrap = ('../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js');
+var slick = require('slick-carousel');
 
 $( document ).ready(function(){
     $('.new-slider').slick({

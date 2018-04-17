@@ -1,11 +1,23 @@
-//.modal{
-//	&-dialog{
-//		min-width: 600px;
-//	}
-//	&-header{
-//		border-bottom: 0;
-//	}
-//	&-content{
-//		border: 0;
-//	}
-//}
+.modal{
+	&-dialog{
+		min-width: 600px;
+	}
+	&-header{
+		border-bottom: 0;
+	}
+	&-content{
+		border: 0;
+		border-radius: 0 0 4px 4px;
+	}
+	&-title{
+		display: inline-block;
+		float: left;
+	}
+	.btn-close{
+		display: inline-block;
+		float: right;
+	}
+	.card{
+		min-height: auto;
+	}
+}
