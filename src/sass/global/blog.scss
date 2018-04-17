@@ -6,10 +6,6 @@
 		box-shadow: none;
 	}
 }
-.blog {
-	display: block;
-	//width: 100%;
-}
 .blog{
 	display: block;
 	&-img{
@@ -26,6 +22,9 @@
 		font-size: .9rem;
 		padding: 0 2rem;
 		margin-bottom: 0;
+	}
+	&-content{
+		overflow: hidden;
 	}
 	&-content-list{
 		padding-left: 2rem;
@@ -49,6 +48,7 @@
 			margin-right: .5rem;
 			border-radius: 0;
 			font-size: 0.875rem;
+			height: inherit;
 		}
 	}
 	.panel{
