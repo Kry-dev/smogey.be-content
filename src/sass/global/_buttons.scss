@@ -1,15 +1,30 @@
 .btn{
 	font-size: inherit;
 	color: #fff;
-	line-height: 18px;
-	display: flex;
+	line-height: 1;
+	height: 40px;
+	display: block;
 	flex-direction: row;
-	align-items: center;
 	font-weight: bold;
 	text-decoration: none;
+	border-radius: 0;
+	text-align: left;
 	.fa{
 		font-size: 24px;
 		margin-right: 10px;
+		display: inline-block;
+		float: left;
+		vertical-align: middle;
+	}
+	span{
+		vertical-align: bottom;
+		vertical-align: -webkit-baseline-middle;
+	}
+	&:focus,
+	&:active,
+	&:active:focus{
+		outline: 0;
+		box-shadow: none;
 	}
 }
 .btn-search{
@@ -50,4 +65,54 @@
 .btn-outline-warning{
 	color: $warning;
 	background: $white;
+}
+.btn-pink{
+	background: $pink;
+	&:focus,
+	&.focus {
+		color: $white;
+		background-color: darken($pink, 10%);
+	}
+	&:hover {
+		color: $white;
+		background-color: darken($pink, 10%);
+	}
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		color: $white;
+		background-color: darken($pink, 10%);
+
+		&:hover,
+		&:focus,
+		&.focus {
+			color: $white;
+			background-color: darken($pink, 17%);
+		}
+	}
+}
+.btn-pink-dark{
+	background: $pink-dark;
+	&:focus,
+	&.focus {
+		color: $white;
+		background-color: darken($pink-dark, 10%);
+	}
+	&:hover {
+		color: $white;
+		background-color: darken($pink-dark, 10%);
+	}
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		color: $white;
+		background-color: darken($pink-dark, 10%);
+
+		&:hover,
+		&:focus,
+		&.focus {
+			color: $white;
+			background-color: darken($pink-dark, 17%);
+		}
+	}
 }

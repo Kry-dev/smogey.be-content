@@ -1,7 +1,6 @@
 .new-slider{
-	max-height: 450px;
 	width: 100%;
-	display: flex;
+	display: block;
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 0 !important;
@@ -22,10 +21,10 @@
 	}
 	li{
 		a{
+			display: block;
 			position: relative;
-			display: flex;
-			flex-direction: column;
 			img{
+
 				width: 100%;
 			}
 		}
@@ -38,5 +37,6 @@
 		width: 100%;
 		padding: 1rem;
 		margin-bottom: 0;
+		margin-top: 0;
 	}
 }

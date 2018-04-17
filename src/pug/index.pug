@@ -16,41 +16,41 @@ html(lang="en")
 							.container-fluid.p-0
 								.row.mx-0.mb-20
 									.col-md-4.px-1
-										.card
-											.card-body
+										.card.pt-4
+											.card-body.mb-5
 												img(src='assets/img/initi/initi-01.png', alt='#')
 											.card-header
 												h5.card-title.text-center Mobilité
 											.card-footer
-												button.btn.btn-pink.w-100(data-toggle="modal", data-target="#en-savoir-plus")
-													| En savoir plus
+												button.btn.btn-pink.w-100.text-center(data-toggle="modal", data-target="#en-savoir-plus")
+													span En savoir plus
 									.col-md-4.px-1
-										.card
-											.card-body
+										.card.pt-4
+											.card-body.mb-5
 												img(src='assets/img/initi/initi-02.png', alt='#')
 											.card-header
 												h5.card-title.text-center Réduction des déchets
 											.card-footer
-												button.btn.btn-success.w-100(data-toggle="modal", data-target="#en-savoir-plus")
-													| En savoir plus
+												button.btn.btn-success.w-100.text-center(data-toggle="modal", data-target="#en-savoir-plus")
+													span En savoir plus
 									.col-md-4.px-1
-										.card
-											.card-body
+										.card.pt-4
+											.card-body.mb-5
 												img(src='assets/img/initi/initi-03.png', alt='#')
 											.card-header
 												h5.card-title.text-center Economie locale
 											.card-footer
-												button.btn.btn-warning.w-100(data-toggle="modal", data-target="#en-savoir-plus")
-													| En savoir plus
+												button.btn.btn-warning.w-100.text-center(data-toggle="modal", data-target="#en-savoir-plus")
+													span En savoir plus
 								.row.mx-0.mb-20
 									.col-md-6.px-1
 										a(href="#").btn.btn-primary.btn-block
 											i.fa.fa-map-marker
-											| Voir toute les initiatives
+											span Voir toute les initiatives
 									.col-md-6.px-1
 										a(href="#").btn.btn-pink-dark.btn-block
 											i.fa.fa-user
-											| Trouver un ambassadeur
+											span Trouver un ambassadeur
 								.row.mx-0.mb-20
 									.col-md-12.px-1
 										form(action='', method='post')#initiv-search.initiv-search
@@ -59,7 +59,7 @@ html(lang="en")
 												i.fa.fa-search
 								.row.mx-0.mb-20
 									include global/slider
-		#en-savoir-plus.modal.fade(tabindex='-1')
+		#en-savoir-plus.modal.fade(tabindex='-1', role="dialog")
 			.modal-dialog.modal-lg
 				.modal-header.bg-pink.text-white
 					h5.modal-title Je suis
@@ -75,7 +75,7 @@ html(lang="en")
 								.card-header
 								.card-footer
 									button.btn.btn-success.w-100
-										| Entreprise
+										span Entreprise
 						.col
 							.card
 								.card-body
@@ -83,6 +83,6 @@ html(lang="en")
 								.card-header
 								.card-footer
 									button.btn.btn-warning.w-100
-										| Citoyen
+										span Citoyen
 
 
