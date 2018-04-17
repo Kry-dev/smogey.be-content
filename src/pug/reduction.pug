@@ -16,35 +16,36 @@ html(lang="en")
 							.container-fluid.p-0
 								.row.mb-20
 									.col-md-12.px-0
-										.d-flex.bg-success.p-2.justify-content-between.align-items-center
-											h5.text-white.mb-0 Réduction des déchets
-											.btn.btn-outline-success(role="button") Retour
+										.clearfix.bg-success.p-3
+											h4.d-inline-block.text-white.float-left Réduction des déchets
+											.d-inline-block.btn.btn-outline-success.float-right(role="button") Retour
 								.row.p-0.mb-20
-									.col-md-6.pl-0
-										.card
-											.card-body
+									.col-md-6.col-xs-12.pl-md-0.mb-3
+										.card.pt-5
+											.card-body.mb-3
 												img(src='assets/img/reduction/red-01.png', alt='#')
 											.card-header
 												h5.card-title.text-center La carte des initiatives
 											.card-footer
-												button.btn.btn-primary.w-50.mx-auto(data-toggle="modal", data-target="#en-savoir-plus")
-													| En savoir plus
-									.col-md-6.pr-0
-										.card
-											.card-body
+												button.btn.btn-primary.w-50.btn-block.m-auto(data-toggle="modal",
+												data-target="#en-savoir-plus")
+													span.text-uppercase En savoir plus
+									.col-md-6.col-xs-12.pr-md-0
+										.card.pt-5
+											.card-body.mb-3
 												img(src='assets/img/reduction/red-02.png', alt='#')
 											.card-header
 												h5.card-title.text-center La carte des initiatives
 											.card-footer
-												button.btn.btn-warning.w-50.mx-auto(data-toggle="modal", data-target="#en-savoir-plus")
-													| En savoir plus
-								.row.p-0.mb-20
-									.col-md-6.pl-0
+												button.btn.btn-warning.w-50.btn-block.m-auto(data-toggle="modal",
+												data-target="#en-savoir-plus")
+													span.text-uppercase En savoir plus
+								.row.p-0.mb-xs-20
+									.col-md-6.pl-md-0
 										a(href="#").btn.btn-pink.btn-block
 											i.fa.fa-trash
-											span.no-upercouse
-												| En savoir plus sur la réduction des déchets
-									.col-md-6.pr-0
+											span.no-upercouse En savoir plus sur la réduction des déchets
+									.col-md-6.pr-md-0
 										.quote
 											i.fa.fa-quote-left.text-success
 											span.text-dark
