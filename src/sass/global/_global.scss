@@ -1,4 +1,4 @@
-body{
+body,html{
 	font-size: 16px;
 }
 ul,li{
@@ -47,11 +47,15 @@ article{
 	right:0;
 	top:-15px;
 }
+.ab-b-0{
+	position: absolute;
+	bottom: 0;
+}
 .lb-20{
 	margin-left: -20px;
 	margin-bottom: -20px;
 }
-.card-img-overlay{
+.panel-img-overlay{
 	&.ov-primary{  background: rgba($primary, .7) !important;}
 	&.ov-success{  background: rgba($success, .7) !important;}
 	&.ov-danger{  background: rgba($danger, .7) !important;}
