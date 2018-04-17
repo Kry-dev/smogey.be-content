@@ -1,26 +1,23 @@
 .card-list{
-	display: flex;
+	display: block;
 	width: 100%;
 }
 .card{
 	border-radius: 0;
 	border: 0;
 	background: $gray;
-	//min-height: 300px;
+	min-height: 280px;
 	&-header{
 		border-bottom: 0;
 	}
-	&-title{
-		margin-bottom: 0;
-	}
 	&-body{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+		display: block;
+		text-align: center;
 		img{
-			display: flex;
+			display: block;
+			min-height: 110px;
 			max-height: 110px;
+			margin: 0 auto;
 		}
 	}
 	&-header,
@@ -34,11 +31,10 @@
 		color: $white;
 		font-size: 14px;
 		text-transform: capitalize;
-		justify-content: center;
+		height: 40px;
+		text-align: center;
 	}
 	&-img-overlay{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		display: block;
 	}
 }

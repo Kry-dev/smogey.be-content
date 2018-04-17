@@ -7,8 +7,9 @@
   "author": "yaroslavkryvda@gmail.com",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^3.3.7",
     "bootstrap-calendar": "^0.2.4",
+    "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
     "font-awesome": "^4.7.0",
@@ -37,6 +38,6 @@
   },
   "dependencies": {
     "bxslider": "^4.2.13",
-    "jquery": "^3.2.1"
+    "jquery": "^1.9.1"
   }
 }
