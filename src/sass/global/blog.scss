@@ -1,6 +1,10 @@
 .blog-list{
 	display: block;
 	width: 100%;
+	.panel{
+		border-radius: 0;
+		box-shadow: none;
+	}
 }
 .blog {
 	display: block;
