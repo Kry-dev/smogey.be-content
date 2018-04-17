@@ -2,7 +2,7 @@
 	display: block;
 	width: 100%;
 }
-.card{
+.panel{
 	border-radius: 0;
 	border: 0;
 	background: $gray;
@@ -29,7 +29,6 @@
 	}
 	.btn{
 		color: $white;
-		font-size: 14px;
 		text-transform: capitalize;
 		height: 40px;
 		text-align: center;
