@@ -2,7 +2,6 @@
 html(lang="en")
 	include global/head
 	+head('map')
-	script(src="assets/js/map.js")
 	include mixin/all-mixin
 	body.homepage
 		.wrapper
@@ -12,38 +11,40 @@ html(lang="en")
 						.map
 							.container-fluid.p-0
 								.row.mb-40
-									.col-md-4.pl-0
+									.col-md-4.col-sm-12.pl-md-0
 										form(action='', method='post')#initiv-search.initiv-search
 											input.form-control(type='text', size='60', placeholder="Rechercher...")
 											button.btn.btn-search(type='submit')
 												i.fa.fa-search
 										include global/map-sidebar
-									.col-md-8.pr-0
+									.col-md-8.col-sm-12.pr-md-0
 										include global/map-content
-		// Modal
+		//// Modal
 		#mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
 			.modal-dialog(role='document')
 				.modal-content
 					.modal-header.bg-pink.text-white
-						h5.modal-title Naturalia Tolbiac
+						h4.modal-title Naturalia Tolbiac
 						button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
 							span.fa.fa-close.text-white(aria-hidden='true')
 					.modal-body
-						.d-flex.justify-content-between.mb-20
-							img(src='assets/img/map/map-modal-01.jpg')
-							img(src='assets/img/map/map-modal-02.jpg')
+						.row.mb-20
+							.col-sm-6.mb-3
+								img.w-100(src='assets/img/map/map-modal-01.jpg')
+							.col-sm-6.mb-3
+								img.w-100(src='assets/img/map/map-modal-03.jpg')
 						p.mb-0
-							| Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles n’a aucunement été modifié. Certains habitants confondent certainement les dates de ce ramassage avec l’enlèvement des PMC et des papiers réalisés par Fost Plus, dont certaines tournées ont récemment.
-					.modal-footer.border-0.justify-content-start
+							| Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.
+					.modal-footer.border-0
 						button.btn.btn-primary(type='button') En savoir plus
 
 
 		// Modal
-		#plus-initiative.modal.fade.show(tabindex='-1', role='dialog', aria-labelledby='plus-initiativeTitle', aria-hidden='true')
+		#plus-initiative.modal.fade(tabindex='-1', role='dialog', aria-labelledby='plus-initiativeTitle', aria-hidden='true')
 			.modal-dialog(role='document')
 				form.modal-content.plus-init-form
 					.modal-header.bg-pink.text-white
-						h5.modal-title Ajouter une initiative
+						h4.modal-title Ajouter une initiative
 						button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
 							span.fa.fa-close.text-white(aria-hidden='true')
 					.modal-body
@@ -67,9 +68,8 @@ html(lang="en")
 								| Localiser
 						.form-group
 							#map_modal(style='width:100%; height:300px')
-					.modal-footer.border-0.justify-content-center
+					.modal-footer.border-0
 						button.btn.btn-pink Ajouter
-		script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBcnL4h84dY1OeZV5yOV94LgZzRHjO8Wvw&libraries=places')
 
 
 
