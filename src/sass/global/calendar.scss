@@ -3,6 +3,21 @@
 	width: 100%;
 }
 .calendar{
+	&-header{
+		position: relative;
+		button{
+			position: absolute;
+			background: transparent;
+			color: $white;
+			top: 5px;
+			&.pull-left{
+				left: 0;
+			}
+			&.pull-right{
+				right: 0;
+			}
+		}
+	}
 	table {
 		width: 100%;
 		box-sizing: border-box;
@@ -12,12 +27,6 @@
 		display: table;
 		border-collapse: separate;
 	}
-
-	th, td {
-		//border: 1px solid rgba(255,255,255,0.1);
-		//box-sizing: border-box;
-	}
-
 	th {
 		text-transform: uppercase;
 		font-size:10px;
@@ -25,7 +34,6 @@
 		padding: 10px;
 		letter-spacing: 1px;
 	}
-
 	td {
 		width: 14.285%;
 		transition: all 0.3s;
@@ -83,7 +91,7 @@
 	}
 	&-tooltip{
 		position: absolute;
-		display: block;
+		display: none;
 		height: 200px;
 		width: 300px;
 		z-index: 100;

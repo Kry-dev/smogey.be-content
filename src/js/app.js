@@ -15,5 +15,12 @@ $( document ).ready(function(){
         nextArrow: '<button class="right"><i class="fa fa-arrow-right"></i></button>',
         prevArrow: '<button class="left"><i class="fa fa-arrow-left"></i></button>'
     });
-
+    if($('.calendar-tooltip')){
+        $(this).hide();
+    }
+    $('.events-item').click(function (e) {
+        e.preventDefault();
+        var tooltip = $(this).find('.calendar-tooltip');
+        $(tooltip).toggle();
+    })
 });
