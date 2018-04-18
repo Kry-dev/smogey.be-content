@@ -1,6 +1,12 @@
 .modal{
 	&-dialog{
 		min-width: 600px;
+		@media (max-width: $screen-sm-max){
+			min-width: inherit;
+			.panel{
+				min-height: inherit;
+			}
+		}
 	}
 	&-header{
 		border-bottom: 0;

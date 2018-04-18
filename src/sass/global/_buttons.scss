@@ -28,6 +28,9 @@
 		display: block;
 		line-height: 16px;
 	}
+	@media (max-width: $screen-sm-max){
+		font-size: 14px;
+	}
 }
 .btn-search{
 	position: absolute;
