@@ -7,6 +7,8 @@
 }
 .breadcrumb{
 	border-radius: 0;
+	white-space: nowrap;
+	overflow: hidden;
 	&-item{
 		font-size: 14px;
 		@media (max-width: $screen-sm-max){

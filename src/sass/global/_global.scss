@@ -58,6 +58,19 @@ article{
 	margin-left: -20px;
 	margin-bottom: -20px;
 }
+.ab-b-0,
+.ab_lt-10,
+.ab_rt-plus-10,
+.ab_rb-10,
+.ab_r-0_t-15 {
+	@media (max-width: $screen-sm-max){
+		position: relative;
+		left: auto;
+		right: auto;
+		top: auto;
+		bottom: auto;
+	}
+}
 .panel-img-overlay{
 	&.ov-primary{  background: rgba($primary, .7) !important;}
 	&.ov-success{  background: rgba($success, .7) !important;}
