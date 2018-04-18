@@ -9,6 +9,9 @@
 	border-radius: 0;
 	&-item{
 		font-size: 14px;
+		@media (max-width: $screen-sm-max){
+			font-size: 12px;
+		}
 	}
 	a{
 		color: inherit;
