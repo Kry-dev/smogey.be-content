@@ -1,16 +1,14 @@
 .calendar{
-	display: flex;
-	flex-direction: column;
+	display: block;
 	background: transparent;
 	box-sizing: border-box;
 	background: $gray;
 	&-header{
-		display: flex;
+		display: block;
 		width: 100%;
-		flex-direction: column;
 	}
 	&-day{
-		display: flex;
+		display: block;
 		flex-direction: column;
 		justify-content: space-between;
 		min-height: 80px;
@@ -20,7 +18,7 @@
 		.date{  font-size: 1rem;  }
 	}
 	&-events{
-		display: flex;
+		display: block;
 		flex-direction: row-reverse;
 		width: 100%;
 		justify-content: flex-start;
