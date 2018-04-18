@@ -22,6 +22,10 @@
 		font-size: .9rem;
 		padding: 0 2rem;
 		margin-bottom: 0;
+
+		@media (max-width: $screen-sm-max){
+			padding: 0;
+		}
 	}
 	&-content{
 		overflow: hidden;
@@ -86,5 +90,10 @@
 		display: block;
 		max-width: 100px;
 		text-align: center;
+	}
+	h2{
+		@media (max-width: $screen-sm-max){
+			font-size:$font-size-h3;
+		}
 	}
 }
