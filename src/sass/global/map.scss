@@ -41,7 +41,7 @@ $border-radius: 0;
 		display: block;
 		width: 32px;
 		height: 32px;
-		background: url('/assets/img/map/map-nav-sprite.png') no-repeat;
+		background: url('../img/map/map-nav-sprite.png') no-repeat;
 		background-position: 0 0;
 		&-2{background-position: -32px 0 ;}
 		&-3{background-position: -64px 0 ;}
@@ -110,6 +110,7 @@ $border-radius: 0;
 			right: 5px;
 			width: 30px;
 			height: 30px;
+			margin: 0;
 			&:before{
 				display: flex;
 				flex-direction: row;

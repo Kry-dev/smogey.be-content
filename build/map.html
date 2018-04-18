@@ -10,11 +10,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
       <!--styles-->
       <link rel="stylesheet" type="text/css" href="assets/css/app.min.css"/>
-      <script src="//code.jquery.com/jquery-1.10.0.min.js"></script>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcnL4h84dY1OeZV5yOV94LgZzRHjO8Wvw&amp;libraries=places"></script>
       <script src="assets/js/bundle.js"></script>
     </head>
-  <script src="assets/js/map.js"></script>
   <!--card-text-->
   <!--calendar-tooltip-->
   <body class="homepage">
@@ -25,7 +25,7 @@
             <div class="map">
               <div class="container-fluid p-0">
                 <div class="row mb-40">
-                  <div class="col-md-4 pl-0">
+                  <div class="col-md-4 col-sm-12 pl-md-0">
                     <form class="initiv-search" action="" method="post" id="initiv-search">
                       <input class="form-control" type="text" size="60" placeholder="Rechercher..."/>
                       <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
@@ -36,7 +36,7 @@
                             <div class="map-filter-btn map-filter-btn-1"></div></a></li>
                         <li class="nav-item"><a class="nav-link" href="#map-tab-2" data-toggle="tab" role="tab" aria-controls="map-tab-2">
                             <div class="map-filter-btn map-filter-btn-2"></div></a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#map-tab-3" data-toggle="tab" role="tab" aria-controls="map-tab-3">
+                        <li class="nav-item"><a class="nav-link" href="#map-tab-3" data-toggle="tab" role="tab" aria-controls="map-tab-3">
                             <div class="map-filter-btn map-filter-btn-3"></div></a></li>
                         <li class="nav-item"><a class="nav-link" href="#map-tab-4" data-toggle="tab" role="tab" aria-controls="map-tab-4">
                             <div class="map-filter-btn map-filter-btn-4"></div></a></li>
@@ -46,21 +46,15 @@
                           <div class="tab-pane-header">
                             <h4 class="tab-pane-title">Waste reducing</h4>
                           </div>
-                          <div class="d-flex bg-light flex-column">
-                            <p>Aenean sed lacus id mi scelerisque tristique. Nunc sed ex sed turpis fringilla aliquet in in neque. Praesent posuere, neque rhoncus sollicitudin fermentum, erat ligula volutpat dui, nec dapibus ligula lorem ac mauris. Etiam et leo venenatis purus pharetra dictum.</p>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin tempor mi ut risus laoreet molestie. Duis augue risus, fringilla et nibh ac, convallis cursus purus. Suspendisse potenti. Praesent pretium eros eleifend posuere facilisis. Proin ut magna vitae nulla suscipit eleifend. Ut bibendum pulvinar sapien, vel tristique felis scelerisque et. Sed elementum sapien magna, placerat interdum lacus placerat ut. Integer varius, ligula bibendum laoreet sollicitudin, eros metus fringilla lectus, quis consequat nisl nibh ut nisi. Aenean dignissim, nibh ac fermentum condimentum, ante nisl rutrum sapien, at commodo eros sapien vulputate arcu. Fusce neque leo, blandit nec lectus eu, vestibulum commodo tellus. Aliquam sem libero, tristique at condimentum ac, luctus nec nulla.</p>
-                          </div>
+                          <div class="d-block bg-light"></div>
                         </div>
                         <div class="tab-pane fade" id="map-tab-2" role="tabpanel">
                           <div class="tab-pane-header">
                             <h4 class="tab-pane-title">Repair cafe</h4>
                           </div>
-                          <div class="d-flex bg-light flex-column">
-                            <p>Aenean pharetra risus quis placerat euismod. Praesent mattis lorem eget massa euismod sollicitudin. Donec porta nulla ut blandit vehicula. Mauris sagittis lorem nec mauris placerat, et molestie elit vehicula. Donec libero ex, condimentum et mi dapibus, euismod ornare ligula.</p>
-                            <p>In faucibus tempus ante, et tempor magna luctus id. Ut a maximus ipsum. Duis eu velit nec libero pretium pellentesque. Maecenas auctor hendrerit pulvinar. Donec sed tortor interdum, sodales elit vel, tempor turpis. In tristique vestibulum eros vel congue. Vivamus maximus posuere fringilla. Nullam in est commodo, tristique ligula eu, tincidunt enim. Duis iaculis sodales lectus vitae cursus.</p>
-                          </div>
+                          <div class="d-block bg-light"></div>
                         </div>
-                        <div class="tab-pane fade show active" id="map-tab-3" role="tabpanel">
+                        <div class="tab-pane fade" id="map-tab-3" role="tabpanel">
                           <div class="tab-pane-header">
                             <h4 class="tab-pane-title">Economie locale</h4>
                           </div>
@@ -92,15 +86,12 @@
                         <div class="tab-pane fade" id="map-tab-4" role="tabpanel">
                           <div class="tab-pane-header">
                             <h4 class="tab-pane-title">Dolor</h4>
-                            <div class="d-flex bg-light flex-column">
-                              <p>Aliquam hendrerit nunc vitae nisi efficitur, eu porta sem aliquam. Aenean tincidunt mi sed mi sodales bibendum. Proin dolor ipsum, mollis venenatis velit eu, iaculis laoreet mi. Mauris eget egestas felis, sit amet finibus nunc. Aliquam non dui sit amet erat auctor mollis ac eget ante. Quisque at quam augue. Nulla dignissim, augue nec cursus consequat, mi nulla efficitur augue, vel fringilla turpis quam eu nunc. Quisque rutrum vehicula lacus sodales molestie. Mauris vel felis sit amet erat maximus cursus ut a velit. In hac habitasse platea dictumst. Vestibulum vel neque sit amet nisl finibus fermentum.</p>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-8 pr-0">
+                  <div class="col-md-8 col-sm-12 pr-md-0">
                     <div class="map-content">
                       <div class="btn btn-warning" role="button">Retour</div>
                       <button class="btn btn-pink" type="button" data-toggle="modal" data-target="#plus-initiative"><i class="fa fa-plus-circle"></i>Ajouter une initiative</button>
@@ -114,30 +105,33 @@
         </div>
       </section>
     </div>
-    <!-- Modal-->
+    <!--// Modal-->
     <div class="modal fade" id="mapMarkerModal" tabindex="-1" role="dialog" aria-labelledby="mapMarkerModalTitle" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header bg-pink text-white">
-            <h5 class="modal-title">Naturalia Tolbiac</h5>
+            <h4 class="modal-title">Naturalia Tolbiac</h4>
             <button class="btn-close" type="button" data-dismiss="modal" aria-label="Close"><span class="fa fa-close text-white" aria-hidden="true"></span></button>
           </div>
           <div class="modal-body">
-            <div class="d-flex justify-content-between mb-20"><img src="assets/img/map/map-modal-01.jpg"/><img src="assets/img/map/map-modal-02.jpg"/></div>
-            <p class="mb-0">Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles n’a aucunement été modifié. Certains habitants confondent certainement les dates de ce ramassage avec l’enlèvement des PMC et des papiers réalisés par Fost Plus, dont certaines tournées ont récemment.</p>
+            <div class="row mb-20">
+              <div class="col-sm-6 mb-3"><img class="w-100" src="assets/img/map/map-modal-01.jpg"/></div>
+              <div class="col-sm-6 mb-3"><img class="w-100" src="assets/img/map/map-modal-03.jpg"/></div>
+            </div>
+            <p class="mb-0">Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.</p>
           </div>
-          <div class="modal-footer border-0 justify-content-start">
+          <div class="modal-footer border-0">
             <button class="btn btn-primary" type="button">En savoir plus</button>
           </div>
         </div>
       </div>
     </div>
     <!-- Modal-->
-    <div class="modal fade show" id="plus-initiative" tabindex="-1" role="dialog" aria-labelledby="plus-initiativeTitle" aria-hidden="true">
+    <div class="modal fade" id="plus-initiative" tabindex="-1" role="dialog" aria-labelledby="plus-initiativeTitle" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <form class="modal-content plus-init-form">
           <div class="modal-header bg-pink text-white">
-            <h5 class="modal-title">Ajouter une initiative</h5>
+            <h4 class="modal-title">Ajouter une initiative</h4>
             <button class="btn-close" type="button" data-dismiss="modal" aria-label="Close"><span class="fa fa-close text-white" aria-hidden="true"></span></button>
           </div>
           <div class="modal-body">
@@ -161,12 +155,11 @@
               <div id="map_modal" style="width:100%; height:300px;"></div>
             </div>
           </div>
-          <div class="modal-footer border-0 justify-content-center">
+          <div class="modal-footer border-0">
             <button class="btn btn-pink">Ajouter</button>
           </div>
         </form>
       </div>
     </div>
-    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcnL4h84dY1OeZV5yOV94LgZzRHjO8Wvw&amp;libraries=places"></script>
   </body>
 </html>
