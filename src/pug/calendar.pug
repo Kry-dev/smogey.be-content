@@ -10,10 +10,10 @@ html(lang="en")
                 .container
                     article
                         .calendar-wrap
-                            .container-fluid.p-md-0
+                            .container-fluid
                                 .row.mb-20
                                     .col-md-12.px-0
-                                        .clearfix.bg-warning.p-3
+                                        .clearfix.bg-warning.p-2
                                             h4.d-inline-block.text-white.float-left Réduction des déchets
                                             .d-inline-block.btn.btn-outline-warning.float-right(role="button") Retour
                                 .row.mb-20
@@ -44,11 +44,6 @@ html(lang="en")
                                                     span.number 5
                                                 td.day
                                                     span.number 6
-                                                    .events
-                                                        a(href="#").events-item.bg-primary
-                                                        a(href="#").events-item.bg-pink
-                                                        a(href="#").events-item.bg-warning
-
                                             tr
                                                 td.day
                                                     span.number 7
@@ -73,6 +68,11 @@ html(lang="en")
                                                     span.number 16
                                                 td.day
                                                     span.number 17
+                                                    .events
+                                                        a.events-item.bg-primary
+                                                            +calendar-tooltip('#mapMarkerModal')
+                                                        a.events-item.bg-pink(href='#plus-initiative', data-toggle='modal')
+                                                        a.events-item.bg-warning(href='#mapMarkerModal-02', data-toggle='modal')
                                                 td.day
                                                     span.number 18
                                                 td.day
@@ -130,68 +130,68 @@ html(lang="en")
                                         i.fa.fa-plus-circle
                                         | Voir toute les initiatives
 //// Modal
-//#mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
-//    .modal-dialog(role='document')
-//        .modal-content
-//            .modal-header.bg-pink.text-white
-//                h5.modal-title Naturalia Tolbiac
-//                button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
-//                    span.fa.fa-close.text-white(aria-hidden='true')
-//            .modal-body
-//                .d-flex.justify-content-between.mb-20
-//                    img(src='assets/img/map/map-modal-01.jpg')
-//                    img(src='assets/img/map/map-modal-03.jpg')
-//                p.mb-0
-//                    |Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.
-//            .modal-footer.border-0.justify-content-start
-//                button.btn.btn-primary(type='button') En savoir plus
+#mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
+    .modal-dialog(role='document')
+        .modal-content
+            .modal-header.bg-pink.text-white
+                h5.modal-title Naturalia Tolbiac
+                button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
+                    span.fa.fa-close.text-white(aria-hidden='true')
+            .modal-body
+                .d-flex.justify-content-between.mb-20
+                    img(src='assets/img/map/map-modal-01.jpg')
+                    img(src='assets/img/map/map-modal-03.jpg')
+                p.mb-0
+                    |Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.
+            .modal-footer.border-0.justify-content-start
+                button.btn.btn-primary(type='button') En savoir plus
 //
 //// Modal
-//#mapMarkerModal-02.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
-//    .modal-dialog(role='document')
-//        .modal-content
-//            .modal-header.bg-pink.text-white
-//                h5.modal-title Naturalia Tolbiac
-//                button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
-//                    span.fa.fa-close.text-white(aria-hidden='true')
-//            .modal-body
-//                .row
-//                    .col
-//                        p.mb-0
-//                            | Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.
-//
-//                    .col
-//                        .d-flex.justify-content-between.mb-20
-//                            img(src='assets/img/map/map-modal-03.jpg')
-//                .modal-footer.border-0.justify-content-start
-//                button.btn.btn-primary(type='button') En savoir plus
-//// Modal
-//#plus-initiative.modal.fade.show(tabindex='-1', role='dialog', aria-labelledby='plus-initiativeTitle', aria-hidden='true')
-//    .modal-dialog(role='document')
-//        form.modal-content.plus-init-form
-//            .modal-header.bg-pink.text-white
-//                h5.modal-title Ajouter une initiative
-//                button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
-//                    span.fa.fa-close.text-white(aria-hidden='true')
-//            .modal-body
-//                .form-group
-//                    i.fa.fa-user
-//                    input.form-control(id="init-title", type='text', placeholder='Titre')
-//                .form-group
-//                    i.fa.fa-pencil-square-o
-//                    input.form-control(id="init-descr", type='text', placeholder='Detail')
-//                .form-group
-//                    i.fa.fa-map-marker
-//                    input.form-control(id="pac-input", type='text', name='keyword' placeholder='Localisation')
-//                    button.btn.btn-warning.text-white
-//                        i.fa.fa-location-arrow
-//                        | Localiser
-//                .form-group
-//                    i.fa.fa-list-alt
-//                    input.form-control(id="init-commitment", type='text', placeholder='Quand')
-//
-//            .modal-footer.border-0.justify-content-center
-//                button.btn.btn-pink Ajouter
+#mapMarkerModal-02.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
+    .modal-dialog(role='document')
+        .modal-content
+            .modal-header.bg-pink.text-white
+                h5.modal-title Naturalia Tolbiac
+                button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
+                    span.fa.fa-close.text-white(aria-hidden='true')
+            .modal-body
+                .row
+                    .col
+                        p.mb-0
+                            | Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.
+
+                    .col
+                        .d-flex.justify-content-between.mb-20
+                            img(src='assets/img/map/map-modal-03.jpg')
+                .modal-footer.border-0.justify-content-start
+                button.btn.btn-primary(type='button') En savoir plus
+// Modal
+#plus-initiative.modal.fade(tabindex='-1', role='dialog', aria-labelledby='plus-initiativeTitle', aria-hidden='true')
+    .modal-dialog(role='document')
+        form.modal-content.plus-init-form
+            .modal-header.bg-pink.text-white
+                h5.modal-title Ajouter une initiative
+                button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
+                    span.fa.fa-close.text-white(aria-hidden='true')
+            .modal-body
+                .form-group
+                    i.fa.fa-user
+                    input.form-control(id="init-title", type='text', placeholder='Titre')
+                .form-group
+                    i.fa.fa-pencil-square-o
+                    input.form-control(id="init-descr", type='text', placeholder='Detail')
+                .form-group
+                    i.fa.fa-map-marker
+                    input.form-control(id="pac-input", type='text', name='keyword' placeholder='Localisation')
+                    button.btn.btn-warning.text-white
+                        i.fa.fa-location-arrow
+                        | Localiser
+                .form-group
+                    i.fa.fa-list-alt
+                    input.form-control(id="init-commitment", type='text', placeholder='Quand')
+
+            .modal-footer.border-0.justify-content-center
+                button.btn.btn-pink Ajouter
 
 
 

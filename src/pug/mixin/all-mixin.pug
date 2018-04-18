@@ -78,22 +78,21 @@ mixin card-text
 //calendar-tooltip
 mixin calendar-tooltip(link)
 	.calendar-tooltip
-		.calendar-tooltip-header.bg-pink.text-white
-			h4#map-tooltip-title.map-tooltip-title Naturalia Tolbiac
-		.calendar-tooltip-content
-			.calendar-tooltip-content-left
-				p
-					| 71, rue de Tolbiac,
-					br
-					|  PARIS 75013,
-					br
-					|  Magasin vrac
-				button.btn.btn-success(type='button', data-toggle='modal',
-				data-target=link)
-					| More
-					| information
-			.calendar-tooltip-content-right
-				img(src='assets/img/map/map-pin-01.png')
+		.panel-header.bg-pink.text-white.p-1
+			h4#map-tooltip-title.text-center Naturalia Tolbiac
+		.panel-content
+			.row.p-3
+				.col-xs-8
+					p
+						| 71, rue de Tolbiac,
+						br
+						|  PARIS 75013,
+						br
+						|  Magasin vrac
+					button.btn.btn-success.w-100.text-center(type='button', data-toggle='modal',data-target=link)
+						|  More information
+				.col-xs-4
+					img.img-responsive.m-auto(src='assets/img/calendar/pin-01.png')
 
 //- sprite
 include svg-sprite
