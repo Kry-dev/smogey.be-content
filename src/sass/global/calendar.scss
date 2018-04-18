@@ -1,170 +1,65 @@
-.calendar{
-	display: block;
-	background: transparent;
+table {
+	width: 100%;
 	box-sizing: border-box;
-	background: $gray;
-	&-header{
-		display: block;
-		width: 100%;
-	}
-	&-day{
-		display: block;
-		flex-direction: column;
-		justify-content: space-between;
-		min-height: 80px;
-		background: $white;
-		overflow: inherit;
-		&.border{  border: 2px solid $gray !important;  }
-		.date{  font-size: 1rem;  }
-	}
-	&-events{
-		display: block;
-		flex-direction: row-reverse;
-		width: 100%;
-		justify-content: flex-start;
-		align-items: flex-end;
-		flex: auto;
-		flex-wrap: wrap;
-	}
-	.event{
-		display: flex;
-		width: 15px;
-		height: 15px;
-		border-radius: 50%;
-		border: 2px solid $white;
-		margin-left: -4px;
-		z-index: 10;
-		position: relative;
-		&:hover,
-		&:focus{
-			cursor: pointer;
-			z-index: 15;
-			transform: scale(1.2);
-			.calendar-tooltip{
-				display: block;
-				transform: scale(.8);
-			}
-		}
-	}
-	.calendar-tooltip{
-		z-index: 1000;
-		border-radius: 5px;
-		position: absolute;
-		display: none;
-		width: 250px;
-		bottom: 0;
-		left: -125px;
-		min-height: 200px;
-		flex-direction: column;
-		background: $white;
-		-webkit-box-shadow: -2px 2px 68px -1px rgba(0,0,0,0.4);
-		-moz-box-shadow: -2px 2px 68px -1px rgba(0,0,0,0.4);
-		box-shadow: -2px 2px 68px -1px rgba(0,0,0,0.4);
-		&:after{
-			content: "\f0c8";
-			font-family: FontAwesome;
-			color: $white;
-			text-align: center;
-			width: 20px;
-			height: 20px;
-			font-size: 25px;
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			transform: rotate(45deg);
-		}
-		&-header{
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			padding: .5rem;
-			height: 50px;
-			border-radius: 5px 5px 0 0;
-		}
-		&-title{
-			font-size: 14px;
-			text-align: left;
-			margin-bottom: 0;
-		}
-		&-content{
-			padding: 1rem;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			width: 100%;
-			align-items: flex-start;
-			&-left{  width: 80% !important;  }
-			&-right{  width: 20% !important;
-				img{
-					width: 30px;
-					display: block;
-					margin: 0 auto;
-				}
-			}
-			p{
-				margin-bottom: 1rem;
-			}
-		}
-		.btn{
-			position: relative;
-			display: block;
-		}
-	}
-	.tab-content{
-		display: flex;
-		padding: 0 .5rem 1rem;
-		flex-direction: column;
-		width: 100%;
-		height: 100%;
-		&.active{  display: flex;  }
-	}
-	.form-group{
-		display: flex;
-		width: 100%;
-		background: $white;
-		flex-direction: row;
-		justify-content: space-between;
-		border: 0;
-		border-radius: 0;
-		padding: .75rem 2rem;
-		margin-bottom: 0;
-		position: relative;
-		.map-pin{
-			position: absolute;
-			left: 8px;
-			top: 10px;
-		}
-		label{
-			display: flex;
-			width: 100%;
-			justify-self: flex-start;
-			margin-bottom: 0;
-			&:hover,
-			&:focus{  cursor: pointer;  }
-		}
-		input.checkbox{
-			position: absolute;
-			right: 5px;
-			width: 30px;
-			height: 30px;
-			&:before{
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				width: 30px;
-				height: 30px;
-				background: $white;
-				content: "\f055";
-				color: $success;
-				font-size: 20px;
-				font-family: FontAwesome;
-				z-index: 100;
-			}
-			&:checked:before{
-				content: "\f056";
-				color: $danger;
-			}
-		}
-	}
+	background-color: #f4f3f3;
+	border-spacing: 4px;
+	border-color: transparent;
+	display: table;
+	border-collapse: separate;
 }
+
+th, td {
+	//border: 1px solid rgba(255,255,255,0.1);
+	//box-sizing: border-box;
+}
+
+th {
+	text-transform: uppercase;
+	font-size:10px;
+	font-weight:700;
+	padding: 10px;
+	letter-spacing: 1px;
+}
+
+td {
+	width: 14.285%;
+	transition: all 0.3s;
+	background: $white;
+	font-weight: 400;
+	font-size: 14px;
+	vertical-align: initial;
+	padding: 1.5% 0;
+	height: 75px;
+}
+
+.day:hover {
+	background-color: rgba(0,0,0,0.1);
+	cursor:pointer;
+}
+
+.today {
+	color: #FFF;
+	background-color: rgba(0,0,0,.25) !important;
+}
+
+span.number {
+	margin-left: 10% ;
+}
+
+span.event {
+	height: 4px;
+	background-color: rgba(0,0,0,.3);
+	display: block;
+	margin: 5px 10%;
+	border-radius: 2px;
+	background-color: #91c33b;
+}
+
+span.event-multiday {
+	margin: 5px -2px;
+	border-radius: 0;
+}
+span.event-multiday-start { margin-right: -4px;  }
+span.event-multiday-finish { margin-left: -4px;  }
+
+span.event-ghost { background-color:transparent; }
