@@ -34,8 +34,7 @@
 		border: 0;
 	}
 }
-.map .plus-init-form ,
-.calendar .plus-init-form {
+.plus-init-form {
 	.form-group {
 		padding: .75rem 1rem;
 		position: relative;
@@ -61,6 +60,7 @@
 		border-bottom: 2px solid $gray-500;
 		background: transparent;
 		padding-left: 2rem;
+		box-shadow: none;
 	}
 	.controls {
 		margin-top: 10px;

@@ -2,7 +2,6 @@
 html(lang="en")
     include global/head
     +head('Smogey Calendar')
-
     include mixin/all-mixin
     body.homepage
         .wrapper
@@ -17,9 +16,13 @@ html(lang="en")
                                             h4.d-inline-block.text-white.float-left Réduction des déchets
                                             .d-inline-block.btn.btn-outline-warning.float-right(role="button") Retour
                                 .row.mb-20
-                                    .calendar
+                                    #calendar.calendar
                                         .calendar-header.bg-success.p-3
+                                            button.btn.pull-left
+                                                i.fa.fa-arrow-left
                                             h4.text-white.text-center.m-0 January 2018
+                                            button.btn.pull-right
+                                                i.fa.fa-arrow-right
                                         table
                                             tr
                                                 th.day-name Sun
@@ -71,8 +74,10 @@ html(lang="en")
                                                     .events
                                                         a.events-item.bg-primary
                                                             +calendar-tooltip('#mapMarkerModal')
-                                                        a.events-item.bg-pink(href='#plus-initiative', data-toggle='modal')
-                                                        a.events-item.bg-warning(href='#mapMarkerModal-02', data-toggle='modal')
+                                                        a.events-item.bg-pink
+                                                            +calendar-tooltip('#mapMarkerModal-02')
+                                                        a.events-item.bg-warning
+                                                            +calendar-tooltip('#mapMarkerModal')
                                                 td.day
                                                     span.number 18
                                                 td.day
@@ -134,13 +139,15 @@ html(lang="en")
     .modal-dialog(role='document')
         .modal-content
             .modal-header.bg-pink.text-white
-                h5.modal-title Naturalia Tolbiac
+                h4.modal-title Naturalia Tolbiac
                 button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
                     span.fa.fa-close.text-white(aria-hidden='true')
             .modal-body
-                .d-flex.justify-content-between.mb-20
-                    img(src='assets/img/map/map-modal-01.jpg')
-                    img(src='assets/img/map/map-modal-03.jpg')
+                .row.mb-20
+                    .col-sm-6.mb-3
+                        img.w-100(src='assets/img/map/map-modal-01.jpg')
+                    .col-sm-6.mb-3
+                        img.w-100(src='assets/img/map/map-modal-03.jpg')
                 p.mb-0
                     |Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.
             .modal-footer.border-0.justify-content-start
@@ -151,26 +158,25 @@ html(lang="en")
     .modal-dialog(role='document')
         .modal-content
             .modal-header.bg-pink.text-white
-                h5.modal-title Naturalia Tolbiac
+                h4.modal-title Naturalia Tolbiac
                 button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
                     span.fa.fa-close.text-white(aria-hidden='true')
             .modal-body
                 .row
-                    .col
-                        p.mb-0
+                    .col-sm-6.mb-3
+                        p
                             | Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.
+                        button.btn.btn-primary(type='button') En savoir plus
+                    .col-sm-6.mb-3
+                        .d-block.mb-20
+                            img.w-100(src='assets/img/map/map-modal-03.jpg')
 
-                    .col
-                        .d-flex.justify-content-between.mb-20
-                            img(src='assets/img/map/map-modal-03.jpg')
-                .modal-footer.border-0.justify-content-start
-                button.btn.btn-primary(type='button') En savoir plus
 // Modal
 #plus-initiative.modal.fade(tabindex='-1', role='dialog', aria-labelledby='plus-initiativeTitle', aria-hidden='true')
     .modal-dialog(role='document')
         form.modal-content.plus-init-form
             .modal-header.bg-pink.text-white
-                h5.modal-title Ajouter une initiative
+                h4.modal-title Ajouter une initiative
                 button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
                     span.fa.fa-close.text-white(aria-hidden='true')
             .modal-body
@@ -192,6 +198,5 @@ html(lang="en")
 
             .modal-footer.border-0.justify-content-center
                 button.btn.btn-pink Ajouter
-
 
 
