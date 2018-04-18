@@ -1,70 +1,102 @@
-table {
-	width: 100%;
-	box-sizing: border-box;
-	background-color: #f4f3f3;
-	border-spacing: 4px;
-	border-color: transparent;
-	display: table;
-	border-collapse: separate;
-}
-
-th, td {
-	//border: 1px solid rgba(255,255,255,0.1);
-	//box-sizing: border-box;
-}
-
-th {
-	text-transform: uppercase;
-	font-size:10px;
-	font-weight:700;
-	padding: 10px;
-	letter-spacing: 1px;
-}
-
-td {
-	width: 14.285%;
-	transition: all 0.3s;
-	background: $white;
-	font-weight: 400;
-	font-size: 14px;
-	vertical-align: initial;
-	padding: 1.5% 0;
-	height: 75px;
-}
-.day{
-	position: relative;
-	&:hover{
-		background-color: rgba(0,0,0,0.1);
-		cursor:pointer;
-	}
-	&.today{
-		color: #FFF;
-		background-color: rgba(0,0,0,.25) !important;
-	}
-	.number {
-		margin-left: 10% ;
-	}
-}
-
-.events {
-	position: absolute;
-	width: 100%;
-	height: 15px;
+.calendar-wrap{
 	display: block;
-	bottom: 0;
-	right: 0;
-	&-item{
-		float: right;
-		display: inline-block;
-		width: 15px;
+	width: 100%;
+}
+.calendar{
+	table {
+		width: 100%;
+		box-sizing: border-box;
+		background-color: #f4f3f3;
+		border-spacing: 4px;
+		border-color: transparent;
+		display: table;
+		border-collapse: separate;
+	}
+
+	th, td {
+		//border: 1px solid rgba(255,255,255,0.1);
+		//box-sizing: border-box;
+	}
+
+	th {
+		text-transform: uppercase;
+		font-size:10px;
+		font-weight:700;
+		padding: 10px;
+		letter-spacing: 1px;
+	}
+
+	td {
+		width: 14.285%;
+		transition: all 0.3s;
+		background: $white;
+		font-weight: 400;
+		font-size: 14px;
+		vertical-align: initial;
+		padding: 1.5% 0;
+		height: 75px;
+	}
+	.day{
+		position: relative;
+		&:hover{
+			background-color: rgba(0,0,0,0.1);
+			cursor:pointer;
+		}
+		&.today{
+			color: #FFF;
+			background-color: rgba(0,0,0,.25) !important;
+		}
+		.number {
+			margin-left: 10% ;
+		}
+	}
+
+	.events {
+		//position: absolute;
+		width: 100%;
 		height: 15px;
-		background: transparent;
-		border-radius: 50%;
-		border: 2px solid $white;
-		margin-left: -5px;
-		&:hover,
-		&:focus{
-			transform: scale(1.2);
+		display: block;
+		padding-top: 20px;
+		//bottom: 0;
+		//right: 0;
+		&-item{
+			float: right;
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			background: transparent;
+			border-radius: 50%;
+			border: 2px solid $white;
+			margin-left: -5px;
+			vertical-align: bottom;
+			color: inherit;
+			&:hover,
+			&:focus{
+				width: 18px;
+				height: 18px;
+				margin-top: -3px;
+				outline: 0;
+				text-decoration: none;
+				color: inherit;
+			}
+		}
+	}
+	&-tooltip{
+		position: absolute;
+		display: block;
+		height: 200px;
+		width: 300px;
+		z-index: 500;
+		bottom: 40px;
+		left: auto;
+		transform: translate(-150px);
+		background: $white;
+		color: inherit;
+		border-radius: 4px;
+		box-shadow: 0px 0px 66px 0px rgba(0,0,0,0.39);
+		.panel-header{
+			border-radius: 4px 4px 0 0;
 		}
 	}
 }
+
