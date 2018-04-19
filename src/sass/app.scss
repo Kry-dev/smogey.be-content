@@ -30,6 +30,7 @@
 //@import "../../node_modules/bootstrap/scss/functions";
 //@import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/font-awesome/scss/font-awesome";
+@import "https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css";
 @import "../../node_modules/fg-select-css/src/select-css";
 @import "../../node_modules/fg-select-css/src/select-css-arrow";
 
@@ -54,5 +55,6 @@
 @import "global/blog";
 @import "global/map";
 @import "global/calendar";
+@import "global/daterpicker";
 
 @import "global/header";

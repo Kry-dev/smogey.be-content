@@ -31,6 +31,9 @@ $( document ).ready(function(){
             }
         ]
     });
+
+
+
     if($('.calendar-tooltip')){
         $(this).hide();
     }
