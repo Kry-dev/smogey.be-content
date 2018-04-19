@@ -2,6 +2,21 @@
 	display: block;
 	width: 100%;
 	overflow: hidden;
+	@media (max-width: $screen-sm-max){
+		h1,
+		h2,
+		h3,
+		h4,
+		h5{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			width: 50%;
+		}
+		.panel-title{
+			text-align: center;
+			width: 100%;
+		}
+	}
 }
 .panel{
 	border-radius: 0;
