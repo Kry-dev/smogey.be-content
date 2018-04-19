@@ -16,15 +16,21 @@ $border-radius: 0;
 			white-space: nowrap;
 			border-radius: 0;
 			border: 0;
-			padding: 1rem;
+			padding: 10px;
 			&:hover {
 				background-color: lighten($color-border, 10%);
 				border-color: transparent;
+				border: 0;
 			}
 		}
 		.nav-link.active {
 				border-left: 5px solid $primary;
 		}
+	}
+	li.active > a,
+	li.active > a:hover,
+	li.active > a:focus{
+			border: 0;
 	}
 }
 
@@ -32,10 +38,27 @@ $border-radius: 0;
 	min-height: 50vh;
 	width: 100%;
 	&-filter{
-		height: 100%;
+		height: 540px;
 		width: 100%;
-		display: flex;
-		flex-direction: row;
+		display: block;
+		@media (max-width: $screen-md-min){
+			height: auto;
+			min-height: 310px;
+		}
+		.nav-tabs{
+			display: inline-block;
+			width: 62px;
+			height: 100%;
+			float: left;
+			padding-left: 10px;
+			@media (max-width: $screen-md-min){
+				display: block;
+				width: 100%;
+				height: auto;
+				float: none;
+				padding: 0;
+			}
+		}
 	}
 	&-filter-btn{
 		display: block;
@@ -68,17 +91,30 @@ $border-radius: 0;
 		}
 	}
 	.tab-pane{
-		&-header{  padding: 1rem;  }
+		height: 100%;
+		&-header{  padding: 1rem;
+			height: 60px; }
 		&-title{  margin-bottom: 0;}
+		.list-group{
+			height: calc(100% - 60px);
+			fieldset{
+				height: 100%;
+				background: $white;
+			}
+		}
 	}
 	.tab-content{
-		display: flex;
+		display: inline-block;
 		padding: 0 .5rem 1rem;
-		flex-direction: column;
-		width: 100%;
+		width: 80%;
 		height: 100%;
 		&.active{
-			display: flex;
+			display: block;
+		}
+		@media (max-width: $screen-md-min) {
+			display: block;
+			width: 100%;
+			height: auto;
 		}
 	}
 	.form-group{
@@ -164,6 +200,9 @@ $border-radius: 0;
 	.gm-style-iw {
 		overflow: visible !important;
 		width: 360px !important;
+		@media (max-width: $screen-sm-max){
+			width: 200px !important;
+		}
 		div {
 			overflow: visible !important;
 			width: 100%;
