@@ -10,14 +10,14 @@ html(lang="en")
 					article
 						.map
 							.container-fluid.p-0
-								.row.mb-40
-									.col-md-4.col-sm-12.pl-md-0
+								.row.row-eq-height.mb-40
+									.col-md-4.col-sm-12
 										form(action='', method='post')#initiv-search.initiv-search
 											input.form-control(type='text', size='60', placeholder="Rechercher...")
 											button.btn.btn-search(type='submit')
 												i.fa.fa-search
 										include global/map-sidebar
-									.col-md-8.col-sm-12.pr-md-0
+									.col-md-8.col-sm-12
 										include global/map-content
 		//// Modal
 		#mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
