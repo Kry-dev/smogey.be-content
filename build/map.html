@@ -9,9 +9,12 @@
       <!--viewport-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
       <!--styles-->
+      <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
       <link rel="stylesheet" type="text/css" href="assets/css/app.min.css"/>
       <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcnL4h84dY1OeZV5yOV94LgZzRHjO8Wvw&amp;libraries=places"></script>
       <script src="assets/js/bundle.js"></script>
     </head>
@@ -145,7 +148,7 @@
               <input class="form-control" id="init-type" type="text" placeholder="Précisions"/>
             </div>
             <div class="form-group"><i class="fa fa-list-alt"></i>
-              <input class="form-control" id="init-commitment" type="text" placeholder="Engagements citoyens "/>
+              <input class="form-control" id="datetimepicker4" type="text" placeholder="Engagements citoyens "/>
             </div>
             <div class="form-group"><i class="fa fa-map-marker"></i>
               <input class="form-control" id="pac-input" type="text" name="keyword" placeholder="Adresse complète"/>
@@ -160,6 +163,11 @@
           </div>
         </form>
       </div>
+      <script>
+        $(function () {
+        	$('#datetimepicker4').datetimepicker();
+        });
+      </script>
     </div>
   </body>
 </html>

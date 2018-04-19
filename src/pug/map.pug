@@ -59,7 +59,7 @@ html(lang="en")
 							input.form-control(id="init-type", type='text', placeholder='Précisions')
 						.form-group
 							i.fa.fa-list-alt
-							input.form-control(id="init-commitment", type='text', placeholder='Engagements citoyens ')
+							input.form-control(id="datetimepicker4", type='text', placeholder='Engagements citoyens ')
 						.form-group
 							i.fa.fa-map-marker
 							input.form-control(id="pac-input", type='text', name='keyword' placeholder='Adresse complète')
@@ -70,7 +70,10 @@ html(lang="en")
 							#map_modal(style='width:100%; height:300px')
 					.modal-footer.border-0
 						button.btn.btn-pink Ajouter
-
+			script.
+				$(function () {
+					$('#datetimepicker4').datetimepicker();
+				});
 
 
 
