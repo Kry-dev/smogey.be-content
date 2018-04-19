@@ -11,8 +11,25 @@ $( document ).ready(function(){
         arrows: true,
         slidesToShow: 6,
         slidesToScroll: 1,
+        rows: 1,
         nextArrow: '<button class="right"><i class="fa fa-arrow-right"></i></button>',
-        prevArrow: '<button class="left"><i class="fa fa-arrow-left"></i></button>'
+        prevArrow: '<button class="left"><i class="fa fa-arrow-left"></i></button>',
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 3,
+                    rows:2
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 2,
+                    rows:2
+                }
+            }
+        ]
     });
     if($('.calendar-tooltip')){
         $(this).hide();

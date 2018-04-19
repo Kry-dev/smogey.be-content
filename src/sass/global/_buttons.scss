@@ -7,6 +7,9 @@
 	text-decoration: none;
 	border-radius: 0;
 	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 	.fa{
 		font-size: 20px;
 		margin-right: 10px;
@@ -15,8 +18,8 @@
 		vertical-align: middle;
 	}
 	span{
-		vertical-align: bottom;
-		vertical-align: -webkit-baseline-middle;
+		line-height: 24px;
+		text-overflow: ellipsis;
 	}
 	&:focus,
 	&:active,
