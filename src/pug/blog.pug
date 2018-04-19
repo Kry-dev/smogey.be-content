@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 html(lang="en")
 	include global/head
-	+head('Initiatives sur Tournai')
+	+head('Blog')
 	include mixin/all-mixin
 	body.homepage
 		.wrapper
@@ -10,106 +10,124 @@ html(lang="en")
 					article
 						.blog-list
 							.container-fluid.p-md-0
-								.row.mb-40
-									.col-md-3.col-xs-12.pl-md-0.mb-20
+								.row.mb-20
+									.col-md-3.col-sm-12.pl-sm-3.pl-md-0.mb-20
 										form(action='', method='post')#initiv-search.initiv-search
 											input.form-control(type='text', size='60', placeholder="Rechercher...")
 											button.btn.btn-search(type='submit')
 												i.fa.fa-search
-									.col-md-9.col-xs-12.pr-md-0
+									.col-md-9.col-sm-12.pr-md-0
 										nav(aria-label='breadcrumb').bread
 											ol.breadcrumb.mb-0
 												li.breadcrumb-item
 													a(href='#') Acceuil
 												li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
-											.btn.btn-warning(role="button") Retour
-								.row.mb-40
-									.blog.bg-gray.mx-md-3.w-100
-										.row
-											.col-md-6.col-xs-12.pl-md-0
-												a(href="#").blog-img.ab_r-0_t-15
-													img(src='assets/img/blog/blog-01.jpg')
-											.col-md-6.col-xs-12.pl-md-0
-												.panel
-													.panel-header.pb-0
-														.text-muted 08/02/2018  |  by Smogey
-													.panel-body.py-0.text-left
-														h2.text-uppercase.mt-0.text-left BIO ET VRAC, LA CONSOMMATION SELON LILI BULK
-														p.blog-text.text-left
-															| Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des bocaux consignés...
-													.panel-footer.pl-5
-														a.btn.btn-primary(href='#') Life
-								.row.mb-40
-									.blog.col-md-6.col-xs-12.pl-md-0
+											.btn.btn-warning(role="button")
+												span Retour
+								.row.mb-20.blog.line-left.bg-gray
+									.col-sm-6.col-xs-12.pl-md-0
+										a(href="#").blog-img.ab_r-0_t-15
+											img(src='assets/img/blog/blog-01.jpg')
+									.col-sm-6.col-xs-12.pr-md-0
+										.panel
+											.panel-header.pb-sm-0
+												.text-muted 08/02/2018  |  by Smogey
+											.panel-body.py-sm-0.text-left
+												h2.text-uppercase.mt-0.text-left BIO ET VRAC, LA CONSOMMATION SELON LILI BULK
+												p.blog-text.text-left
+													| Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des bocaux consignés...
+											.panel-footer.pl-5
+												a.btn.btn-primary(href='#')
+													span Life
+								.row
+									.blog.col-md-6.col-xs-12.pl-md-0.px-sm-0.mb-20
 										.panel.bg-dark.text-white
 											img.panel-img(src='assets/img/blog/blog-02.jpg', alt='panel image')
 											.panel-img-overlay.ov-warning
 												.panel-header
 													.text-white 08/02/2018  |  by Smogey
-												.panel-footer.ab-b-0
+												.panel-footer
 													h2.text-uppercase.text-left.mt-0 LE COMPOSTAGE POUR LES PERSONNES EN APPARTEMENT
 													p.panel-text.text-left Transformer nos déchets culinaires en un engrais 100 % naturel
-									.blog.col-md-6.col-xs-12.pr-md-0
+									.blog.col-md-6.col-xs-12.pr-md-0.px-sm-0.mb-40
 										.panel.bg-dark.text-white
 											img.panel-img(src='assets/img/blog/blog-03.jpg', alt='panel image')
 											.panel-img-overlay.ov-pink
 												.panel-header
 													.text-white 08/02/2018  |  by Smogey
-												.panel-footer.ab-b-0
+												.panel-footer
 													h2.text-uppercase ZÉRO DÉCHET : ÊTES-VOUS PRÊT À RELEVER LE DÉFI?
 													p.panel-text La consommation est synonyme de déchets...Comment les éviter?
 
-								.row.mb-40
-									.blog.bg-gray.mr-3
+								.row.mb-20
+									.blog.line-right.bg-gray.w-100
 										.row
-											.col-md-6.col-xs-12
+											.col-sm-6.col-xs-12.pr-sm-0.mb-20
 												.panel
-													.panel-header.text-left.pb-0
+													.panel-header
 														.text-muted 08/02/2018  |  by Smogey
-													.panel-body.py-0
-														h2.text-uppercase.text-left EN FINIR AVEC L'OBSOLESCENCE PROGRAMEÉ
-														.blog-text.text-left
+													.panel-body.py-sm-0.text-left
+														h2.text-uppercase.mt-0.text-left BIO ET VRAC, LA CONSOMMATION SELON LILI BULK
+														p.blog-text.text-left
 															| Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des bocaux consignés...
-													.panel-footer
-														a.btn.btn-success(href='#') Life
-											.col-md-6.col-xs-12.pr-md-0
+													.panel-footer.pl-5
+														a.btn.btn-primary(href='#')
+															span Life
+											.col-sm-6.col-xs-12
 												a(href="#").blog-img.ab_r-0_t-15
 													img(src='assets/img/blog/blog-04.jpg')
-								.row.mb-40
-									.blog.col-md-6.col-xs-12.pl-md-0
+								.row
+									.blog.col-md-6.col-xs-12.pl-md-0.px-sm-0.mb-20
 										.panel.bg-dark.text-white
 											img.panel-img(src='assets/img/blog/blog-02.jpg', alt='panel image')
 											.panel-img-overlay.ov-primary
 												.panel-header
 													.text-white 08/02/2018  |  by Smogey
-												.panel-footer.ab-b-0
-													h2.text-uppercase LE COMPOSTAGE POUR LES PERSONNES EN APPARTEMENT
-													p.panel-text Transformer nos déchets culinaires en un engrais 100 % naturel
-									.blog.col-md-6.col-xs-12.pr-md-0
+												.panel-footer
+													h2.text-uppercase.text-left.mt-0 LE COMPOSTAGE POUR LES PERSONNES EN APPARTEMENT
+													p.panel-text.text-left Transformer nos déchets culinaires en un engrais 100 % naturel
+									.blog.col-md-6.col-xs-12.pr-md-0.px-sm-0.mb-40
 										.panel.bg-dark.text-white
 											img.panel-img(src='assets/img/blog/blog-03.jpg', alt='panel image')
 											.panel-img-overlay.ov-success
 												.panel-header
 													.text-white 08/02/2018  |  by Smogey
-												.panel-footer.ab-b-0
+												.panel-footer
 													h2.text-uppercase ZÉRO DÉCHET : ÊTES-VOUS PRÊT À RELEVER LE DÉFI?
 													p.panel-text La consommation est synonyme de déchets...Comment les éviter?
-								.row.mb-40
-									.blog.bg-gray.mx-md-3.w-100
-										.row
-											.col-md-6.col-xs-12.pl-md-0
-												a(href="#").blog-img.ab_r-0_t-15
-													img(src='assets/img/blog/blog-01.jpg')
-											.col-md-6.col-xs-12.pl-md-0
-												.panel
-													.panel-header.pb-0
-														.text-muted 08/02/2018  |  by Smogey
-													.panel-body.py-0.text-left
-														h2.text-uppercase.mt-0.text-left BIO ET VRAC, LA CONSOMMATION SELON LILI BULK
-														p.blog-text.text-left
-															| Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des bocaux consignés...
-													.panel-footer.pl-5
-														a.btn.btn-primary(href='#') Life
+
+								.row.mb-20.blog.line-left.bg-gray
+									.col-sm-6.col-xs-12.pl-md-0
+										a(href="#").blog-img.ab_r-0_t-15
+											img(src='assets/img/blog/blog-01.jpg')
+									.col-sm-6.col-xs-12.pr-md-0
+										.panel
+											.panel-header.pb-sm-0
+												.text-muted 08/02/2018  |  by Smogey
+											.panel-body.py-sm-0.text-left
+												h2.text-uppercase.mt-0.text-left BIO ET VRAC, LA CONSOMMATION SELON LILI BULK
+												p.blog-text.text-left
+													| Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des bocaux consignés...
+											.panel-footer.pl-5
+												a.btn.btn-primary(href='#')
+													span Life
+								.row
+									ul.pagination.pull-right
+										li
+											a(href='#') «
+										li
+											a(href='#') 1
+										li
+											a(href='#') 2
+										li
+											a(href='#') 3
+										li
+											a(href='#') 4
+										li
+											a(href='#') 5
+										li
+											a(href='#') »
+
 
 
 
