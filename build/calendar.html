@@ -229,7 +229,7 @@
           <button class="btn btn-warning text-white"><i class="fa fa-location-arrow"></i>Localiser</button>
         </div>
         <div class="form-group"><i class="fa fa-list-alt"></i>
-          <input class="form-control" id="init-commitment" type="text" placeholder="Quand"/>
+          <input class="form-control" name="daterange" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" type="text" placeholder="Engagements citoyens "/>
         </div>
       </div>
       <div class="modal-footer border-0 justify-content-center">
@@ -238,3 +238,14 @@
     </form>
   </div>
 </div>
+<script>
+  $(function () {
+      $('input[name="daterange"]').daterangepicker({
+          timePicker: true,
+          timePickerIncrement: 30,
+          locale: {
+              format: 'MM/DD/YYYY h:mm A'
+          }
+      });
+  });
+</script>
