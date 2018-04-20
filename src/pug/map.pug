@@ -59,8 +59,7 @@ html(lang="en")
                             input.form-control(id="init-type", type='text', placeholder='Précisions')
                         .form-group
                             i.fa.fa-list-alt
-                            input.form-control(name="daterange", value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM", type='text',
-                            placeholder='Engagements citoyens ')
+                            input.form-control(id="datetimepicker4", type='text', placeholder='Engagements citoyens ')
                         .form-group
                             i.fa.fa-map-marker
                             input.form-control(id="pac-input", type='text', name='keyword' placeholder='Adresse complète')
@@ -73,13 +72,7 @@ html(lang="en")
                         button.btn.btn-pink Ajouter
             script.
                 $(function () {
-                    $('input[name="daterange"]').daterangepicker({
-                        timePicker: true,
-                        timePickerIncrement: 30,
-                        locale: {
-                            format: 'MM/DD/YYYY h:mm A'
-                        }
-                    });
+                    $('#datetimepicker4').datetimepicker({format: 'YYYY-MM-DD'});
                 });
 
 
