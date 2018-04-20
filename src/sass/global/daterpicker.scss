@@ -1,47 +1,19 @@
-.modal{
-	.form-control{
-		.bootstrap-datetimepicker-widget{
-			width: 100% !important;
-			z-index: 500;
+.daterangepicker{
+	@media (max-width: $screen-sm-min){
+		top: 0 !important;
+		right: 0 !important;
+		left: 0!important;
+		bottom: 0 !important;
+		width: 100% !important;
+		position: fixed !important;
+		.calendar{
+			&.left,
+			&.right{
+				max-width: 100% !important;
+			}
 		}
-	}
-	.bootstrap-datetimepicker-widget table td {
-		height: 54px;
-		line-height: 54px;
-		width: 54px;
-	}
-	.bootstrap-datetimepicker-widget table td span {
-		display: inline-block;
-		width: 54px;
-		height: 54px;
-		line-height: 54px;
-		margin: 2px 1.5px;
-		cursor: pointer;
-		border-radius: 4px;
-	}
-	.bootstrap-datetimepicker-widget a[data-action]{
-		display: inline-block;
-		padding: 6px 0;
-		margin-bottom: 0;
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 1.42857143;
-		text-align: center;
-		white-space: nowrap;
-		vertical-align: middle;
-		-ms-touch-action: manipulation;
-		touch-action: manipulation;
-		cursor: pointer;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		background-image: none;
-		border: 1px solid transparent;
-		border-radius: 4px;
-	}
-	.bootstrap-datetimepicker-widget table {
-		width: 100%;
-		margin: 0;
+		.table-condensed>thead>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>tfoot>tr>td{
+			padding: 0 !important;
+		}
 	}
 }
