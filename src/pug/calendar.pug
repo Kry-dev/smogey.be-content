@@ -202,20 +202,13 @@ html(lang="en")
                         | Localiser
                 .form-group
                     i.fa.fa-list-alt
-                    input.form-control(name="daterange", value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM", type='text',
-                    placeholder='Engagements citoyens ')
+                    input.form-control(id="datetimepicker4", type='text', placeholder='Engagements citoyens ')
 
             .modal-footer.border-0.justify-content-center
                 button.btn.btn-pink Ajouter
 script.
     $(function () {
-        $('input[name="daterange"]').daterangepicker({
-            timePicker: true,
-            timePickerIncrement: 30,
-            locale: {
-                format: 'MM/DD/YYYY h:mm A'
-            }
-        });
+        $('#datetimepicker4').datetimepicker({format: 'YYYY-MM-DD'});
     });
 
 
