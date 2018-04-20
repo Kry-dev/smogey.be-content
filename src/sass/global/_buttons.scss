@@ -31,6 +31,9 @@
 		display: block;
 		line-height: 16px;
 	}
+	&-default{
+		color: inherit;
+	}
 	@media (max-width: $screen-sm-max){
 		font-size: 14px;
 	}
