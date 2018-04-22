@@ -1,4 +1,4 @@
-.brands-slider{
+.brands-slider {
 	width: 100%;
 	padding: 0 5%;
 	margin: 0 auto;
@@ -7,39 +7,37 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	@media (max-width: $screen-sm-max){
-		padding: 0 40px;
-	}
-	.slick-arrow{
+	@media (max-width: $screen-sm-max) {  padding: 0 40px;  }
+	.slick-arrow {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
 		font-size: 23px;
-		background: #e6e5e5;
+		background-color: #e6e5e5;
 		padding: 5px 10px;
 		color: $white;
 		z-index: 100;
 		border: 0;
-		&.right{right:0;}
-		&.left{left: 0}
+		&.right {  right: 0;  }
+		&.left {  left: 0  }
 		&:focus,
-		&:hover{
+		&:hover {
 			outline: 0;
 			cursor: pointer;
 		}
 	}
-	.slick-list{
+	.slick-list {
 		width: 100%;
 		display: flex;
 		align-items: center;
 	}
-	.slick-track{
+	.slick-track {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
-	img{
+	img {
 		display: block;
 		width: 100%;
 		max-width: 150px;

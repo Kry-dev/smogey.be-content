@@ -1,25 +1,25 @@
-.category-box{
-	background: $gray-200;
+.category-box {
+	background-color: $gray-200;
 	height: 180px;
 	width: 100%;
 	display: block;
 	margin: 0 auto 20px;
-	@media (max-width: $screen-sm-min){
+	@media (max-width: $screen-sm-min) {
 		height: 100%;
 	}
-	&__img{
+	&__img {
 		height: 180px;
 		position: relative;
 		padding: 0;
-		img{
+		img {
 			display: block;
 			width: 100%;
 			max-width: 300px;
 			height: 100%;
 		}
-		@media (max-width: $screen-sm-min){
+		@media (max-width: $screen-sm-min) {
 			height: 100%;
-			img{
+			img {
 				position: relative;
 				left: 0;
 				top: 0;
@@ -27,22 +27,22 @@
 			}
 		}
 	}
-	&__info{
+	&__info {
 		display: block;
 		height: 100%;
 		padding: 1rem;
 	}
-	&__text{
+	&__text {
 		display: block;
 		height: 110px;
 		overflow-y: scroll;
 	}
-	&__contact{
+	&__contact {
 		position: relative;
 		height: 100%;
 		padding: 0;
 	}
-	.panel{
+	.panel {
 		display: block;
 		padding: 1rem 0;
 		width: 90%;
@@ -52,25 +52,25 @@
 		align-items: center;
 		border-radius: 0;
 		margin-bottom: 0;
-		.btn{
-			background: transparent;
+		.btn {
+			background-color: transparent;
 			border: 0;
 			display: inline-block;
 			width: auto;
 			min-width: inherit;
-			.fa{
+			.fa {
 				margin-right: 0;
 			}
 
 		}
-		.btn-group{
+		.btn-group {
 			display: block;
 			width: 60%;
 			height: 100%;
 			margin: 0 auto;
-			.btn{
+			.btn {
 				width: 33%;
-				.fa{
+				.fa {
 					float: none;
 					display: block;
 					margin: 0 auto;
@@ -78,7 +78,7 @@
 				}
 			}
 		}
-		@media (max-width: $screen-sm-min){
+		@media (max-width: $screen-sm-min) {
 			position: relative;
 			margin: 0 auto;
 			width: 100%;
@@ -86,23 +86,23 @@
 			top: 0;
 		}
 	}
-	.panel-title{
+	.panel-title {
 		text-transform: uppercase;
 		text-align: center;
 	}
-	.fa{
-		font-size: 1.5rem	;
+	.fa {
+		font-size: 1.5rem;
 	}
-	.icons{
+	.icons {
 		display: block;
 		width: 50%;
 	}
-	.btn{
+	.btn {
 		display: block;
 		width: 20%;
 		min-width: 100px;
 		text-align: center;
-		@media (max-width: $screen-sm-min){
+		@media (max-width: $screen-sm-min) {
 			margin: 0 auto;
 		}
 	}
