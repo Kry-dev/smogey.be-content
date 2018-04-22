@@ -64,7 +64,8 @@ $border-radius: 0;
 		display: block;
 		width: 32px;
 		height: 32px;
-		background-image: url('../img/map/map-nav-sprite.png') no-repeat;
+		background-image: url('../img/map/map-nav-sprite.png');
+		background-repeat: no-repeat;
 		background-position: 0 0;
 		&-2 {
 			background-position: -32px 0;
