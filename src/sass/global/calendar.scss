@@ -1,19 +1,20 @@
-.calendar-wrap{
+.calendar-wrap {
 	display: block;
 	width: 100%;
 }
-.calendar{
-	&-header{
+
+.calendar {
+	&-header {
 		position: relative;
-		button{
+		button {
 			position: absolute;
-			background: transparent;
+			background-color: transparent;
 			color: $white;
 			top: 5px;
-			&.pull-left{
+			&.pull-left {
 				left: 0;
 			}
-			&.pull-right{
+			&.pull-right {
 				right: 0;
 			}
 		}
@@ -29,33 +30,33 @@
 	}
 	th {
 		text-transform: uppercase;
-		font-size:10px;
-		font-weight:700;
+		font-size: 10px;
+		font-weight: 700;
 		padding: 10px;
 		letter-spacing: 1px;
 	}
 	td {
 		width: 14.285%;
 		transition: all 0.3s;
-		background: $white;
+		background-color: $white;
 		font-weight: 400;
 		font-size: 14px;
 		vertical-align: initial;
 		padding: 1.5% 0;
 		height: 75px;
 	}
-	.day{
+	.day {
 		position: relative;
-		&:hover{
-			background-color: rgba(0,0,0,0.1);
-			cursor:pointer;
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+			cursor: pointer;
 		}
-		&.today{
+		&.today {
 			color: #FFF;
-			background-color: rgba(0,0,0,.25) !important;
+			background-color: rgba(0, 0, 0, .25) !important;
 		}
 		.number {
-			margin-left: 10% ;
+			margin-left: 10%;
 		}
 	}
 
@@ -64,19 +65,19 @@
 		height: 15px;
 		display: block;
 		padding-top: 20px;
-		&-item{
+		&-item {
 			float: right;
 			display: inline-block;
 			width: 15px;
 			height: 15px;
-			background: transparent;
+			background-color: transparent;
 			border-radius: 50%;
 			border: 2px solid $white;
 			margin-left: -5px;
 			vertical-align: bottom;
 			color: inherit;
 			&:hover,
-			&:focus{
+			&:focus {
 				width: 18px;
 				height: 18px;
 				margin-top: -3px;
@@ -86,7 +87,7 @@
 			}
 		}
 	}
-	&-tooltip{
+	&-tooltip {
 		position: absolute;
 		display: none;
 		height: 200px;
@@ -95,14 +96,14 @@
 		bottom: 50px;
 		left: auto;
 		transform: translate(-145px);
-		background: $white;
+		background-color: $white;
 		color: inherit;
 		border-radius: 4px;
-		box-shadow: 0 0 66px 0 rgba(0,0,0,0.39);
-		.panel-header{
+		box-shadow: 0 0 66px 0 rgba(0, 0, 0, 0.39);
+		.panel-header {
 			border-radius: 4px 4px 0 0;
 		}
-		&:before{
+		&:before {
 			content: "";
 			position: absolute;
 			display: block;
@@ -110,13 +111,13 @@
 			margin-left: -15px;
 			width: 30px;
 			height: 30px;
-			background: $white;
+			background-color: $white;
 			bottom: -15px;
 			transform: rotate(45deg);
 			z-index: -2;
-			box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 		}
-		&:after{
+		&:after {
 			content: "";
 			position: absolute;
 			display: block;
@@ -124,7 +125,7 @@
 			margin-left: -30px;
 			width: 60px;
 			height: 30px;
-			background: $white;
+			background-color: $white;
 			bottom: 0;
 			z-index: -1;
 		}

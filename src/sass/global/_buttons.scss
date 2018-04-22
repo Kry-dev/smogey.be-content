@@ -1,4 +1,4 @@
-.btn{
+.btn {
 	font-size: inherit;
 	color: #fff;
 	height: 40px;
@@ -10,75 +10,80 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-	.fa{
+	.fa {
 		font-size: 20px;
 		margin-right: 10px;
 		display: inline-block;
 		float: left;
 		vertical-align: middle;
 	}
-	span{
+	span {
 		line-height: 24px;
 		text-overflow: ellipsis;
 	}
 	&:focus,
 	&:active,
-	&:active:focus{
+	&:active:focus {
 		outline: 0;
 		box-shadow: none;
 	}
-	&-block{
+	&-block {
 		display: block;
 		line-height: 16px;
 	}
-	&-default{
+	&-default {
 		color: inherit;
 	}
-	@media (max-width: $screen-sm-max){
+	@media (max-width: $screen-sm-max) {
 		font-size: 14px;
 	}
 }
-.btn-search{
+
+.btn-search {
 	position: absolute;
 	right: 8px;
-	background: transparent;
+	background-color: transparent;
 	margin: 0;
 	width: 23px;
 	height: 23px;
 	padding: 0;
-	.fa{
+	.fa {
 		font-size: 21px;
 		color: rgba($black, .5);
 	}
 	&:hover,
-	&:focus{
+	&:focus {
 		border: 0;
 		outline: 0 !important;
 		box-shadow: none;
 	}
 }
-.btn-close{
+
+.btn-close {
 	border: 0;
-	background: transparent;
+	background-color: transparent;
 	&:hover,
-	&:focus{
+	&:focus {
 		cursor: pointer;
 	}
-	.fa{
+	.fa {
 		margin: 0;
 		font-size: 24px;
 	}
 }
-.btn-outline-success{
+
+.btn-outline-success {
 	color: $success;
-	background: $white;
+	background-color: $white;
 }
-.btn-outline-warning{
+
+.btn-outline-warning {
 	color: $warning;
-	background: $white;
+	background-color: $white;
 }
-.btn-pink{
-	background: $pink;
+
+.btn-pink {
+	background-color: $pink;
 	&:focus,
 	&.focus {
 		color: $white;
@@ -102,8 +107,9 @@
 		}
 	}
 }
-.btn-pink-dark{
-	background: $pink-dark;
+
+.btn-pink-dark {
+	background-color: $pink-dark;
 	&:focus,
 	&.focus {
 		color: $white;
