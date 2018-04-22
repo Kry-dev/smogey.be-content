@@ -26,7 +26,7 @@ $( document ).ready(function(){
                 breakpoint: 500,
                 settings: {
                     slidesToShow: 2,
-                    rows:2
+                    rows:1
                 }
             }
         ]
