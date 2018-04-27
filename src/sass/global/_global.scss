@@ -112,4 +112,13 @@ article{
 .pagination > li> span:hover{
 	color: $pagination-color;
 }
+.pagination{
+	float: right;
+	@media (max-width: $screen-sm-max){
+		//display: block;
+		float: none;
+		margin: 0 auto;
+		width:auto;
+	}
+}
 .pos-r{ position: relative; }
