@@ -38,9 +38,10 @@ $( document ).ready(function(){
         $(this).hide();
     }
     $('.events-item').click(function (e) {
+        $('.calendar-tooltip').hide();
         e.preventDefault();
         var tooltip = $(this).find('.calendar-tooltip');
-        $(tooltip).toggle();
+        $(tooltip).show();
     });
 
     var markers = new Array();
