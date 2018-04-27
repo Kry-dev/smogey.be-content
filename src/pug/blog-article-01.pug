@@ -3,111 +3,109 @@ html(lang="en")
 	include global/head
 	+head('BLOG ARTICLE 1')
 	include mixin/all-mixin
-	body.homepage
+	body
 		.wrapper
-			section.main
-				.container
-					article
-						.blog-list
-							.container-fluid.p-md-0
+			article.blog-list
+				.container.py-3
+					.row.mb-20
+						.col-md-12
+							nav(aria-label='breadcrumb').bread
+								ol.breadcrumb.mb-0
+									li.breadcrumb-item
+										a(href='#') Acceuil
+									li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
+								a.btn.btn-warning(role="button", href='index.html')
+									span Retour
+					.row.mb-40
+						.col-md-12
+							.blog-content
+								.text-muted.mb-20 08/02/2018  |  by Smogey
+								h1.blog-title.blue.text-uppercase ZÉRO DÉCHET: ÊTES-VOUS PRÊT À RELEVER LE DÉFI?
+								p
+									| En Belgique, avoir un comportement respectueux de l’environnement est une seconde nature. La preuve, nous trions les ordures avec le plus grand soin. Mais cela ne nous empêche pas de produire 500 kilos de déchets par personne par an… L’objectif zéro déchet, une utopie ? Pas du tout. Il suffit de le vouloir.
 								.row.mb-20
-									.col-md-12.p-0
-										nav(aria-label='breadcrumb').bread
-											ol.breadcrumb.mb-0
-												li.breadcrumb-item
-													a(href='#') Acceuil
-												li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
-											a.btn.btn-warning(role="button", href='index.html')
-												span Retour
-								.row.mb-40
-									.blog-content
-										.text-muted.mb-20 08/02/2018  |  by Smogey
-										h1.blog-title.blue.text-uppercase ZÉRO DÉCHET: ÊTES-VOUS PRÊT À RELEVER LE DÉFI?
-										p.blog-text
-											| En Belgique, avoir un comportement respectueux de l’environnement est une seconde nature. La preuve, nous trions les ordures avec le plus grand soin. Mais cela ne nous empêche pas de produire 500 kilos de déchets par personne par an… L’objectif zéro déchet, une utopie ? Pas du tout. Il suffit de le vouloir.
-										.row.mb-20
-											.col-md-3.col-sm-6
-												img.m-auto.w-100(src='assets/img/blog/blog-article-01.jpg')
-											.col-md-9.col-sm-6
-												.panel.bg-gray.border-success.border-left-5.px-3
-													.panel-header
-														h3 Zéro déchet rime avec nouveau mode de vie
-													.panel-body.flex-column
-														p.panel-text C’est un fait, le tri des déchets ne suffit pas à réduire de manière
-															| drastique
-															| leur quantité. Pour passer de 500 kilos par personne par an à zéro déchet,
-															| il faut prendre des mesures draconiennes, autrement dit changer du tout au
-															| tout. Avoir zéro déchet signifie revoir son mode de consommation et donc son
-															| mode de vie.
+									.col-md-3.col-sm-6
+										img.m-auto.w-100(src='assets/img/blog/blog-article-01.jpg')
+									.col-md-9.col-sm-6
+										.panel.bg-gray.border-success.border-left-5.px-3
+											.panel-header
+												h3 Zéro déchet rime avec nouveau mode de vie
+											.panel-body.flex-column
+												p.panel-text C’est un fait, le tri des déchets ne suffit pas à réduire de manière
+													| drastique
+													| leur quantité. Pour passer de 500 kilos par personne par an à zéro déchet,
+													| il faut prendre des mesures draconiennes, autrement dit changer du tout au
+													| tout. Avoir zéro déchet signifie revoir son mode de consommation et donc son
+													| mode de vie.
 
-														p.panel-text Nous ne vous disons pas cela dans le but de vous effrayer ou de vous
-															| décourager.
-															| Nous tenons simplement à vous faire prendre conscience qu’il s’agit bel
-															| et bien d’un défi. Mais rassurez-vous, vous pouvez tout à fait le relever et
-															| si vous êtes convaincu d’agir pour la bonne cause (nous sommes certains que
-															| vous l’êtes), vous n’aurez pas l’impression de faire des sacrifices.
-										h3 Le meilleur déchet est celui qui n’existe pas
-										p La consommation est synonyme de déchet. Pour ne plus sortir les poubelles plusieurs fois par semaine, vous devez donc combattre le fléau à sa source:
-										ul.blog-content-list
-											li
-												p Empruntez ou louez les équipements dont vous vous servez occasionnellement;
-											li
-												p Achetez uniquement la quantité qu’il vous faut pour ne pas faire de gaspillage;
-											li
-												p Refusez les choses dont vous n’avez pas besoin, notamment les imprimés publicitaires et
-													| les
-													| cadeaux gratuits;
-											li
-												p Exit les produits à usage unique tels que la vaisselle en plastique ou en carton, le
-													| papier
-													| essuie-tout, les lingettes, les papiers cadeaux, etc.
-											li
-												p Achetez des objets solides et durables ou réparables;
-											li
-												p Limitez autant que possible le suremballage: achetez en vrac (le nombre de magasins
-													| vendant
-													| de la nourriture en vrac, mais également des produits cosmétiques et d’entretien, s’est
-													| multiplié au cours de ces dernières années);
-											li
-												p Privilégiez les produits d’occasion: vêtements et accessoires, appareils électroménagers,
-													| équipements informatiques, meubles…li
-										.row
-											.col-md-12
-												.panel.mb-3
-													img.panel-img-top(src='assets/img/blog/blog-article-02.jpg')
-													.panel-body.p-3
-														h3.mb-20.text-left Less is more
-														p.panel-text.text-left Pour atteindre l’objectif zéro déchet, il faut adopter un mode de vie minimaliste, c’est-à-dire apprendre à se contenter du strict minimum. Pour faire le ménage par exemple, vous n’avez pas besoin d’une pléthore de produits d’entretien. En plus d’être toxiques, les produits d’entretien habituels génèrent une quantité incroyable de déchets.
-														p.panel-text.text-left Solution : opter pour la simplicité. Les cristaux de soude, le
-															| bicarbonate de
-															| soude, le savon noir, le savon de Marseille et le vinaigre blanc vous
-															| permettront d’avoir une maison nickel. Idem pour les produits d’hygiène, on
-															| trouve désormais des produits cosmétiques solides et dépourvus d’emballage
-															| dans les boutiques spécialisées : dentifrice, déodorant, savon, shampoing,
-															| etc.
+												p.panel-text Nous ne vous disons pas cela dans le but de vous effrayer ou de vous
+													| décourager.
+													| Nous tenons simplement à vous faire prendre conscience qu’il s’agit bel
+													| et bien d’un défi. Mais rassurez-vous, vous pouvez tout à fait le relever et
+													| si vous êtes convaincu d’agir pour la bonne cause (nous sommes certains que
+													| vous l’êtes), vous n’aurez pas l’impression de faire des sacrifices.
+								h3 Le meilleur déchet est celui qui n’existe pas
+								p La consommation est synonyme de déchet. Pour ne plus sortir les poubelles plusieurs fois par semaine, vous devez donc combattre le fléau à sa source:
+								ul.blog-content-list
+									li
+										p Empruntez ou louez les équipements dont vous vous servez occasionnellement;
+									li
+										p Achetez uniquement la quantité qu’il vous faut pour ne pas faire de gaspillage;
+									li
+										p Refusez les choses dont vous n’avez pas besoin, notamment les imprimés publicitaires et
+											| les
+											| cadeaux gratuits;
+									li
+										p Exit les produits à usage unique tels que la vaisselle en plastique ou en carton, le
+											| papier
+											| essuie-tout, les lingettes, les papiers cadeaux, etc.
+									li
+										p Achetez des objets solides et durables ou réparables;
+									li
+										p Limitez autant que possible le suremballage: achetez en vrac (le nombre de magasins
+											| vendant
+											| de la nourriture en vrac, mais également des produits cosmétiques et d’entretien, s’est
+											| multiplié au cours de ces dernières années);
+									li
+										p Privilégiez les produits d’occasion: vêtements et accessoires, appareils électroménagers,
+											| équipements informatiques, meubles…li
+								.row
+									.col-md-12
+										.panel.mb-3
+											img.panel-img-top(src='assets/img/blog/blog-article-02.jpg')
+											.panel-body.p-3
+												h3.mb-20.text-left Less is more
+												p.panel-text.text-left Pour atteindre l’objectif zéro déchet, il faut adopter un mode de vie minimaliste, c’est-à-dire apprendre à se contenter du strict minimum. Pour faire le ménage par exemple, vous n’avez pas besoin d’une pléthore de produits d’entretien. En plus d’être toxiques, les produits d’entretien habituels génèrent une quantité incroyable de déchets.
+												p.panel-text.text-left Solution : opter pour la simplicité. Les cristaux de soude, le
+													| bicarbonate de
+													| soude, le savon noir, le savon de Marseille et le vinaigre blanc vous
+													| permettront d’avoir une maison nickel. Idem pour les produits d’hygiène, on
+													| trouve désormais des produits cosmétiques solides et dépourvus d’emballage
+													| dans les boutiques spécialisées : dentifrice, déodorant, savon, shampoing,
+													| etc.
 
-										h3 Récapitulons
-										p Viser l’objectif zéro déchet est plus simple qu’il n’y paraît. Il suffit de suivre les règles suivantes:
-										ul.blog-content-list
-											li
-												p Refuser le superflu ;
-											li
-												p Réduire : vos achats ;
-											li
-												p Réutiliser : acheter des produits de seconde main, réparer au lieu de jeter
-											li
-												p Recycler : tout ce que vous n’avez pas pu refuser ;
-											li
-												p Composter ses déchets de cuisine : pour votre information, 40 % des déchets non triés en
-													|Wallonie sont d’origine organique.
+								h3 Récapitulons
+								p Viser l’objectif zéro déchet est plus simple qu’il n’y paraît. Il suffit de suivre les règles suivantes:
+								ul.blog-content-list
+									li
+										p Refuser le superflu ;
+									li
+										p Réduire : vos achats ;
+									li
+										p Réutiliser : acheter des produits de seconde main, réparer au lieu de jeter
+									li
+										p Recycler : tout ce que vous n’avez pas pu refuser ;
+									li
+										p Composter ses déchets de cuisine : pour votre information, 40 % des déchets non triés en
+											|Wallonie sont d’origine organique.
 
-										p En suivant ces consignes scrupuleusement, vous pourrez suivre les traces de Bea Johnson (connue pour être la figure du mouvement Zéro déchet) : les déchets annuels de sa famille – ils sont quatre – tiennent dans un bocal de 250 ml!
-										.blog-tags
-											a(href="#").btn.btn-warning.btn-sm.mb-1 zéro déchet
-											a(href="#").btn.btn-warning.btn-sm.mb-1 Réduire
-											a(href="#").btn.btn-warning.btn-sm.mb-1 Déchet
-											a(href="#").btn.btn-warning.btn-sm.mb-1 zéro déchet
-											a(href="#").btn.btn-warning.btn-sm.mb-1 Réduire
-											a(href="#").btn.btn-warning.btn-sm.mb-1 Déchet
+								p En suivant ces consignes scrupuleusement, vous pourrez suivre les traces de Bea Johnson (connue pour être la figure du mouvement Zéro déchet) : les déchets annuels de sa famille – ils sont quatre – tiennent dans un bocal de 250 ml!
+								.blog-tags
+									a(href="#").btn.btn-warning.btn-sm.mb-1 zéro déchet
+									a(href="#").btn.btn-warning.btn-sm.mb-1 Réduire
+									a(href="#").btn.btn-warning.btn-sm.mb-1 Déchet
+									a(href="#").btn.btn-warning.btn-sm.mb-1 zéro déchet
+									a(href="#").btn.btn-warning.btn-sm.mb-1 Réduire
+									a(href="#").btn.btn-warning.btn-sm.mb-1 Déchet
 
 
