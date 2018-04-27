@@ -21,6 +21,9 @@
 		line-height: 24px;
 		text-overflow: ellipsis;
 	}
+	&.btn-sm{
+		height: auto;
+	}
 	&:focus,
 	&:active,
 	&:active:focus {
