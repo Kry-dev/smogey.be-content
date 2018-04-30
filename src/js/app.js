@@ -121,7 +121,7 @@ $( document ).ready(function(){
         ['Wharton', '973-659-9111', 'GAC', 40.893, -74.582, 31]
     ];
 
-    var map = new google.maps.Map(document.getElementById('.map'), {
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 11,
         center: new google.maps.LatLng(40.7967667, -74.4815438),
         mapTypeId: google.maps.MapTypeId.ROADMAP
