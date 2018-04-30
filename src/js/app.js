@@ -31,14 +31,14 @@ $( document ).ready(function(){
         ]
     });
 
-    if($('.calendar-tooltip')){
-        $(this).hide();
-    }
-    $('.events-item').click(function (e) {
-        $('.calendar-tooltip').hide();
-        e.preventDefault();
-        var tooltip = $(this).find('.calendar-tooltip');
-        $(tooltip).show();
+    var hideTooltip = function () {$('#calendar .calendar-tooltip').hide();};
+    hideTooltip();
+
+    $('.events-item').on('click', function() {
+        $(this).find('.calendar-tooltip').toggle();
+    });
+    $('.btn-tooltip-close').on('click', function () {
+        $(this).find('.calendar-tooltip').toggle();
     });
 
     var markers = new Array();
@@ -121,7 +121,7 @@ $( document ).ready(function(){
         ['Wharton', '973-659-9111', 'GAC', 40.893, -74.582, 31]
     ];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
+    var map = new google.maps.Map(document.getElementById('.map'), {
         zoom: 11,
         center: new google.maps.LatLng(40.7967667, -74.4815438),
         mapTypeId: google.maps.MapTypeId.ROADMAP

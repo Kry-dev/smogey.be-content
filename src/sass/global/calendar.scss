@@ -98,10 +98,12 @@
 		transform: translate(-145px);
 		background-color: $white;
 		color: inherit;
+		cursor: auto;
 		border-radius: 4px;
 		box-shadow: 0 0 66px 0 rgba(0, 0, 0, 0.39);
 		.panel-header {
 			border-radius: 4px 4px 0 0;
+			position: relative;
 		}
 		&:before {
 			content: "";
@@ -128,6 +130,15 @@
 			background-color: $white;
 			bottom: 0;
 			z-index: -1;
+		}
+	}
+	.btn-tooltip-close{
+		position: absolute;
+		right: 0;
+		top: 8px;
+		z-index: 150;
+		&:focus{
+			outline: none;
 		}
 	}
 }
