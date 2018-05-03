@@ -37,6 +37,10 @@ html(lang="en")
                                             |  More information
                                     .col-sm-3.col-xs-12
                                         img.img-responsive.m-auto(src='assets/img/calendar/pin-01.png')
+                        .row.mx-0.mb-20
+                            a.btn.btn-pink(href='#plus-initiative', data-toggle='modal')
+                                i.fa.fa-plus-circle
+                                span Voir toute les initiatives
 
         //// Modal
         #mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
@@ -57,6 +61,30 @@ html(lang="en")
                             | Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.
                     .modal-footer.border-0.justify-content-start
                         button.btn.btn-primary(type='button') En savoir plus
+        // Modal
+        #plus-initiative.modal.fade(tabindex='-1', role='dialog', aria-labelledby='plus-initiativeTitle', aria-hidden='true')
+            .modal-dialog(role='document')
+                form.modal-content.plus-init-form
+                    .modal-header.bg-pink.text-white
+                        h4.modal-title Ajouter une initiative
+                        button.btn-close(type='button', data-dismiss='modal', aria-label='Close')
+                            span.fa.fa-close.text-white(aria-hidden='true')
+                    .modal-body
+                        .form-group
+                            i.fa.fa-user
+                            input.form-control(id="init-title", type='text', placeholder='Titre')
+                        .form-group
+                            i.fa.fa-pencil-square-o
+                            input.form-control(id="init-descr", type='text', placeholder='Detail')
+                        .form-group
+                            i.fa.fa-map-marker
+                            input.form-control(id="pac-input", type='text', name='keyword' placeholder='Localisation')
+                            button.btn.btn-warning.text-white
+                                i.fa.fa-location-arrow
+                                | Localiser
+
+                    .modal-footer.border-0.justify-content-center
+                        button.btn.btn-pink Ajouter
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js")
         script.
@@ -96,6 +124,7 @@ html(lang="en")
                 },
                 defaultView: 'month',
                 displayEventTime: false,
+                eventLimit: true,
                 events: [
                 {
                     title: 'Naturalia Tolbiac -1',
@@ -117,13 +146,13 @@ html(lang="en")
                     start: new Date(y, m, d, 12, 0),
                     color: red
                 }, {
+                    title: 'Naturalia Tolbiac -11',
+                    start: new Date(y, m, d, 12, 0),
+                    color: pinkdark
+                }, {
                     title: 'Naturalia Tolbiac -4',
                     start: new Date(y, m, d + 1, 19, 0),
                     color: green
-                }, {
-                    title: 'Naturalia Tolbiac -5',
-                    start: new Date(y, m, d + 1, 19, 0),
-                    color: yellow
                 },
 
                 ],
@@ -140,21 +169,17 @@ html(lang="en")
                         //placement: 'auto',
                         placement: function (context, source) {
                             var position = $(source).position();
-                            var content_width = 515;  //Can be found from a JS function for more dynamic output
+                            var content_width = document.getElementsByClassName('clientWidth').clientWidth;  //Can be found from a JS function for more dynamic output
                             var content_height = 110;  //Can be found from a JS function for more dynamic output
-
                             if (position.left > content_width) {
                                 return "left";
                             }
-
                             if (position.left < content_width) {
                                 return "right";
                             }
-
                             if (position.top < content_height) {
                                 return "bottom";
                             }
-
                             return "top";
                         },
                         html: 'true',
