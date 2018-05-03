@@ -1,5 +1,6 @@
 var $ = require('jquery');
 var slick = require('slick-carousel');
+
 $( document ).ready(function(){
     $('.new-slider').slick({
         dots: true,
@@ -30,6 +31,9 @@ $( document ).ready(function(){
             }
         ]
     });
+
+
+
 
     var hideTooltip = function () {$('#calendar .calendar-tooltip').hide();};
     hideTooltip();
@@ -262,4 +266,5 @@ $( document ).ready(function(){
             infowindow.open(map, marker);
         });
     })();
+
 });

@@ -22,8 +22,8 @@ html(lang="en")
                                     a.d-inline-block.btn.btn-outline-warning.float-right(role="button", href="index.html")
                                         span Retour
                         .row.mb-20
-                            #calendar.calendar
-                                .calendar-header.bg-success.p-3
+                            #calendar.cal
+                                .cal-header.bg-success.p-3
                                     button.btn.pull-left
                                         i.fa.fa-arrow-left
                                     h4.text-white.text-center.m-0 January 2018
@@ -199,15 +199,8 @@ html(lang="en")
                     button.btn.btn-warning.text-white
                         i.fa.fa-location-arrow
                         | Localiser
-                .form-group
-                    i.fa.fa-list-alt
-                    input.form-control(id="datetimepicker4", type='text', placeholder='Engagements citoyens ')
 
             .modal-footer.border-0.justify-content-center
                 button.btn.btn-pink Ajouter
-script.
-    $(function () {
-        $('#datetimepicker4').datetimepicker({format: 'YYYY-MM-DD'});
-    });
 
 
