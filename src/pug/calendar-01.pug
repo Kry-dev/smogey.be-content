@@ -6,23 +6,37 @@ html(lang="en")
     include mixin/all-mixin
     body.homepage
         .wrapper
-            article.calendar
-                .container.py-5
-                    .row.mb-20
-                        #calendar-01
-                        #popoverContent.hide
-                            .row.p-3
-                                .col-xs-9
-                                    p
-                                        | 71, rue de Tolbiac,
-                                        br
-                                        |  PARIS 75013,
-                                        br
-                                        |  Magasin vrac
-                                    button.btn.btn-success.w-100.text-center(type='button', data-toggle='modal',data-target='#mapMarkerModal')
-                                        |  More information
-                                .col-xs-3
-                                    img.img-responsive.m-auto(src='assets/img/calendar/pin-01.png')
+            section.main
+                .container.py-3
+                    article.calendar-wrap
+                        .row.mb-20
+                            .col-xs-12.px-0
+                                nav(aria-label='breadcrumb').bread
+                                    ol.breadcrumb.mb-0
+                                        li.breadcrumb-item
+                                            a(href='#') Acceuil
+                                        li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
+                        .row.mb-20
+                            .col-md-12.px-0
+                                .clearfix.bg-warning.p-2
+                                    h4.d-inline-block.text-white.float-left Réduction des déchets
+                                    a.d-inline-block.btn.btn-outline-warning.float-right(role="button", href="index.html")
+                                        span Retour
+                        .row.mb-20
+                            #calendar-01
+                            #popoverContent.hide
+                                .row.p-3
+                                    .col-xs-9
+                                        p
+                                            | 71, rue de Tolbiac,
+                                            br
+                                            |  PARIS 75013,
+                                            br
+                                            |  Magasin vrac
+                                        button.btn.btn-success.w-100.text-center(type='button', data-toggle='modal',data-target='#mapMarkerModal')
+                                            |  More information
+                                    .col-xs-3
+                                        img.img-responsive.m-auto(src='assets/img/calendar/pin-01.png')
 
         //// Modal
         #mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
@@ -81,15 +95,16 @@ html(lang="en")
                     right: 'next'
                 },
                 defaultView: 'month',
-                selectable: false,
-                selectHelper: false,
-                editable: true,
+                //selectable: false,
+                //selectHelper: false,
+                //editable: true,
                 displayEventTime: false,
                 events: [
                 {
                     title: 'Naturalia Tolbiac -1',
                     start: new Date(y, m, d + 4, 16, 0),
                     color: pink,
+                    placement: 'bottom',
                     text: "71, rue de Tolbiac,' + <br> + 'PARIS 75013,' + <br> + ' Magasin vrac",
 
                 }, {
@@ -121,11 +136,31 @@ html(lang="en")
                             return $("#popoverContent").html();
                         },
                         template: popTemplate,
-                        placement: 'top',
+                        //placement: 'auto',
+                        placement: function (context, source) {
+                            var position = $(source).position();
+                            var content_width = 515;  //Can be found from a JS function for more dynamic output
+                            var content_height = 110;  //Can be found from a JS function for more dynamic output
+
+                            if (position.left > content_width) {
+                                return "left";
+                            }
+
+                            if (position.left < content_width) {
+                                return "right";
+                            }
+
+                            if (position.top < content_height) {
+                                return "bottom";
+                            }
+
+                            return "top";
+                        },
                         html: 'true',
                         trigger: 'click',
                         animation: 'true',
                         container: 'body'
+
                     }).popover('show');
                 },
 
@@ -141,7 +176,26 @@ html(lang="en")
                             return $("#popoverContent").html();
                         },
                         template: popTemplate,
-                        placement: 'top',
+                        //placement: 'auto',
+                        placement: function (context, source) {
+                            var position = $(source).position();
+                            var content_width = 515;  //Can be found from a JS function for more dynamic output
+                            var content_height = 110;  //Can be found from a JS function for more dynamic output
+
+                            if (position.left > content_width) {
+                                return "left";
+                            }
+
+                            if (position.left < content_width) {
+                                return "right";
+                            }
+
+                            if (position.top < content_height) {
+                                return "bottom";
+                            }
+
+                            return "top";
+                        },
                         html: 'true',
                         trigger: 'click',
                         animation: 'true',
