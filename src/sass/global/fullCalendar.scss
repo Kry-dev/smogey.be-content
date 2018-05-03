@@ -1,10 +1,12 @@
 .fc{
 	min-height: 600px;
 	&-row{
+
 		.fc-content-skeleton{
 			position: absolute;
 			top: 0;
 			bottom: 0;
+			height: 100%;
 			table{
 				height: 100%;
 				width: 100%;
@@ -32,7 +34,7 @@
 		overflow-x: inherit !important;
 		overflow-y: inherit !important;
 		@media (max-width: $screen-sm-max) {
-			min-height: 380px;
+			min-height: 500px;
 			overflow-x: hidden !important;
 			overflow-y: scroll !important;
 		}
@@ -79,6 +81,10 @@
 		.fc-row{
 			margin-right: 0 !important;
 			border-right-width: 0;
+			@media (max-width: $screen-sm-max) {
+				margin-right: 15px !important;
+			}
+
 		}
 	}
 	&-day-header &-widget-header{
@@ -165,4 +171,7 @@ fc-content-skeleton > tbody{
 	& > tr{
 		position: absolute;
 	}
+}
+.fc-row .fc-week .fc-widget-content{
+	min-height: 85px !important;
 }
