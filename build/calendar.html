@@ -9,6 +9,7 @@
       <!--viewport-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
       <!--styles-->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css"/>
       <link rel="stylesheet" type="text/css" href="assets/css/app.min.css"/>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
       <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
@@ -46,8 +47,8 @@
               </div>
             </div>
             <div class="row mb-20">
-              <div class="calendar" id="calendar">
-                <div class="calendar-header bg-success p-3">
+              <div class="cal" id="calendar">
+                <div class="cal-header bg-success p-3">
                   <button class="btn pull-left"><i class="fa fa-arrow-left"></i></button>
                   <h4 class="text-white text-center m-0">January 2018</h4>
                   <button class="btn pull-right"><i class="fa fa-arrow-right"></i></button>
@@ -247,9 +248,6 @@
           <input class="form-control" id="pac-input" type="text" name="keyword" placeholder="Localisation"/>
           <button class="btn btn-warning text-white"><i class="fa fa-location-arrow"></i>Localiser</button>
         </div>
-        <div class="form-group"><i class="fa fa-list-alt"></i>
-          <input class="form-control" id="datetimepicker4" type="text" placeholder="Engagements citoyens "/>
-        </div>
       </div>
       <div class="modal-footer border-0 justify-content-center">
         <button class="btn btn-pink">Ajouter</button>
@@ -257,8 +255,3 @@
     </form>
   </div>
 </div>
-<script>
-  $(function () {
-      $('#datetimepicker4').datetimepicker({format: 'YYYY-MM-DD'});
-  });
-</script>

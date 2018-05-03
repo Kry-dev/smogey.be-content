@@ -3,7 +3,7 @@
 	width: 100%;
 }
 
-.calendar {
+.cal {
 	&-header {
 		position: relative;
 		button {
@@ -87,7 +87,7 @@
 			}
 		}
 	}
-	&-tooltip {
+	.calendar-tooltip {
 		position: absolute;
 		display: none;
 		height: 200px;
