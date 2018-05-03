@@ -114,6 +114,11 @@
 		width: 15px;
 		height: 15px;
 		border-radius: 50%;
+		border: 1px solid $white;
+		&:hover,&:focus{
+			cursor: pointer;
+			transform: scale(1.2);
+		}
 		@media (max-width: $screen-sm-max) {
 			width: 10px;
 			height: 10px;
