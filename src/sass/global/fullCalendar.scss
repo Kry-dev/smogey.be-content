@@ -33,9 +33,9 @@
 	&-scroller.fc-day-grid-container{
 		overflow-x: inherit !important;
 		overflow-y: inherit !important;
-		height: 100%;
+		height: 100% !important;
 		@media (max-width: $screen-sm-max) {
-			min-height: 500px;
+			min-height: 500px !important;
 			overflow-x: hidden !important;
 			overflow-y: scroll !important;
 		}
