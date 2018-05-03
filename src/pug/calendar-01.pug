@@ -26,7 +26,7 @@ html(lang="en")
                             #calendar-01
                             #popoverContent.hide
                                 .row.p-3
-                                    .col-xs-9
+                                    .col-sm-9.col-xs-12.mb-sm-3
                                         p
                                             | 71, rue de Tolbiac,
                                             br
@@ -35,7 +35,7 @@ html(lang="en")
                                             |  Magasin vrac
                                         button.btn.btn-success.w-100.text-center(type='button', data-toggle='modal',data-target='#mapMarkerModal')
                                             |  More information
-                                    .col-xs-3
+                                    .col-sm-3.col-xs-12
                                         img.img-responsive.m-auto(src='assets/img/calendar/pin-01.png')
 
         //// Modal
@@ -179,7 +179,8 @@ html(lang="en")
                         //placement: 'auto',
                         placement: function (context, source) {
                             var position = $(source).position();
-                            var content_width = 515;  //Can be found from a JS function for more dynamic output
+                            var content_width = document.getElementsByClassName('clientWidth').clientWidth;  //Can be found from a JS
+                            // function for more dynamic output
                             var content_height = 110;  //Can be found from a JS function for more dynamic output
 
                             if (position.left > content_width) {
@@ -189,7 +190,6 @@ html(lang="en")
                             if (position.left < content_width) {
                                 return "right";
                             }
-
                             if (position.top < content_height) {
                                 return "bottom";
                             }
