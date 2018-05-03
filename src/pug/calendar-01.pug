@@ -19,7 +19,7 @@ html(lang="en")
                         .row.mb-20
                             .col-md-12.px-0
                                 .clearfix.bg-warning.p-2
-                                    h4.d-inline-block.text-white.float-left Réduction des déchets
+                                    h4.d-inline-block.text-white.float-left L'agenda des initiatives dans votre commune
                                     a.d-inline-block.btn.btn-outline-warning.float-right(role="button", href="index.html")
                                         span Retour
                         .row.mb-20
@@ -40,7 +40,7 @@ html(lang="en")
                         .row.mx-0.mb-20
                             a.btn.btn-pink(href='#plus-initiative', data-toggle='modal')
                                 i.fa.fa-plus-circle
-                                span Voir toute les initiatives
+                                span Poposer un événement
 
         //// Modal
         #mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
@@ -77,6 +77,9 @@ html(lang="en")
                             i.fa.fa-pencil-square-o
                             input.form-control(id="init-descr", type='text', placeholder='Detail')
                         .form-group
+                            i.fa.fa-list-alt
+                            input.form-control(id="datetimepicker4", type='text', placeholder='Engagements citoyens ')
+                        .form-group
                             i.fa.fa-map-marker
                             input.form-control(id="pac-input", type='text', name='keyword' placeholder='Localisation')
                             button.btn.btn-warning.text-white
@@ -88,6 +91,9 @@ html(lang="en")
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js")
         script.
+            $(function () {
+                $('#datetimepicker4').datetimepicker({format: 'YYYY-MM-DD'});
+            });
             var popTemplate = [
                 '<div class="popover" style="max-width:600px;" >',
                 '<div class="arrow"></div>',
@@ -230,7 +236,7 @@ html(lang="en")
 
                 },
                 eventAfterAllRender: function () {
-                    $('.fc-row.fc-week.fc-widget-content').attr('style', 'min-height: 90px');
+                    $('.fc-row.fc-week.fc-widget-content').attr('style', 'min-height: 140px');
                 }
 
             });
