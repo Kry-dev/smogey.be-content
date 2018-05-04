@@ -1,34 +1,32 @@
 .fc{
-	min-height: 600px;
 	&-row{
-
-		.fc-content-skeleton{
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			height: 100%;
-			table{
-				height: 100%;
-				width: 100%;
-			}
-			tbody{
-				position: relative;
-				//display: block;
-				width: 100%;
-				height: 100%;
-				padding: 5px 0;
-				tr{
-					width: 100%;
-					td{
-						width: 14.285%;
-					}
-				}
-			}
-			.fc-event-container{
-				vertical-align: bottom;
-				height: 15px;
-			}
-		}
+		//.fc-content-skeleton{
+		//	position: absolute;
+		//	top: 0;
+		//	bottom: 0;
+		//	height: 100%;
+		//	table{
+		//		height: 100%;
+		//		width: 100%;
+		//	}
+		//	tbody{
+		//		position: relative;
+		//		//display: block;
+		//		width: 100%;
+		//		height: 100%;
+		//		padding: 5px 0;
+		//		tr{
+		//			width: 100%;
+		//			td{
+		//				width: 14.285%;
+		//			}
+		//		}
+		//	}
+		//	.fc-event-container{
+		//		vertical-align: bottom;
+		//		height: 15px;
+		//	}
+		//}
 	}
 	&-scroller.fc-day-grid-container{
 		overflow-x: inherit !important;
@@ -44,6 +42,7 @@
 		color: $white;
 		background: $success;
 		margin-bottom: 0;
+		height: 50px;
 		&.fc-header-toolbar{
 			margin-bottom: -0px;
 		}
@@ -75,18 +74,18 @@
 		border-color: transparent;
 		padding: 5px 3px 0;
 	}
-	&-head-container.fc-widget-header{
-		padding: 0;
-		height: auto;
-		.fc-row{
-			margin-right: 0 !important;
-			border-right-width: 0;
-			@media (max-width: $screen-sm-max) {
-				margin-right: 15px !important;
-			}
-
-		}
-	}
+	//&-head-container.fc-widget-header{
+	//	padding: 0;
+	//	height: auto;
+	//	.fc-row{
+	//		margin-right: 0 !important;
+	//		border-right-width: 0;
+	//		@media (max-width: $screen-sm-max) {
+	//			margin-right: 15px !important;
+	//		}
+	//
+	//	}
+	//}
 	&-day-header &-widget-header{
 		font-weight: bold;
 		text-align: left;
@@ -140,9 +139,9 @@
 	background: white !important;
 }
 .calendar td{
-	height: auto;
-	padding: 0;
-	font-size: 16px;
+	//height: auto;
+	//padding: 0;
+	//font-size: 16px;
 	background: $white;
 }
 
