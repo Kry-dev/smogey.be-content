@@ -150,6 +150,7 @@ $( document ).ready(function(){
                     '<div class="map-tooltip">'+
                     '<div class="map-tooltip-header">'+
                     '<h4 id="map-tooltip-title" class="map-tooltip-title">Naturalia Tolbiac</h4>'+
+                    '<button id="map-tooltip-close"><i class="fa fa-times" aria-hidden="true"></i></button>'+
                     '</div>'+
                     '<div class="map-tooltip-content">'+
                     '<div class="map-tooltip-content-left">' +
@@ -161,9 +162,11 @@ $( document ).ready(function(){
                     '</div>'+
                     '</div>';
                 var infowindow = new google.maps.InfoWindow({
-                    content: contentString
+                    content: contentString,
                 });
 
+                var newImage = $('<img src="assets/img/map/close.png"/>');
+                $(".gm-style-iw").next("div").html( newImage );
                 // infowindow.setContent(contentString + locations[i][0] + "<br />" + locations[i][2] + "<br />" + locations[i][1]);
 
                 if( prev_infowindow ) {
