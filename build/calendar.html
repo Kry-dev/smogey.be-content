@@ -26,27 +26,27 @@
   <!--calendar-tooltip-->
   <body class="homepage">
     <div class="wrapper">
-      <section class="main">
+      <article class="calendar-wrap">
         <div class="container py-3">
-          <article class="calendar-wrap">
-            <div class="row mb-20">
-              <div class="col-xs-12 px-0">
-                <nav class="bread" aria-label="breadcrumb">
-                  <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Le blog du développement durable</li>
-                  </ol>
-                </nav>
+          <div class="row mb-20">
+            <div class="col-xs-12">
+              <nav class="bread" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Le blog du développement durable</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="row mb-20">
+            <div class="col-md-12">
+              <div class="clearfix bg-warning p-2">
+                <h4 class="d-inline-block text-white float-left">Réduction des déchets</h4><a class="d-inline-block btn btn-outline-warning float-right" role="button" href="index.html"><span>Retour</span></a>
               </div>
             </div>
-            <div class="row mb-20">
-              <div class="col-md-12 px-0">
-                <div class="clearfix bg-warning p-2">
-                  <h4 class="d-inline-block text-white float-left">Réduction des déchets</h4><a class="d-inline-block btn btn-outline-warning float-right" role="button" href="index.html"><span>Retour</span></a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-20">
+          </div>
+          <div class="row mb-20">
+            <div class="col-xs-12">
               <div class="cal" id="calendar">
                 <div class="cal-header bg-success p-3">
                   <button class="btn pull-left"><i class="fa fa-arrow-left"></i></button>
@@ -174,10 +174,10 @@
                 </table>
               </div>
             </div>
-            <div class="row mx-0 mb-20"><a class="btn btn-pink" href="#plus-initiative" data-toggle="modal"><i class="fa fa-plus-circle"></i><span>Voir toute les initiatives</span></a></div>
-          </article>
+          </div>
+          <div class="row mx-0 mb-20"><a class="btn btn-pink" href="#plus-initiative" data-toggle="modal"><i class="fa fa-plus-circle"></i><span>Voir toute les initiatives</span></a></div>
         </div>
-      </section>
+      </article>
     </div>
   </body>
 </html>
@@ -244,6 +244,9 @@
         <div class="form-group"><i class="fa fa-pencil-square-o"></i>
           <input class="form-control" id="init-descr" type="text" placeholder="Detail"/>
         </div>
+        <div class="form-group"><i class="fa fa-list-alt"></i>
+          <input class="form-control" id="datetimepicker4" type="text" placeholder="Engagements citoyens "/>
+        </div>
         <div class="form-group"><i class="fa fa-map-marker"></i>
           <input class="form-control" id="pac-input" type="text" name="keyword" placeholder="Localisation"/>
           <button class="btn btn-warning text-white"><i class="fa fa-location-arrow"></i>Localiser</button>
@@ -253,5 +256,10 @@
         <button class="btn btn-pink">Ajouter</button>
       </div>
     </form>
+    <script>
+      $(function () {
+          $('#datetimepicker4').datetimepicker({format: 'YYYY-MM-DD'});
+      });
+    </script>
   </div>
 </div>

@@ -5,23 +5,23 @@ html(lang="en")
     include mixin/all-mixin
     body.homepage
         .wrapper
-            section.main
+            article.calendar-wrap
                 .container.py-3
-                    article.calendar-wrap
-                        .row.mb-20
-                            .col-xs-12.px-0
-                                nav(aria-label='breadcrumb').bread
-                                    ol.breadcrumb.mb-0
-                                        li.breadcrumb-item
-                                            a(href='#') Acceuil
-                                        li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
-                        .row.mb-20
-                            .col-md-12.px-0
-                                .clearfix.bg-warning.p-2
-                                    h4.d-inline-block.text-white.float-left Réduction des déchets
-                                    a.d-inline-block.btn.btn-outline-warning.float-right(role="button", href="index.html")
-                                        span Retour
-                        .row.mb-20
+                    .row.mb-20
+                        .col-xs-12
+                            nav(aria-label='breadcrumb').bread
+                                ol.breadcrumb.mb-0
+                                    li.breadcrumb-item
+                                        a(href='#') Acceuil
+                                    li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
+                    .row.mb-20
+                        .col-md-12
+                            .clearfix.bg-warning.p-2
+                                h4.d-inline-block.text-white.float-left Réduction des déchets
+                                a.d-inline-block.btn.btn-outline-warning.float-right(role="button", href="index.html")
+                                    span Retour
+                    .row.mb-20
+                        .col-xs-12
                             #calendar.cal
                                 .cal-header.bg-success.p-3
                                     button.btn.pull-left
@@ -136,10 +136,10 @@ html(lang="en")
                                         td.day
                                             span.number 11
 
-                        .row.mx-0.mb-20
-                            a.btn.btn-pink(href='#plus-initiative', data-toggle='modal')
-                                i.fa.fa-plus-circle
-                                span Voir toute les initiatives
+                    .row.mx-0.mb-20
+                        a.btn.btn-pink(href='#plus-initiative', data-toggle='modal')
+                            i.fa.fa-plus-circle
+                            span Voir toute les initiatives
 //// Modal
 #mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
     .modal-dialog(role='document')
@@ -194,6 +194,9 @@ html(lang="en")
                     i.fa.fa-pencil-square-o
                     input.form-control(id="init-descr", type='text', placeholder='Detail')
                 .form-group
+                    i.fa.fa-list-alt
+                    input.form-control(id="datetimepicker4", type='text', placeholder='Engagements citoyens ')
+                .form-group
                     i.fa.fa-map-marker
                     input.form-control(id="pac-input", type='text', name='keyword' placeholder='Localisation')
                     button.btn.btn-warning.text-white
@@ -202,5 +205,10 @@ html(lang="en")
 
             .modal-footer.border-0.justify-content-center
                 button.btn.btn-pink Ajouter
+
+        script.
+            $(function () {
+                $('#datetimepicker4').datetimepicker({format: 'YYYY-MM-DD'});
+            });
 
 
