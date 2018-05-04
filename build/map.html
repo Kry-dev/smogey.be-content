@@ -122,7 +122,9 @@
           <div class="modal-body">
             <div class="row mb-20">
               <div class="col-sm-6 mb-3"><img class="w-100" src="assets/img/map/map-modal-01.jpg"/></div>
-              <div class="col-sm-6 mb-3"><img class="w-100" src="assets/img/map/map-modal-03.jpg"/></div>
+              <div class="col-sm-6 mb-3">
+                <div id="calendar-modal"></div>
+              </div>
             </div>
             <p class="mb-0">Depuis quelques jours, la Ville de Tournai constate que des sacs poubelles d’ordures ménagères apparaissent à différents endroits de l’entité à des jours inappropriés alors que le calendrier de ramassage de ces poubelles.</p>
           </div>
@@ -150,9 +152,6 @@
             <div class="form-group"><i class="fa fa-folder"></i>
               <input class="form-control" id="init-type" type="text" placeholder="Précisions"/>
             </div>
-            <div class="form-group"><i class="fa fa-list-alt"></i>
-              <input class="form-control" id="datetimepicker4" type="text" placeholder="Engagements citoyens "/>
-            </div>
             <div class="form-group"><i class="fa fa-map-marker"></i>
               <input class="form-control" id="pac-input" type="text" name="keyword" placeholder="Adresse complète"/>
               <button class="btn btn-warning text-white"><i class="fa fa-location-arrow"></i>Localiser</button>
@@ -166,9 +165,114 @@
           </div>
         </form>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
       <script>
-        $(function () {
-            $('#datetimepicker4').datetimepicker({format: 'YYYY-MM-DD'});
+        $('#calendar-modal').fullCalendar({
+            header: {
+                left: 'prev',
+                center: 'title',
+                right: 'next'
+            },
+            defaultView: 'month',
+            displayEventTime: false,
+            eventLimit: true,
+            events: [],
+        
+            select: function (start, end, jsEvent) {
+                closePopovers();
+                popoverElement = $(jsEvent.target);
+                $(jsEvent.target).popover({
+                    title: 'the title',
+                    content: function () {
+                        return $("#popoverContent").html();
+                    },
+                    template: popTemplate,
+                    //placement: 'auto',
+                    placement: function (context, source) {
+                        var position = $(source).position();
+                        var content_width = document.getElementsByClassName('clientWidth').clientWidth;  //Can be found from a JS function for more dynamic output
+                        var content_height = 110;  //Can be found from a JS function for more dynamic output
+                        if (position.left > content_width) {
+                            return "left";
+                        }
+                        if (position.left < content_width) {
+                            return "right";
+                        }
+                        if (position.top < content_height) {
+                            return "bottom";
+                        }
+                        return "top";
+                    },
+                    html: 'true',
+                    trigger: 'click',
+                    animation: 'true',
+                    container: 'body'
+        
+                }).popover('show');
+            },
+        
+            eventClick: function (calEvent, jsEvent, view) {
+                //closePopovers();
+                popoverElement = $(jsEvent.currentTarget);
+            },
+        
+            eventRender: function (event, element) {
+                element.popover({
+                    title: event.title,
+                    content: function () {
+                        return $("#popoverContent").html();
+                    },
+                    template: popTemplate,
+                    //placement: 'auto',
+                    placement: function (context, source) {
+                        var position = $(source).position();
+                        var content_width = document.getElementsByClassName('clientWidth').clientWidth;  //Can be found from a JS
+                        // function for more dynamic output
+                        var content_height = 110;  //Can be found from a JS function for more dynamic output
+        
+                        if (position.left > content_width) {
+                            return "left";
+                        }
+        
+                        if (position.left < content_width) {
+                            return "right";
+                        }
+                        if (position.top < content_height) {
+                            return "bottom";
+                        }
+        
+                        return "top";
+                    },
+                    html: 'true',
+                    trigger: 'click',
+                    animation: 'true',
+                    container: 'body'
+                });
+        
+            },
+            eventAfterAllRender: function () {
+                $('.fc-row.fc-week.fc-widget-content').attr('style', 'height: auto ');
+            }
+        
+        });
+        
+        
+        var popoverElement;
+        
+        function closePopovers() {
+            $('.popover').not(this).popover('hide');
+        }
+        if ($('.modal[aria-hidden="true"]')) {
+            closePopovers();
+        }
+        
+        $('body').on('click', function (e) {
+            // close the popover if: click outside of the popover || click on the close button of the popover
+            if (popoverElement && ((!popoverElement.is(e.target) && popoverElement.has(e.target).length === 0 && $('.popover').has(e.target).length === 0) || (popoverElement.has(e.target) && e.target.id === 'closepopover'))) {
+        
+                ///$('.popover').popover('hide'); --> works
+                closePopovers();
+            }
         });
       </script>
     </div>
