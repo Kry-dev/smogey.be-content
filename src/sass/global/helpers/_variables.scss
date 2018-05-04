@@ -85,14 +85,7 @@ $brand-danger:          $danger;
 .bg-danger      {background-color: $danger !important; }
 .bg-pink				{background-color: $pink !important; }
 .bg-pink-dark		{background-color: $pink-dark !important; }
-.bg-gradient-custom-gray{
-	background: linear-gradient(
-									to right,
-									$white 20px,
-									$gray 20px,
-									$gray 100%
-	);
-}
+
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: (
