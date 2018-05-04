@@ -6,23 +6,23 @@ html(lang="en")
     include mixin/all-mixin
     body.homepage
         .wrapper
-            section.main
+            article.calendar-wrap
                 .container.py-3
-                    article.calendar-wrap
-                        .row.mb-20
-                            .col-xs-12.px-0
-                                nav(aria-label='breadcrumb').bread
-                                    ol.breadcrumb.mb-0
-                                        li.breadcrumb-item
-                                            a(href='#') Acceuil
-                                        li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
-                        .row.mb-20
-                            .col-md-12.px-0
-                                .clearfix.bg-warning.p-2
-                                    h4.d-inline-block.text-white.float-left L'agenda des initiatives dans votre commune
-                                    a.d-inline-block.btn.btn-outline-warning.float-right(role="button", href="index.html")
-                                        span Retour
-                        .row.mb-20
+                    .row.mb-20
+                        .col-xs-12
+                            nav(aria-label='breadcrumb').bread
+                                ol.breadcrumb.mb-0
+                                    li.breadcrumb-item
+                                        a(href='#') Acceuil
+                                    li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
+                    .row.mb-20
+                        .col-md-12
+                            .clearfix.bg-warning.p-2
+                                h4.d-inline-block.text-white.float-left L'agenda des initiatives dans votre commune
+                                a.d-inline-block.btn.btn-outline-warning.float-right(role="button", href="index.html")
+                                    span Retour
+                    .row.mb-20
+                        .col-xs-12
                             #calendar-01
                             #popoverContent.hide
                                 .row.p-3
@@ -37,10 +37,10 @@ html(lang="en")
                                             |  More information
                                     .col-sm-3.col-xs-12
                                         img.img-responsive.m-auto(src='assets/img/calendar/pin-01.png')
-                        .row.mx-0.mb-20
-                            a.btn.btn-pink(href='#plus-initiative', data-toggle='modal')
-                                i.fa.fa-plus-circle
-                                span Poposer un événement
+                    .row.mx-0.mb-20
+                        a.btn.btn-pink(href='#plus-initiative', data-toggle='modal')
+                            i.fa.fa-plus-circle
+                            span Poposer un événement
 
         //// Modal
         #mapMarkerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mapMarkerModalTitle', aria-hidden='true')
@@ -176,7 +176,7 @@ html(lang="en")
                         placement: function (context, source) {
                             var position = $(source).position();
                             var content_width = document.getElementsByClassName('clientWidth').clientWidth;  //Can be found from a JS function for more dynamic output
-                            var content_height = 110;  //Can be found from a JS function for more dynamic output
+                            //var content_height = 110;  //Can be found from a JS function for more dynamic output
                             if (position.left > content_width) {
                                 return "left";
                             }
@@ -213,7 +213,7 @@ html(lang="en")
                             var position = $(source).position();
                             var content_width = document.getElementsByClassName('clientWidth').clientWidth;  //Can be found from a JS
                             // function for more dynamic output
-                            var content_height = 110;  //Can be found from a JS function for more dynamic output
+                            //var content_height = 110;  //Can be found from a JS function for more dynamic output
 
                             if (position.left > content_width) {
                                 return "left";
@@ -235,9 +235,9 @@ html(lang="en")
                     });
 
                 },
-                eventAfterAllRender: function () {
-                    $('.fc-row.fc-week.fc-widget-content').attr('style', 'height: auto ');
-                }
+                //eventAfterAllRender: function () {
+                  //  $('.fc-row.fc-week.fc-widget-content').attr('style', 'height: auto ');
+                //}
 
             });
 
