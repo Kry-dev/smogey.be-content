@@ -218,7 +218,7 @@ $border-radius: 0;
 	width: 100%;
 	.gm-style-iw {
 		overflow: visible !important;
-		width: 360px !important;
+		width: 280px !important;
 		@media (max-width: $screen-sm-max) {
 			width: 200px !important;
 		}
@@ -234,7 +234,6 @@ $border-radius: 0;
 			width: calc(100% + 52px);
 			height: calc(100% + 17px);
 			position: absolute;
-			border: 2px solid #96B314;
 			left: -15px;
 			top: -8px;
 			background-color: $white;
@@ -254,6 +253,9 @@ $border-radius: 0;
 			left: 50%;
 			margin-left: -13px;
 		}
+	}
+	img[src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"] {
+		top: -305px!important;
 	}
 }
 
@@ -279,9 +281,10 @@ $border-radius: 0;
 		border-radius: 5px 5px 0 0;
 	}
 	&-title {
-		font-size: 14px;
+		font-size: 16px;
 		text-align: left;
 		margin-bottom: 0;
+		margin-top: 0;
 	}
 	&-content {
 		padding: 50px 0 1rem 1rem;
@@ -309,6 +312,17 @@ $border-radius: 0;
 		position: relative;
 		width: 150px;
 		display: block;
+	}
+	#map-tooltip-close{
+		background: transparent;
+		color: $white;
+		position: absolute;
+		right: 10px;
+		border: none;
+		top: 15px;
+		.fa{
+			font-size: 20px;
+		}
 	}
 }
 
