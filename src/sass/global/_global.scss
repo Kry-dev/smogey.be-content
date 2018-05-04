@@ -122,3 +122,15 @@ article{
 	}
 }
 .pos-r{ position: relative; }
+.bg-gradient-custom-gray{
+	background: linear-gradient(
+									to right,
+									$white 20px,
+									$gray 20px,
+									$gray 100%
+	);
+
+	@media (max-width: $screen-sm-max) {
+		background: $gray;
+	}
+}
