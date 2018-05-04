@@ -1,7 +1,8 @@
 var $ = require('jquery');
 var slick = require('slick-carousel');
 
-$( document ).ready(function(){
+$(document).ready(function(){
+
     $('.new-slider').slick({
         dots: true,
         nextArrow: '<button class="right"><i class="fa fa-arrow-right"></i></button>',

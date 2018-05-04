@@ -1,146 +1,148 @@
 <!DOCTYPE html>
 html(lang="en")
-	include global/head
-	+head(
-		'Ambassadeur'
-	)
-	include mixin/all-mixin
-	body.homepage
-		.wrapper
-			article.panel-list
-				.container.py-3
-					.row.mb-3
-						.col-xs-12.mb-3
-							nav(aria-label='breadcrumb').bread
-								ol.breadcrumb.mb-0
-									li.breadcrumb-item
-										a(href='#') Acceuil
-									li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
-						.col-xs-12
-							.bg-warning.clearfix.py-2.px-3
-								h4.d-inline-block.text-white.float-left Réduction des déchets
-								a.d-inline-block.btn.btn-outline-warning.float-right(href="index.html", role="button")
-									span Retour
-					.row.mb-3
-						.col-md-3.mb-3.pr-md-0.pr-sm-3
-							.custom-select.w-100
-								select
-									option(selected='') Catégories
-									option(value='1') One
-									option(value='2') Two
-									option(value='3') Three
-					.row.mb-5.category-box
-						.col-xs-12.pl-md-3.px-sm-0
-							.col-md-3.col-xs-12.bg-gray.px-0
-								.category-box__img
-									img(src='assets/img/ambasad/cat-img-01.jpg').category-box__img-left-top
-							.col-md-6.col-xs-12.bg-gray.p-0.h-100
-								.category-box__info
-									p.category-box__text Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais
-										| elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des
-										| emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des
-										| bocaux consignés.
-									a(href="#").btn.btn-primary.btn-sm
-										span Catégorie
-							.col-md-3.col-xs-12.bg-gray.p-0
-								.category-box__contact
-									.panel.panel-success.bg-success
-										h5.panel-title.text-white Contact
-										.panel-body.p-0
-											.d-block.p-2.text-center
-												a(href="#").panel-text.text-white.m-auto 0 800 200 32 23
-											.d-block.p-2.text-center
-												a(href="#").panel-text.text-white.m-auto ili@mail.com
-											.d-block.p-2.text-center
-												a(href="#").panel-text.text-white.m-auto www.lili-bulk.com
-											.btn-group
-												a(href="#").btn.btn-default.text-center(type='button')
-													i.fa.fa-facebook-square
-												a(href="#").btn.btn-default.text-center(type='button')
-													i.fa.fa-twitter-square
-												a(href="#").btn.btn-default.text-center(type='button')
-													i.fa.fa-linkedin-square
-					.row.mb-5.category-box
-						.col-xs-12.pl-md-3.px-sm-0
-							.col-md-3.col-xs-12.bg-gray.px-0
-								.category-box__img
-									img(src='assets/img/ambasad/cat-img-02.jpg').category-box__img-left-top
-							.col-md-6.col-xs-12.bg-gray.p-0.h-100
-								.category-box__info
-									p.category-box__text Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais
-										| elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des
-										| emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des
-										| bocaux consignés.
-									a(href="#").btn.btn-primary.btn-sm
-										span Catégorie
-							.col-md-3.col-xs-12.bg-gray.p-0
-								.category-box__contact
-									.panel.panel-success.bg-success
-										h5.panel-title.text-white Contact
-										.panel-body.p-0
-											.d-block.p-2.text-center
-												a(href="#").panel-text.text-white.m-auto 0 800 200 32 23
-											.d-block.p-2.text-center
-												a(href="#").panel-text.text-white.m-auto ili@mail.com
-											.d-block.p-2.text-center
-												a(href="#").panel-text.text-white.m-auto www.lili-bulk.com
-											.btn-group
-												a(href="#").btn.btn-default.text-center(type='button')
-													i.fa.fa-facebook-square
-												a(href="#").btn.btn-default.text-center(type='button')
-													i.fa.fa-twitter-square
-												a(href="#").btn.btn-default.text-center(type='button')
-													i.fa.fa-linkedin-square
-					.row.mb-5.category-box
-						.col-xs-12.pl-md-3.px-sm-0
-							.col-md-3.col-xs-12.bg-gray.px-0
-								.category-box__img
-									img(src='assets/img/ambasad/cat-img-03.jpg').category-box__img-left-top
-							.col-md-6.col-xs-12.bg-gray.p-0.h-100
-								.category-box__info
-									p.category-box__text Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais
-										| elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des
-										| emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des
-										| bocaux consignés.
-									a(href="#").btn.btn-primary.btn-sm
-										span Catégorie
-							.col-md-3.col-xs-12.bg-gray.p-0
-								.category-box__contact
-									.panel.panel-success.bg-success
-										h5.panel-title.text-white Contact
-										.panel-body.p-0
-											.d-block.p-2.text-center
-												a(href="#").panel-text.text-white.m-auto 0 800 200 32 23
-											.d-block.p-2.text-center
-												a(href="#").panel-text.text-white.m-auto ili@mail.com
-											.d-block.p-2.text-center
-												a(href="#").panel-text.text-white.m-auto www.lili-bulk.com
-											.btn-group
-												a(href="#").btn.btn-default.text-center(type='button')
-													i.fa.fa-facebook-square
-												a(href="#").btn.btn-default.text-center(type='button')
-													i.fa.fa-twitter-square
-												a(href="#").btn.btn-default.text-center(type='button')
-													i.fa.fa-linkedin-square
-					.row
-						.col-md-12.text-center
-							ul.pagination
-								li
-									a(href='#') «
-								li
-									a(href='#') 1
-								li
-									a(href='#') 2
-								li
-									a(href='#') 3
-								li
-									a(href='#') 4
-								li
-									a(href='#') 5
-								li
-									a(href='#') »
+    include global/head
+    +head(
+    'Ambassadeur'
+    )
+    include mixin/all-mixin
+    body.homepage
+        .wrapper
+            article.panel-list
+                .container.py-3
+                    .row.mb-3
+                        .col-xs-12.mb-3
+                            nav(aria-label='breadcrumb').bread
+                                ol.breadcrumb.mb-0
+                                    li.breadcrumb-item
+                                        a(href='#') Acceuil
+                                    li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
+                        .col-xs-12
+                            .bg-warning.clearfix.py-2.px-3
+                                h4.d-inline-block.text-white.float-left Réduction des déchets
+                                a.d-inline-block.btn.btn-outline-warning.float-right(href="index.html", role="button")
+                                    span Retour
+                    .row.mb-3
+                        .col-md-3.mb-3.pr-md-0.pr-sm-3
+                            .custom-select.w-100
+                                select
+                                    option(selected='') Catégories
+                                    option(value='1') One
+                                    option(value='2') Two
+                                    option(value='3') Three
+                    .row.mb-5.category-box
+                        .col-xs-12.pl-md-3.px-sm-0.bg-gradient-custom-gray
+                            .col-md-3.col-xs-12.px-0
+                                .category-box__img
+                                    img(src='assets/img/ambasad/cat-img-01.jpg').category-box__img-left-top
+                            .col-md-6.col-xs-12.p-0.h-100
+                                .category-box__info
+                                    p.ellipsis Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais
+                                        | elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des
+                                        | emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des
+                                        | bocaux consignés.
 
+                                    a(href="#").btn.btn-primary.btn-sm
+                                        span Catégorie
+                            .col-md-3.col-xs-12.p-0
+                                .category-box__contact
+                                    .panel.panel-success.bg-success
+                                        h5.panel-title.text-white Contact
+                                        .panel-body.p-0
+                                            .d-block.p-2.text-center
+                                                a(href="#").panel-text.text-white.m-auto 0 800 200 32 23
+                                            .d-block.p-2.text-center
+                                                a(href="#").panel-text.text-white.m-auto ili@mail.com
+                                            .d-block.p-2.text-center
+                                                a(href="#").panel-text.text-white.m-auto www.lili-bulk.com
+                                            .btn-group
+                                                a(href="#").btn.btn-default.text-center(type='button')
+                                                    i.fa.fa-facebook-square
+                                                a(href="#").btn.btn-default.text-center(type='button')
+                                                    i.fa.fa-twitter-square
+                                                a(href="#").btn.btn-default.text-center(type='button')
+                                                    i.fa.fa-linkedin-square
+                    .row.mb-5.category-box
+                        .col-xs-12.pl-md-3.px-sm-0.bg-gradient-custom-gray
+                            .col-md-3.col-xs-12.px-0
+                                .category-box__img
+                                    img(src='assets/img/ambasad/cat-img-02.jpg').category-box__img-left-top
+                            .col-md-6.col-xs-12.p-0.h-100
+                                .category-box__info
+                                    p.ellipsis Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais
+                                        | elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des
+                                        | emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des
+                                        | bocaux consignés.
 
+                                    a(href="#").btn.btn-primary.btn-sm
+                                        span Catégorie
+                            .col-md-3.col-xs-12.p-0
+                                .category-box__contact
+                                    .panel.panel-success.bg-success
+                                        h5.panel-title.text-white Contact
+                                        .panel-body.p-0
+                                            .d-block.p-2.text-center
+                                                a(href="#").panel-text.text-white.m-auto 0 800 200 32 23
+                                            .d-block.p-2.text-center
+                                                a(href="#").panel-text.text-white.m-auto ili@mail.com
+                                            .d-block.p-2.text-center
+                                                a(href="#").panel-text.text-white.m-auto www.lili-bulk.com
+                                            .btn-group
+                                                a(href="#").btn.btn-default.text-center(type='button')
+                                                    i.fa.fa-facebook-square
+                                                a(href="#").btn.btn-default.text-center(type='button')
+                                                    i.fa.fa-twitter-square
+                                                a(href="#").btn.btn-default.text-center(type='button')
+                                                    i.fa.fa-linkedin-square
+                    .row.mb-5.category-box
+                        .col-xs-12.pl-md-3.px-sm-0.bg-gradient-custom-gray
+                            .col-md-3.col-xs-12.px-0
+                                .category-box__img
+                                    img(src='assets/img/ambasad/cat-img-03.jpg').category-box__img-left-top
+                            .col-md-6.col-xs-12.p-0.h-100
+                                .category-box__info
+                                    p.ellipsis Lili Bulk, encore une autre épicerie en ligne 100 % bio ? Certes oui, mais
+                                        | elle est unique en son genre, car là où elle se démarque de ses paires, c’est au niveau des
+                                        | emballages. Privilégiant le zéro déchet, la startup livre ses produits en vrac dans des
+                                        | bocaux consignés.
 
+                                    a(href="#").btn.btn-primary.btn-sm
+                                        span Catégorie
+                            .col-md-3.col-xs-12.p-0
+                                .category-box__contact
+                                    .panel.panel-success.bg-success
+                                        h5.panel-title.text-white Contact
+                                        .panel-body.p-0
+                                            .d-block.p-2.text-center
+                                                a(href="#").panel-text.text-white.m-auto 0 800 200 32 23
+                                            .d-block.p-2.text-center
+                                                a(href="#").panel-text.text-white.m-auto ili@mail.com
+                                            .d-block.p-2.text-center
+                                                a(href="#").panel-text.text-white.m-auto www.lili-bulk.com
+                                            .btn-group
+                                                a(href="#").btn.btn-default.text-center(type='button')
+                                                    i.fa.fa-facebook-square
+                                                a(href="#").btn.btn-default.text-center(type='button')
+                                                    i.fa.fa-twitter-square
+                                                a(href="#").btn.btn-default.text-center(type='button')
+                                                    i.fa.fa-linkedin-square
+                    .row
+                        .col-md-12.text-center
+                            ul.pagination
+                                li
+                                    a(href='#') «
+                                li
+                                    a(href='#') 1
+                                li
+                                    a(href='#') 2
+                                li
+                                    a(href='#') 3
+                                li
+                                    a(href='#') 4
+                                li
+                                    a(href='#') 5
+                                li
+                                    a(href='#') »
+
+    script.
 
 
