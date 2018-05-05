@@ -2,7 +2,6 @@ var $ = require('jquery');
 var slick = require('slick-carousel');
 
 $(document).ready(function(){
-
     $('.new-slider').slick({
         dots: true,
         nextArrow: '<button class="right"><i class="fa fa-arrow-right"></i></button>',
@@ -36,15 +35,17 @@ $(document).ready(function(){
 
 
 
-    var hideTooltip = function () {$('#calendar .calendar-tooltip').hide();};
-    hideTooltip();
-
-    $('.events-item').on('click', function() {
-        $(this).find('.calendar-tooltip').toggle();
-    });
+    var hideTooltip = function () {$('#calendar .calendar-tooltip').removeClass('d-block');};
     $('.btn-tooltip-close').on('click', function () {
-        $(this).find('.calendar-tooltip').toggle();
+        $('.calendar-tooltip').removeClass('d-block');
     });
+
+    $('.events-link').on('click', function() {
+        hideTooltip();
+        $(this).next('.calendar-tooltip').addClass('d-block');
+
+    });
+
 
     var markers = new Array();
     var iconSrc = {};

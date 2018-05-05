@@ -65,9 +65,13 @@
 		height: 15px;
 		display: block;
 		padding-top: 20px;
-		&-item {
-			float: right;
+		&-item{
 			display: inline-block;
+			float: right;
+		}
+		&-link {
+
+			display: block;
 			width: 15px;
 			height: 15px;
 			background-color: transparent;
