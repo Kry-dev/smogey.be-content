@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 html(lang="en")
-    include global/head
+    include global/head-calendar-01
     +head('Smogey Calendar')
 
     include mixin/all-mixin
@@ -90,6 +90,7 @@ html(lang="en")
                         button.btn.btn-pink Ajouter
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js")
+        script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCeloO1xPh9Dnsbowth9eYErBB_bajVhT8&libraries=places')
         script.
             $(function () {
                 $('#datetimepicker4').datetimepicker({format: 'YYYY-MM-DD'});
