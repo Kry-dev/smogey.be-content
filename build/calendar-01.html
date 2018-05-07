@@ -157,7 +157,7 @@
           },
           defaultView: 'month',
           displayEventTime: false,
-          eventLimit: true,
+          eventLimit: 3,
           events: [
           {
               title: 'Naturalia Tolbiac -1',
@@ -219,6 +219,7 @@
           eventRender: function (event, element) {
               element.popover({
                   title: event.title,
+                  eventLimit: 3,
                   content: function () {
                       return $("#popoverContent").html();
                   },
