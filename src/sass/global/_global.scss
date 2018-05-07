@@ -134,3 +134,13 @@ article{
 		background: $gray;
 	}
 }
+.ellipsis-sm{
+	@media (max-width: $screen-sm-min) {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		display: inline !important;
+		width: 70%;
+	}
+
+}
