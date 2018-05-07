@@ -1,33 +1,4 @@
 .fc{
-	&-row{
-		//.fc-content-skeleton{
-		//	position: absolute;
-		//	top: 0;
-		//	bottom: 0;
-		//	height: 100%;
-		//	table{
-		//		height: 100%;
-		//		width: 100%;
-		//	}
-		//	tbody{
-		//		position: relative;
-		//		//display: block;
-		//		width: 100%;
-		//		height: 100%;
-		//		padding: 5px 0;
-		//		tr{
-		//			width: 100%;
-		//			td{
-		//				width: 14.285%;
-		//			}
-		//		}
-		//	}
-		//	.fc-event-container{
-		//		vertical-align: bottom;
-		//		height: 15px;
-		//	}
-		//}
-	}
 	&-scroller.fc-day-grid-container{
 		overflow-x: inherit !important;
 		overflow-y: inherit !important;
@@ -103,6 +74,10 @@
 		float: left !important;
 		padding: 4px;
 		font-size: 16px;
+		@media (max-width: $screen-sm-max) {
+			padding: 1px;
+			font-size: 12px;
+		}
 	}
 	.fc-title{
 		display: none;
@@ -118,15 +93,21 @@
 			cursor: pointer;
 			transform: scale(1.2);
 		}
+		@media (max-width: $screen-md-min) {
+			margin: 2px !important;
+		}
 		@media (max-width: $screen-sm-max) {
 			width: 10px;
 			height: 10px;
-			margin: 2px;
+		}
+		@media (max-width: $screen-sm-min) {
+			width: 10px;
+			height: 10px;
+			margin: 1px !important;
 		}
 		@media (max-width: $screen-xs-max) {
 			width: 7px;
 			height: 7px;
-			margin: 1px;
 		}
 	}
 	.fc-day-grid-event{
