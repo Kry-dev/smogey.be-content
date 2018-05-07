@@ -90,7 +90,6 @@ html(lang="en")
                         button.btn.btn-pink Ajouter
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js")
-        script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCeloO1xPh9Dnsbowth9eYErBB_bajVhT8&libraries=places')
         script.
             $(function () {
                 $('#datetimepicker4').datetimepicker({format: 'YYYY-MM-DD'});
@@ -286,6 +285,12 @@ html(lang="en")
                     ///$('.popover').popover('hide'); --> works
                     closePopovers();
                 }
+            });
+
+            var map = new google.maps.Map(document.getElementById('map-canvas'), {
+                zoom: 11,
+                center: new google.maps.LatLng(40.7967667, -74.4815438),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
             });
 
 

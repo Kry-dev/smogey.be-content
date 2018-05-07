@@ -28,7 +28,11 @@ const paths = {
         dest: 'build/assets/css/'
     },
     scripts: {
-        src: 'src/js/**/*.js',
+        src: 'src/js/*.js',
+        dest: 'build/assets/js/'
+    },
+    vendorScripts: {
+        src: 'src/js/vendor/*.js',
         dest: 'build/assets/js/'
     },
     templates: {
@@ -124,6 +128,11 @@ function fonts() {
     return gulp.src(paths.fonts.src)
         .pipe(gulp.dest(paths.fonts.dest));
 }
+// copy vendorScripts
+function vendorScripts() {
+    return gulp.src(paths.vendorScripts.src)
+        .pipe(gulp.dest(paths.vendorScripts.dest));
+}
 
 // look at the changes and compilation
 function watch() {
@@ -132,7 +141,7 @@ function watch() {
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.templates.src, templates);
     gulp.watch(paths.images.src, images);
-    //gulp.watch(paths.fonts.src, fonts);
+    gulp.watch(paths.vendorScripts.src, vendorScripts);
 }
 
 // следим за build и релоадим браузер
@@ -150,7 +159,7 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.templates = templates;
 exports.images = images;
-//exports.fonts = fonts;
+exports.vendorScripts = vendorScripts;
 exports.watch = watch;
 exports.server = server;
 
@@ -159,6 +168,6 @@ exports.server = server;
 gulp.task('default', gulp.series(
     clean,
     // gulp.parallel(SVGSpriteBuild, fonts, styles, scripts, templates, images),
-    gulp.parallel( fonts, styles, scripts, templates, images),
+    gulp.parallel( fonts, styles, scripts,vendorScripts, templates, images),
     gulp.parallel(watch, server)
 ));

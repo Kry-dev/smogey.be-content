@@ -7,7 +7,7 @@ const config = {
   },
   plugins: [
     new UglifyJSPlugin({
-      sourceMap: true
+      sourceMap: true,
     })
   ]
 };
