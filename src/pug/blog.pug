@@ -7,20 +7,18 @@ html(lang="en")
 		.wrapper
 			article.blog-list
 				.container.py-3
-					.row.mb-lg-6
-						.col-md-8.col-md-push-4.mb-sm-3
+					.row.mb-3
+						.col-xs-12.mb-3
 							nav(aria-label='breadcrumb').bread
 								ol.breadcrumb.mb-0
 									li.breadcrumb-item
 										a(href='#') Acceuil
 									li.breadcrumb-item.active(aria-current='page') Le blog du développement durable
-								a.btn.btn-warning(role="button", href="index.html")
+						.col-xs-12.mb-5
+							.bg-warning.clearfix.py-2.px-3
+								h4.d-inline-block.text-white.float-left Réduction des déchets
+								a.d-inline-block.btn.btn-outline-warning.float-right(href="index.html", role="button")
 									span Retour
-						.col-md-4.col-md-pull-8.mb-sm-3
-							form(action='', method='post')#initiv-search.initiv-search
-								input.form-control(type='text', size='60', placeholder="Rechercher dans le blog de l'outil...")
-								button.btn.btn-search(type='submit')
-									i.fa.fa-search
 
 					.row.mb-3.blog
 						.col-xs-12
