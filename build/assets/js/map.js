@@ -1,4 +1,12 @@
 $(document).ready(function() {
+   $('#allTabs .form-group a').click(function (e) {
+       e.preventDefault();
+       var href = $(this).attr('href');
+       var activeLink = $(".nav-tabs > li.nav-item a[href='"+href+"'] ");
+       $('.nav-tabs > li.nav-item.active').removeClass('active');
+       $(activeLink).parent().addClass('active');
+   });
+
     var markers = new Array();
     var iconSrc = {};
     iconSrc['Magasin-vrac'] = 'assets/img/map/map-pin-01.png';

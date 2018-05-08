@@ -29,168 +29,151 @@
   <!--calendar-tooltip-->
   <body class="homepage">
     <div class="wrapper">
-      <section class="main">
-        <div class="container">
-          <article>
-            <div class="map">
-              <div class="container-fluid p-0">
-                <div class="row row-eq-height mb-40">
-                  <div class="col-md-4 col-sm-12">
-                    <form class="initiv-search" action="blog.html" method="post" id="initiv-search">
-                      <input class="form-control" type="text" size="60" placeholder="Rechercher dans le blog de l'outil"/>
-                      <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                    <div class="map-filter mt-3 bg-gray">
-                      <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
-                        <li class="nav-item"><a class="nav-link" href="#map-tab-1" data-toggle="tab" role="tab" aria-controls="map-tab-1">
-                            <div class="map-filter-btn map-filter-btn-1"></div></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#map-tab-2" data-toggle="tab" role="tab" aria-controls="map-tab-2">
-                            <div class="map-filter-btn map-filter-btn-2"></div></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#map-tab-3" data-toggle="tab" role="tab" aria-controls="map-tab-3">
-                            <div class="map-filter-btn map-filter-btn-3"></div></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#map-tab-4" data-toggle="tab" role="tab" aria-controls="map-tab-4">
-                            <div class="map-filter-btn map-filter-btn-4"></div></a></li>
-                      </ul>
-                      <div class="tab-content">
-                        <div class="tab-pane fade" id="map-tab-1" role="tabpanel">
-                          <div class="tab-pane-header">
-                            <h4 class="tab-pane-title">Waste reducing</h4>
-                          </div>
-                          <form class="list-group" id="form" action="blog.html">
-                            <fieldset>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Bebat-pile-pin.png"/>
-                                <label class="text-left" for="Magasin-vrac">title</label>
-                                <input class="checkbox" id="Magasin-vrac" name="Magasin-vrac" type="checkbox" value="Magasin-vrac"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Bulle-a-verre-pin.png"/>
-                                <label for="Producteurs-locaux">title</label>
-                                <input class="checkbox" id="Producteurs-locaux" name="Producteurs-locaux" type="checkbox" value="Producteurs-locaux"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Bulle-a-vetement-pin.png"/>
-                                <label for="Potager collectif">title</label>
-                                <input class="checkbox" id="Potager collectif" name="Potager collectif" type="checkbox" value="Potager collectif"/>
-                              </div>
-                            </fieldset>
-                          </form>
-                        </div>
-                        <div class="tab-pane fade" id="map-tab-2" role="tabpanel">
-                          <div class="tab-pane-header">
-                            <h4 class="tab-pane-title">REDUCTION DES DECHETS</h4>
-                          </div>
-                          <form class="list-group" id="form" action="blog.html">
-                            <fieldset>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Bebat-pile-pin.png"/>
-                                <label class="text-left" for="Magasin-vrac">title</label>
-                                <input class="checkbox" id="Magasin-vrac" name="Magasin-vrac" type="checkbox" value="Magasin-vrac"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Bulle-a-verre-pin.png"/>
-                                <label for="Producteurs-locaux">title</label>
-                                <input class="checkbox" id="Producteurs-locaux" name="Producteurs-locaux" type="checkbox" value="Producteurs-locaux"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Bulle-a-vetement-pin.png"/>
-                                <label for="Potager collectif">title</label>
-                                <input class="checkbox" id="Potager collectif" name="Potager collectif" type="checkbox" value="Potager collectif"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Recupel-ampoule-pin.png"/>
-                                <label for="Seconde main">title</label>
-                                <input class="checkbox" id="Seconde main" name="Seconde main" type="checkbox" value="Seconde main"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Recupel-electro-pin.png"/>
-                                <label for="GAC">title</label>
-                                <input class="checkbox" id="GAC" name="GAC" type="checkbox" value="GAC"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Waste2-pin.png"/>
-                                <label class="text-left" for="Magasin-vrac">title</label>
-                                <input class="checkbox" id="Magasin-vrac" name="Magasin-vrac" type="checkbox" value="Magasin-vrac"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/18-exchange-giving-pin.png"/>
-                                <label for="Producteurs-locaux">title</label>
-                                <input class="checkbox" id="Producteurs-locaux" name="Producteurs-locaux" type="checkbox" value="Producteurs-locaux"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/11-renting-pin.png"/>
-                                <label for="Potager collectif">title</label>
-                                <input class="checkbox" id="Potager collectif" name="Potager collectif" type="checkbox" value="Potager collectif"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/repair-pin.png"/>
-                                <label for="Seconde main">title</label>
-                                <input class="checkbox" id="Seconde main" name="Seconde main" type="checkbox" value="Seconde main"/>
-                              </div>
-                            </fieldset>
-                          </form>
-                        </div>
-                        <div class="tab-pane fade" id="map-tab-3" role="tabpanel">
-                          <div class="tab-pane-header">
-                            <h4 class="tab-pane-title">Economie locale</h4>
-                          </div>
-                          <form class="list-group" id="form" action="blog.html">
-                            <fieldset>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Magasin-vrac-pin.png"/>
-                                <label class="text-left" for="Magasin-vrac">Magasin vrac</label>
-                                <input class="checkbox" id="Magasin-vrac" name="Magasin-vrac" type="checkbox" value="Magasin-vrac"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/local-producer-pin.png"/>
-                                <label for="Producteurs-locaux">Producteurs-locaux</label>
-                                <input class="checkbox" id="Producteurs-locaux" name="Producteurs-locaux" type="checkbox" value="Producteurs-locaux"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/13-local-producer-2-pin.png"/>
-                                <label for="Potager collectif">Potager collectif</label>
-                                <input class="checkbox" id="Potager collectif" name="Potager collectif" type="checkbox" value="Potager collectif"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/12-second-hand-pin.png"/>
-                                <label for="Seconde main">Seconde main</label>
-                                <input class="checkbox" id="Seconde main" name="Seconde main" type="checkbox" value="Seconde main"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/13-local-producer-pin.png"/>
-                                <label for="GAC">GAC</label>
-                                <input class="checkbox" id="GAC" name="GAC" type="checkbox" value="GAC"/>
-                              </div>
-                            </fieldset>
-                          </form>
-                        </div>
-                        <div class="tab-pane fade" id="map-tab-4" role="tabpanel">
-                          <div class="tab-pane-header">
-                            <h4 class="tab-pane-title">Dolor</h4>
-                          </div>
-                          <form class="list-group" id="form" action="blog.html">
-                            <fieldset>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Bebat-pile-pin.png"/>
-                                <label class="text-left" for="Magasin-vrac">title</label>
-                                <input class="checkbox" id="Magasin-vrac" name="Magasin-vrac" type="checkbox" value="Magasin-vrac"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Bulle-a-verre-pin.png"/>
-                                <label for="Producteurs-locaux">title</label>
-                                <input class="checkbox" id="Producteurs-locaux" name="Producteurs-locaux" type="checkbox" value="Producteurs-locaux"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/Bulle-a-vetement-pin.png"/>
-                                <label for="Potager collectif">title</label>
-                                <input class="checkbox" id="Potager collectif" name="Potager collectif" type="checkbox" value="Potager collectif"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/12-second-hand-pin.png"/>
-                                <label for="Seconde main">title</label>
-                                <input class="checkbox" id="Seconde main" name="Seconde main" type="checkbox" value="Seconde main"/>
-                              </div>
-                              <div class="form-group"><img class="map-pin" src="assets/img/map/13-local-producer-pin.png"/>
-                                <label for="GAC">title</label>
-                                <input class="checkbox" id="GAC" name="GAC" type="checkbox" value="GAC"/>
-                              </div>
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
+      <article class="map">
+        <div class="container py-3">
+          <div class="row row-eq-height mb-40">
+            <div class="col-md-4 col-sm-12">
+              <form class="initiv-search" action="blog.html" method="post" id="initiv-search">
+                <input class="form-control" type="text" size="60" placeholder="Rechercher dans le blog de l'outil"/>
+                <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              <div class="map-filter mt-3 bg-gray">
+                <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
+                  <li class="nav-item active"><a class="nav-link" href="#map-tab-1" data-toggle="tab" role="tab" aria-controls="map-tab-1">
+                      <div class="map-filter-btn"><img src="assets/img/map/all2.png"/></div></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#map-tab-2" data-toggle="tab" role="tab" aria-controls="map-tab-2">
+                      <div class="map-filter-btn"><img src="assets/img/map/1.png"/></div></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#map-tab-3" data-toggle="tab" role="tab" aria-controls="map-tab-3">
+                      <div class="map-filter-btn"><img src="assets/img/map/2.png"/></div></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#map-tab-4" data-toggle="tab" role="tab" aria-controls="map-tab-4">
+                      <div class="map-filter-btn"><img src="assets/img/map/3.png"/></div></a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade active in" id="map-tab-1" role="tabpanel">
+                    <div class="tab-pane-header">
+                      <h4 class="tab-pane-title text-uppercase">See all</h4>
                     </div>
+                    <fieldset id="allTabs">
+                      <div class="form-group"><img class="map-pin" src="assets/img/map/1.png"/><a class="text-left" href="#map-tab-2" data-toggle="tab" role="tab">Waste reducing</a></div>
+                      <div class="form-group"><img class="map-pin" src="assets/img/map/2.png"/><a class="nav-link text-left" href="#map-tab-3" data-toggle="tab" role="tab" aria-controls="map-tab-3">Local reducing</a></div>
+                      <div class="form-group"><img class="map-pin" src="assets/img/map/3.png"/><a class="nav-link text-left" href="#map-tab-4" data-toggle="tab" role="tab" aria-controls="map-tab-4">Mobility</a></div>
+                    </fieldset>
                   </div>
-                  <div class="col-md-8 col-sm-12">
-                    <div class="map-content"><a class="btn btn-warning" role="button" href="index.html"><span>Retour</span></a>
-                      <button class="btn btn-pink" type="button" data-toggle="modal" data-target="#plus-initiative"><i class="fa fa-plus-circle"></i><span>Ajouter une initiative</span></button>
-                      <div id="map-canvas" style="width: 100%; height: 600px;"></div>
+                  <div class="tab-pane fade" id="map-tab-2" role="tabpanel">
+                    <div class="tab-pane-header">
+                      <h4 class="tab-pane-title text-uppercase">REDUCTION DES DECHETS</h4>
                     </div>
+                    <form class="list-group" id="form" action="blog.html">
+                      <fieldset>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/Bebat-pile-pin.png"/>
+                          <label class="text-left" for="Magasin-vrac">title</label>
+                          <input class="checkbox" id="Magasin-vrac" name="Magasin-vrac" type="checkbox" value="Magasin-vrac"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/Bulle-a-verre-pin.png"/>
+                          <label for="Producteurs-locaux">title</label>
+                          <input class="checkbox" id="Producteurs-locaux" name="Producteurs-locaux" type="checkbox" value="Producteurs-locaux"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/Bulle-a-vetement-pin.png"/>
+                          <label for="Potager collectif">title</label>
+                          <input class="checkbox" id="Potager collectif" name="Potager collectif" type="checkbox" value="Potager collectif"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/Recupel-ampoule-pin.png"/>
+                          <label for="Seconde main">title</label>
+                          <input class="checkbox" id="Seconde main" name="Seconde main" type="checkbox" value="Seconde main"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/Recupel-electro-pin.png"/>
+                          <label for="GAC">title</label>
+                          <input class="checkbox" id="GAC" name="GAC" type="checkbox" value="GAC"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/Waste2-pin.png"/>
+                          <label class="text-left" for="Magasin-vrac">title</label>
+                          <input class="checkbox" id="Magasin-vrac" name="Magasin-vrac" type="checkbox" value="Magasin-vrac"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/18-exchange-giving-pin.png"/>
+                          <label for="Producteurs-locaux">title</label>
+                          <input class="checkbox" id="Producteurs-locaux" name="Producteurs-locaux" type="checkbox" value="Producteurs-locaux"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/11-renting-pin.png"/>
+                          <label for="Potager collectif">title</label>
+                          <input class="checkbox" id="Potager collectif" name="Potager collectif" type="checkbox" value="Potager collectif"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/repair-pin.png"/>
+                          <label for="Seconde main">title</label>
+                          <input class="checkbox" id="Seconde main" name="Seconde main" type="checkbox" value="Seconde main"/>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="map-tab-3" role="tabpanel">
+                    <div class="tab-pane-header">
+                      <h4 class="tab-pane-title text-uppercase">Economie locale</h4>
+                    </div>
+                    <form class="list-group" id="form" action="blog.html">
+                      <fieldset>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/Magasin-vrac-pin.png"/>
+                          <label class="text-left" for="Magasin-vrac">Magasin vrac</label>
+                          <input class="checkbox" id="Magasin-vrac" name="Magasin-vrac" type="checkbox" value="Magasin-vrac"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/local-producer-pin.png"/>
+                          <label for="Producteurs-locaux">Producteurs-locaux</label>
+                          <input class="checkbox" id="Producteurs-locaux" name="Producteurs-locaux" type="checkbox" value="Producteurs-locaux"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/13-local-producer-2-pin.png"/>
+                          <label for="Potager collectif">Potager collectif</label>
+                          <input class="checkbox" id="Potager collectif" name="Potager collectif" type="checkbox" value="Potager collectif"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/12-second-hand-pin.png"/>
+                          <label for="Seconde main">Seconde main</label>
+                          <input class="checkbox" id="Seconde main" name="Seconde main" type="checkbox" value="Seconde main"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/13-local-producer-pin.png"/>
+                          <label for="GAC">GAC</label>
+                          <input class="checkbox" id="GAC" name="GAC" type="checkbox" value="GAC"/>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="map-tab-4" role="tabpanel">
+                    <div class="tab-pane-header">
+                      <h4 class="tab-pane-title text-uppercase">Dolor</h4>
+                    </div>
+                    <form class="list-group" id="form" action="blog.html">
+                      <fieldset>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/Bebat-pile-pin.png"/>
+                          <label class="text-left" for="Magasin-vrac">title</label>
+                          <input class="checkbox" id="Magasin-vrac" name="Magasin-vrac" type="checkbox" value="Magasin-vrac"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/Bulle-a-verre-pin.png"/>
+                          <label for="Producteurs-locaux">title</label>
+                          <input class="checkbox" id="Producteurs-locaux" name="Producteurs-locaux" type="checkbox" value="Producteurs-locaux"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/Bulle-a-vetement-pin.png"/>
+                          <label for="Potager collectif">title</label>
+                          <input class="checkbox" id="Potager collectif" name="Potager collectif" type="checkbox" value="Potager collectif"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/12-second-hand-pin.png"/>
+                          <label for="Seconde main">title</label>
+                          <input class="checkbox" id="Seconde main" name="Seconde main" type="checkbox" value="Seconde main"/>
+                        </div>
+                        <div class="form-group"><img class="map-pin" src="assets/img/map/13-local-producer-pin.png"/>
+                          <label for="GAC">title</label>
+                          <input class="checkbox" id="GAC" name="GAC" type="checkbox" value="GAC"/>
+                        </div>
+                      </fieldset>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-          </article>
+            <div class="col-md-8 col-sm-12">
+              <div class="map-content"><a class="btn btn-warning" role="button" href="index.html"><span>Retour</span></a>
+                <button class="btn btn-pink" type="button" data-toggle="modal" data-target="#plus-initiative"><i class="fa fa-plus-circle"></i><span>Ajouter une initiative</span></button>
+                <div id="map-canvas" style="width: 100%; height: 600px;"></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </article>
     </div>
     <!--// Modal-->
     <div class="modal fade" id="mapMarkerModal" tabindex="-1" role="dialog" aria-labelledby="mapMarkerModalTitle" aria-hidden="true">
