@@ -118,11 +118,13 @@
 	}
 	.btn {
 		display: block;
-		width: 20%;
-		min-width: 100px;
 		text-align: center;
 		@media (max-width: $screen-sm-min) {
 			margin: 0 auto;
+		}
+		span{
+			text-overflow: inherit;
+			text-align: center;
 		}
 	}
 }
