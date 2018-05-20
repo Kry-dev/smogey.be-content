@@ -159,64 +159,45 @@
           displayEventTime: false,
           eventLimit: 3,
           events: [
-          {
-              title: 'Naturalia Tolbiac -1',
-              start: new Date(y, m, d + 4, 16, 0),
-              color: pink,
-              placement: 'bottom',
-              text: "71, rue de Tolbiac,' + <br> + 'PARIS 75013,' + <br> + ' Magasin vrac",
+              {
+                  title: 'Naturalia Tolbiac -1',
+                  start: new Date(y, m, d + 4, 16, 0),
+                  color: pink,
+                  placement: 'bottom',
+                  text: "71, rue de Tolbiac,' + <br> + 'PARIS 75013,' + <br> + ' Magasin vrac",
       
-          }, {
-              title: 'Naturalia Tolbiac -2',
-              start: new Date(y, m, d, 10, 30),
-              color: blue
-          },{
-              title: 'Naturalia Tolbiac -2',
-              start: new Date(y, m, d, 10, 30),
-              color: blue
-          }, {
-              title: 'Naturalia Tolbiac -10',
-              start: new Date(y, m, d, 12, 0),
-              color: red
-          }, {
-              title: 'Naturalia Tolbiac -11',
-              start: new Date(y, m, d, 12, 0),
-              color: pinkdark
-          }, {
-              title: 'Naturalia Tolbiac -4',
-              start: new Date(y, m, d + 1, 19, 0),
-              color: green
-          }, {
-              title: 'Naturalia Tolbiac -4',
-              start: new Date(y, m, d - 1, 1, 0),
-              color: green
-          }
+              }, {
+                  title: 'Naturalia Tolbiac -2',
+                  start: new Date(y, m, d, 10, 30),
+                  color: blue
+              },{
+                  title: 'Naturalia Tolbiac -2',
+                  start: new Date(y, m, d, 10, 30),
+                  color: blue
+              }, {
+                  title: 'Naturalia Tolbiac -10',
+                  start: new Date(y, m, d, 12, 0),
+                  color: red
+              }, {
+                  title: 'Naturalia Tolbiac -11',
+                  start: new Date(y, m, d, 12, 0),
+                  color: pinkdark
+              }, {
+                  title: 'Naturalia Tolbiac -4',
+                  start: new Date(y, m, d + 1, 19, 0),
+                  color: green
+              }, {
+                  title: 'Naturalia Tolbiac -4',
+                  start: new Date(y, m, d - 1, 1, 0),
+                  color: green
+              }
       
           ],
-      
-          select: function (start, end, jsEvent) {
-              closePopovers();
-              popoverElement = $(jsEvent.target);
-              $(jsEvent.target).popover({
-                  title: 'the title',
-                  content: function () {
-                      return $("#popoverContent").html();
-                  },
-                  template: popTemplate,
-                  html: 'true',
-                  trigger: 'click',
-                  animation: 'true',
-                  container: 'body'
-      
-              }).popover('show');
-          },
-      
-          eventClick: function (calEvent, jsEvent, view) {
-              //closePopovers();
+          eventClick: function (calEvent, jsEvent) {
               popoverElement = $(jsEvent.currentTarget);
           },
-      
           eventRender: function (event, element) {
+              $('.popover').popover('hide');
               element.popover({
                   title: event.title,
                   eventLimit: 3,
@@ -224,13 +205,27 @@
                       return $("#popoverContent").html();
                   },
                   template: popTemplate,
-                  //placement: 'auto',
                   placement: function (tip, element) {
-                      var $element, above, actualHeight, actualWidth, below, boundBottom, boundLeft, boundRight, boundTop, elementAbove, elementBelow, elementLeft, elementRight, isWithinBounds, left, pos, right;
+                      var $element,
+                          above,
+                          actualHeight,
+                          actualWidth,
+                          below,
+                          boundBottom,
+                          boundLeft,
+                          boundRight,
+                          boundTop,
+                          elementAbove,
+                          elementBelow,
+                          elementLeft,
+                          elementRight,
+                          isWithinBounds,
+                          left,
+                          pos,
+                          right;
                       isWithinBounds = function (elementPosition) {
                           return boundTop < elementPosition.top && boundLeft < elementPosition.left && boundRight > (elementPosition.left + actualWidth) && boundBottom > (elementPosition.top + actualHeight);
                       };
-      
                       $element = $(element);
                       pos = $.extend({}, $element.offset(), {
                           width: element.offsetWidth,
@@ -262,8 +257,6 @@
                       below = isWithinBounds(elementBelow);
                       left = isWithinBounds(elementLeft);
                       right = isWithinBounds(elementRight);
-      
-      
                       if (left) {
                           return "left";
                       } else {
@@ -283,34 +276,22 @@
                       }
                   },
                   html: 'true',
-                  trigger: 'click',
+                  trigger: 'manual',
                   animation: 'true',
                   container: '#calendar-01'
+              }).click(function (e) {
+                  $('.popover').not(this).popover('hide');
+                  $(this).popover('toggle');
               });
-      
           },
           eventAfterAllRender: function () {
               $('.fc-row.fc-week.fc-widget-content').attr('style', 'height: auto ');
           }
-      
       });
-      
-      
-      var popoverElement;
-      
-      function closePopovers() {
-          $('.popover').not(this).popover('hide');
-      }
-      if($('.modal[aria-hidden="true"]')){
-          closePopovers();
-      }
-      
       $('body').on('click', function (e) {
-          // close the popover if: click outside of the popover || click on the close button of the popover
+           //close the popover if: click outside of the popover || click on the close button of the popover
           if (popoverElement && ((!popoverElement.is(e.target) && popoverElement.has(e.target).length === 0 && $('.popover').has(e.target).length === 0) || (popoverElement.has(e.target) && e.target.id === 'closepopover'))) {
-      
-              ///$('.popover').popover('hide'); --> works
-              closePopovers();
+              $('.popover').popover('hide');
           }
       });
       
