@@ -1,36 +1,18 @@
-//@import "global/_normalize";
+/**@import "global/_normalize";*/
 @import "global/helpers/_variables";
 
 @import "global/slick";
 @import "global/slick-theme";
-@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/bootstrap-grid";
-@import "../../node_modules/bootstrap/scss/utilities/display";
-@import "../../node_modules/bootstrap/scss/utilities";
-//@import "../../node_modules/bootstrap/scss/grid";
-@import "../../node_modules/bootstrap/scss/buttons";
-@import "../../node_modules/bootstrap/scss/button-group";
-@import "../../node_modules/bootstrap/scss/breadcrumb";
-//@import "../../node_modules/bootstrap/scss/transitions";
-@import "../../node_modules/bootstrap/scss/modal";
-//@import "../../node_modules/bootstrap/scss/navbar";
-@import "../../node_modules/bootstrap/scss/nav";
-@import "../../node_modules/bootstrap/scss/forms";
-@import "../../node_modules/bootstrap/scss/custom-forms";
-//@import "../../node_modules/bootstrap/scss/dropdown";
-@import "../../node_modules/bootstrap/scss/type";
-@import "../../node_modules/bootstrap/scss/card";
-@import "../../node_modules/bootstrap/scss/list-group";
-@import "../../node_modules/bootstrap/scss/forms";
-//@import "../../node_modules/bootstrap/scss/images";
-@import "../../node_modules/bootstrap/scss/popover";
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-mincer";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../node_modules/font-awesome/scss/font-awesome";
+@import "https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css";
+@import "../../node_modules/fg-select-css/src/select-css";
+@import "../../node_modules/fg-select-css/src/select-css-arrow";
 
-//global styles
+/**global styles*/
 @import "global/helpers/helpers_all";
+@import "global/spacing";
 @import "global/global";
 @import "global/typography";
 @import "global/breadcrumb";
@@ -41,7 +23,7 @@
 @import "global/borders";
 @import "global/buttons";
 
-//pages styles
+/**pages styles*/
 @import "global/news-slider";
 @import "global/brands-slider";
 @import "global/initiv-cards";
@@ -49,5 +31,6 @@
 @import "global/blog";
 @import "global/map";
 @import "global/calendar";
+@import "global/fullCalendar";
 
 @import "global/header";

@@ -2,78 +2,86 @@
 <html lang="en">
     <head>
       <meta charset="utf-8"/>
-      <title>Initiatives sur Tournai</title>
+      <title>Reduction</title>
       <meta name="keywords" content="keywords"/>
       <meta name="description" content="description"/>
       <!--favicon-->
       <!--viewport-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
       <!--styles-->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css"/>
       <link rel="stylesheet" type="text/css" href="assets/css/app.min.css"/>
-      <script src="assets/js/bundle.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
+      <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/3.2.2/jquery.dotdotdot.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeloO1xPh9Dnsbowth9eYErBB_bajVhT8&amp;libraries=places" async="async" defer="defer"></script>
+      <script src="assets/js/bundle.js"></script><!--[if lt IE 9]><!-->
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<!--<![endif]-->
     </head>
   <!--card-text-->
   <!--calendar-tooltip-->
   <body class="homepage">
     <div class="wrapper">
-      <div class="header-template"><img src="/assets/img/global/header.jpg"/></div>
-      <section class="main">
-        <div class="container">
-          <article>
-            <div class="card-list">
-              <div class="container-fluid p-0">
-                <div class="row mb-20">
-                  <div class="col-md-12 px-0">
-                    <div class="d-flex bg-success p-2 justify-content-between align-items-center">
-                      <h5 class="text-white mb-0">Réduction des déchets</h5>
-                      <div class="btn btn-outline-success" role="button">Retour</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row p-0 mb-20">
-                  <div class="col-md-6 pl-0">
-                    <div class="card">
-                      <div class="card-body"><img src="assets/img/reduction/red-01.png" alt="#"/></div>
-                      <div class="card-header">
-                        <h5 class="card-title text-center">La carte des initiatives</h5>
-                      </div>
-                      <div class="card-footer">
-                        <button class="btn btn-primary w-50 mx-auto" data-toggle="modal" data-target="#en-savoir-plus">En savoir plus</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 pr-0">
-                    <div class="card">
-                      <div class="card-body"><img src="assets/img/reduction/red-02.png" alt="#"/></div>
-                      <div class="card-header">
-                        <h5 class="card-title text-center">La carte des initiatives</h5>
-                      </div>
-                      <div class="card-footer">
-                        <button class="btn btn-warning w-50 mx-auto" data-toggle="modal" data-target="#en-savoir-plus">En savoir plus</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row p-0 mb-20">
-                  <div class="col-md-6 pl-0"><a class="btn btn-pink btn-block" href="#"><i class="fa fa-trash"></i><span class="no-upercouse">En savoir plus sur la réduction des déchets</span></a></div>
-                  <div class="col-md-6 pr-0">
-                    <div class="quote"><i class="fa fa-quote-left text-success"></i><span class="text-dark">
-                        Le déchet le plus facile à éliminer est celui que l'on
-                        ne produit pas.</span></div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 px-0">
-                    <div class="col-md-12 px-0">
-                      <div class="brands-slider"><img src="/assets/img/reduction/red-slide-01.png"/><img src="/assets/img/reduction/red-slide-02.png"/><img src="/assets/img/reduction/red-slide-03.png"/><img src="/assets/img/reduction/red-slide-04.png"/><img src="/assets/img/reduction/red-slide-01.png"/><img src="/assets/img/reduction/red-slide-02.png"/><img src="/assets/img/reduction/red-slide-01.png"/><img src="/assets/img/reduction/red-slide-02.png"/><img src="/assets/img/reduction/red-slide-03.png"/><img src="/assets/img/reduction/red-slide-04.png"/></div>
-                    </div>
-                  </div>
-                </div>
+      <article class="panel-list">
+        <div class="container py-3">
+          <div class="row mb-3">
+            <div class="col-xs-12 mb-3">
+              <nav class="bread" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Le blog du développement durable</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-xs-12">
+              <div class="bg-success clearfix py-2 px-3">
+                <h4 class="d-inline-block text-white float-left">Réduction des déchets</h4><a class="d-inline-block btn btn-outline-success float-right" href="index.html" role="button"><span>Retour</span></a>
               </div>
             </div>
-          </article>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6 col-xs-12 mb-3">
+              <div class="panel pt-md-3 pl-md-0 px-sm-0">
+                <div class="panel-body"><img src="assets/img/reduction/red-01.png" alt="#"/></div>
+                <div class="panel-header">
+                  <h5 class="panel-title text-center">La carte des initiatives</h5>
+                </div>
+                <div class="panel-footer"><a class="btn btn-primary w-75 btn-block m-auto" href="map.html"><span class="text-uppercase">En savoir plus</span></a></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="panel pt-md-3 pr-md-0 px-sm-0">
+                <div class="panel-body"><img src="assets/img/reduction/red-02.png" alt="#"/></div>
+                <div class="panel-header">
+                  <h5 class="panel-title text-center">L'agenda des initiatives</h5>
+                </div>
+                <div class="panel-footer"><a class="btn btn-warning w-75 btn-block m-auto" href="calendar.html"><span class="text-uppercase">En savoir plus</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-xs-20">
+            <div class="col-md-6"><a class="btn btn-pink btn-block" href="blog.html"><i class="fa fa-trash"></i><span class="no-upercouse">En savoir plus sur la réduction des déchets</span></a></div>
+            <div class="col-md-6">
+              <div class="quote"><i class="fa fa-quote-left text-success"></i><span class="text-dark">
+                  Le déchet le plus facile à éliminer est celui que l'on
+                  ne produit pas.</span></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="col-md-12 px-0">
+                <div class="brands-slider"><img src="assets/img/reduction/red-slide-01.png"/><img src="assets/img/reduction/red-slide-02.png"/><img src="assets/img/reduction/red-slide-03.png"/><img src="assets/img/reduction/red-slide-04.png"/><img src="assets/img/reduction/red-slide-01.png"/><img src="assets/img/reduction/red-slide-02.png"/><img src="assets/img/reduction/red-slide-01.png"/><img src="assets/img/reduction/red-slide-02.png"/><img src="assets/img/reduction/red-slide-03.png"/><img src="assets/img/reduction/red-slide-04.png"/></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </article>
     </div>
   </body>
 </html>

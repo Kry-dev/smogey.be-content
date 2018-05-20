@@ -2,122 +2,105 @@
 <html lang="en">
     <head>
       <meta charset="utf-8"/>
-      <title>Initiatives sur Tournai</title>
+      <title>Smogey</title>
       <meta name="keywords" content="keywords"/>
       <meta name="description" content="description"/>
       <!--favicon-->
       <!--viewport-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
       <!--styles-->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css"/>
       <link rel="stylesheet" type="text/css" href="assets/css/app.min.css"/>
-      <script src="assets/js/bundle.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
+      <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/3.2.2/jquery.dotdotdot.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeloO1xPh9Dnsbowth9eYErBB_bajVhT8&amp;libraries=places" async="async" defer="defer"></script>
+      <script src="assets/js/bundle.js"></script><!--[if lt IE 9]><!-->
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<!--<![endif]-->
     </head>
   <!--card-text-->
   <!--calendar-tooltip-->
   <body class="homepage">
     <div class="wrapper">
-      <div class="header-template"><img src="/assets/img/global/header.jpg"/></div>
       <section class="main">
-        <div class="container">
-          <article>
-            <div class="card-list">
-              <div class="container-fluid p-0">
-                <div class="row mx-0 mb-20">
-                  <div class="col-md-4 px-1">
-                    <div class="card">
-                      <div class="card-body"><img src="assets/img/initi/initi-01.png" alt="#"/></div>
-                      <div class="card-header">
-                        <h5 class="card-title text-center">Mobilité</h5>
-                      </div>
-                      <div class="card-footer">
-                        <button class="btn btn-pink w-100" data-toggle="modal" data-target="#en-savoir-plus">En savoir plus</button>
-                      </div>
+        <div class="container py-3">
+          <article class="panel-list">
+            <div class="container-fluid">
+              <div class="row mb-20">
+                <div class="col-xs-12">
+                  <nav class="bread" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Le blog du développement durable</li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+              <div class="row mx-0 mb-20">
+                <div class="col-sm-4 col-xs-12 px-1">
+                  <div class="panel pt-4">
+                    <div class="panel-body"><img src="assets/img/initi/initi-01.png" alt="#"/></div>
+                    <div class="panel-header">
+                      <h5 class="panel-title text-center">Mobilité</h5>
                     </div>
+                    <div class="panel-footer"><a class="btn btn-pink w-100 text-center" href="reduction.html"><span>En savoir plus</span></a></div>
                   </div>
-                  <div class="col-md-4 px-1">
-                    <div class="card">
-                      <div class="card-body"><img src="assets/img/initi/initi-02.png" alt="#"/></div>
-                      <div class="card-header">
-                        <h5 class="card-title text-center">Réduction des déchets</h5>
-                      </div>
-                      <div class="card-footer">
-                        <button class="btn btn-success w-100" data-toggle="modal" data-target="#en-savoir-plus">En savoir plus</button>
-                      </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 px-1">
+                  <div class="panel pt-4">
+                    <div class="panel-body"><img src="assets/img/initi/initi-02.png" alt="#"/></div>
+                    <div class="panel-header">
+                      <h5 class="panel-title text-center">Réduction des déchets</h5>
                     </div>
+                    <div class="panel-footer"><a class="btn btn-success w-100 text-center" href="reduction.html"><span>En savoir plus</span></a></div>
                   </div>
-                  <div class="col-md-4 px-1">
-                    <div class="card">
-                      <div class="card-body"><img src="assets/img/initi/initi-03.png" alt="#"/></div>
-                      <div class="card-header">
-                        <h5 class="card-title text-center">Economie locale</h5>
-                      </div>
-                      <div class="card-footer">
-                        <button class="btn btn-warning w-100" data-toggle="modal" data-target="#en-savoir-plus">En savoir plus</button>
-                      </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 px-1">
+                  <div class="panel pt-4">
+                    <div class="panel-body"><img src="assets/img/initi/initi-03.png" alt="#"/></div>
+                    <div class="panel-header">
+                      <h5 class="panel-title text-center">Economie locale</h5>
                     </div>
+                    <div class="panel-footer"><a class="btn btn-warning w-100 text-center" href="reduction.html"><span>En savoir plus</span></a></div>
                   </div>
                 </div>
-                <div class="row mx-0 mb-20">
-                  <div class="col-md-6 px-1"><a class="btn btn-primary btn-block" href="#"><i class="fa fa-map-marker"></i>Voir toute les initiatives</a></div>
-                  <div class="col-md-6 px-1"><a class="btn btn-pink-dark btn-block" href="#"><i class="fa fa-user"></i>Trouver un ambassadeur</a></div>
+              </div>
+              <div class="row mx-0 mb-20">
+                <div class="col-sm-6 col-xs-12 px-1"><a class="btn btn-primary btn-block" href="map.html"><i class="fa fa-map-marker"></i><span class="text-uppercase">Voir toute les initiatives</span></a></div>
+                <div class="col-sm-6 col-xs-12 px-1"><a class="btn btn-pink-dark btn-block" href="ambassadeur.html"><i class="fa fa-user"></i><span class="text-uppercase">Trouver un ambassadeur</span></a></div>
+              </div>
+              <div class="row mx-0 mb-20">
+                <div class="col-xs-12 px-1">
+                  <form class="initiv-search" action="blog.html" method="post" id="initiv-search">
+                    <input class="form-control" type="text" size="60" placeholder="Rechercher dans le blog de l'outil"/>
+                    <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
+                  </form>
                 </div>
-                <div class="row mx-0 mb-20">
-                  <div class="col-md-12 px-1">
-                    <form class="initiv-search" action="" method="post" id="initiv-search">
-                      <input class="form-control" type="text" size="60" placeholder="Rechercher une initiative sur Tournai"/>
-                      <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                  </div>
+              </div>
+              <div class="row mx-0 mb-20">
+                <div class="col-xs-12 px-0">
+                  <ul class="new-slider">
+                    <li><a href="blog-article-01.html"><img src="assets/img/initi/slider-01.jpg"/>
+                        <h3 class="new-slider__title">Toute l’actualité & l’agenda des initiatives vertes de</h3></a></li>
+                    <li><a href="blog-article-01.html"><img src="assets/img/initi/slider-01.jpg"/>
+                        <h3 class="new-slider__title">Toute l’actualité & l’agenda des initiatives vertes de</h3></a></li>
+                    <li><a href="blog-article-01.html"><img src="assets/img/initi/slider-01.jpg"/>
+                        <h3 class="new-slider__title">Toute l’actualité & l’agenda des initiatives vertes de</h3></a></li>
+                  </ul>
                 </div>
-                <div class="row mx-0 mb-20">
-                  <div class="col-md-12 px-0">
-                    <ul class="new-slider">
-                      <li><a href="#"><img src="/assets/img/initi/slider-01.jpg"/>
-                          <h3 class="new-slider__title">Toute l’actualité & l’agenda des initiatives vertes de</h3></a></li>
-                      <li><a href="#"><img src="/assets/img/initi/slider-01.jpg"/>
-                          <h3 class="new-slider__title">Toute l’actualité & l’agenda des initiatives vertes de</h3></a></li>
-                      <li><a href="#"><img src="/assets/img/initi/slider-01.jpg"/>
-                          <h3 class="new-slider__title">Toute l’actualité & l’agenda des initiatives vertes de</h3></a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6 p-0 pr-1"><a class="btn btn-primary btn-block" href="#">Toutes les actualités...</a></div>
-                  <div class="col-md-6 p-0 pl-1"><a class="btn btn-primary btn-block" href="#">Tous les événements...</a></div>
-                </div>
+                <div class="col-sm-6 col-xs-12 p-0 pr-md-1"><a class="btn btn-primary btn-block" href="calendar.html"><span class="text-uppercase">Toutes les actualités...</span></a></div>
+                <div class="col-sm-6 col-xs-12 p-0 pl-md-1"><a class="btn btn-primary btn-block" href="calendar.html"><span class="text-uppercase">Tous les événements...</span></a></div>
               </div>
             </div>
           </article>
         </div>
       </section>
-    </div>
-    <div class="modal fade" id="en-savoir-plus" tabindex="-1">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-header bg-pink text-white">
-          <h5 class="modal-title">Je suis</h5>
-          <button class="btn-close" type="button" data-dismiss="modal" aria-label="Close"><span class="fa fa-close text-white" aria-hidden="true"></span></button>
-        </div>
-        <div class="modal-content p-3">
-          <div class="row">
-            <div class="col">
-              <div class="card">
-                <div class="card-body"><img src="assets/img/initi/initi-modal-01.png" alt="#"/></div>
-                <div class="card-header"></div>
-                <div class="card-footer">
-                  <button class="btn btn-success w-100">Entreprise</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body"><img src="assets/img/initi/initi-modal-02.png" alt="#"/></div>
-                <div class="card-header"></div>
-                <div class="card-footer">
-                  <button class="btn btn-warning w-100">Citoyen</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </body>
 </html>

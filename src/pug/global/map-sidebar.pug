@@ -1,63 +1,125 @@
 .map-filter.mt-3.bg-gray
     ul.nav.nav-tabs.nav-tabs--vertical.nav-tabs--left(role='navigation')
-        li.nav-item
+        li.nav-item.active
             a.nav-link(href='#map-tab-1', data-toggle='tab', role='tab', aria-controls='map-tab-1')
-                .map-filter-btn.map-filter-btn-1
+                .map-filter-btn
+                    img(src='assets/img/map/all2.png')
         li.nav-item
             a.nav-link(href='#map-tab-2', data-toggle='tab', role='tab', aria-controls='map-tab-2')
-                .map-filter-btn.map-filter-btn-2
+                .map-filter-btn
+                    img(src='assets/img/map/1.png')
         li.nav-item
-            a.nav-link.active(href='#map-tab-3', data-toggle='tab', role='tab', aria-controls='map-tab-3')
-                .map-filter-btn.map-filter-btn-3
+            a.nav-link(href='#map-tab-3', data-toggle='tab', role='tab', aria-controls='map-tab-3')
+                .map-filter-btn
+                    img(src='assets/img/map/2.png')
         li.nav-item
             a.nav-link(href='#map-tab-4', data-toggle='tab', role='tab', aria-controls='map-tab-4')
-                .map-filter-btn.map-filter-btn-4
+                .map-filter-btn
+                    img(src='assets/img/map/3.png')
     .tab-content
-        #map-tab-1.tab-pane.fade(role='tabpanel')
+        #map-tab-1.tab-pane.fade.active.in(role='tabpanel')
             .tab-pane-header
-                h4.tab-pane-title Waste reducing
-            .d-flex.bg-light.flex-column
-                p
-                    | Aenean sed lacus id mi scelerisque tristique. Nunc sed ex sed turpis fringilla aliquet in in neque. Praesent posuere, neque rhoncus sollicitudin fermentum, erat ligula volutpat dui, nec dapibus ligula lorem ac mauris. Etiam et leo venenatis purus pharetra dictum.
-                p
-                    | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin tempor mi ut risus laoreet molestie. Duis augue risus, fringilla et nibh ac, convallis cursus purus. Suspendisse potenti. Praesent pretium eros eleifend posuere facilisis. Proin ut magna vitae nulla suscipit eleifend. Ut bibendum pulvinar sapien, vel tristique felis scelerisque et. Sed elementum sapien magna, placerat interdum lacus placerat ut. Integer varius, ligula bibendum laoreet sollicitudin, eros metus fringilla lectus, quis consequat nisl nibh ut nisi. Aenean dignissim, nibh ac fermentum condimentum, ante nisl rutrum sapien, at commodo eros sapien vulputate arcu. Fusce neque leo, blandit nec lectus eu, vestibulum commodo tellus. Aliquam sem libero, tristique at condimentum ac, luctus nec nulla.
+                h4.tab-pane-title.text-uppercase See all
+            fieldset#allTabs
+                .form-group
+                    img.map-pin(src='assets/img/map/1.png')
+                    a(href='#map-tab-2', data-toggle='tab', role='tab').text-left Waste reducing
+                .form-group
+                    img.map-pin(src='assets/img/map/2.png')
+                    a.nav-link(href='#map-tab-3', data-toggle='tab', role='tab', aria-controls='map-tab-3').text-left Local reducing
+                .form-group
+                    img.map-pin(src='assets/img/map/3.png')
+                    a.nav-link(href='#map-tab-4', data-toggle='tab', role='tab', aria-controls='map-tab-4').text-left Mobility
         #map-tab-2.tab-pane.fade(role='tabpanel')
             .tab-pane-header
-                h4.tab-pane-title Repair cafe
-            .d-flex.bg-light.flex-column
-                p
-                    | Aenean pharetra risus quis placerat euismod. Praesent mattis lorem eget massa euismod sollicitudin. Donec porta nulla ut blandit vehicula. Mauris sagittis lorem nec mauris placerat, et molestie elit vehicula. Donec libero ex, condimentum et mi dapibus, euismod ornare ligula.
-                p
-                    | In faucibus tempus ante, et tempor magna luctus id. Ut a maximus ipsum. Duis eu velit nec libero pretium pellentesque. Maecenas auctor hendrerit pulvinar. Donec sed tortor interdum, sodales elit vel, tempor turpis. In tristique vestibulum eros vel congue. Vivamus maximus posuere fringilla. Nullam in est commodo, tristique ligula eu, tincidunt enim. Duis iaculis sodales lectus vitae cursus.
-        #map-tab-3.tab-pane.fade.show.active(role='tabpanel')
-            .tab-pane-header
-                h4.tab-pane-title Economie locale
-            form#form.list-group
+                h4.tab-pane-title.text-uppercase REDUCTION DES DECHETS
+            form#form.list-group(action="blog.html")
                 fieldset
                     .form-group
-                        img.map-pin(src='assets/img/map/map-pin-01.png')
+                        img.map-pin(src='assets/img/map/Bebat-pile-pin.png')
+                        label(for='Magasin-vrac').text-left title
+                        input#Magasin-vrac.checkbox(name='Magasin-vrac', type='checkbox', value='Magasin-vrac')
+                    .form-group
+                        img.map-pin(src='assets/img/map/Bulle-a-verre-pin.png')
+                        label(for='Producteurs-locaux') title
+                        input.checkbox(id='Producteurs-locaux', name='Producteurs-locaux', type='checkbox', value='Producteurs-locaux')
+                    .form-group
+                        img.map-pin(src='assets/img/map/Bulle-a-vetement-pin.png')
+                        label(for='Potager collectif') title
+                        input.checkbox(id='Potager collectif', name='Potager collectif', type='checkbox', value='Potager collectif')
+                    .form-group
+                        img.map-pin(src='assets/img/map/Recupel-ampoule-pin.png')
+                        label(for='Seconde main') title
+                        input.checkbox(id='Seconde main', name='Seconde main', type='checkbox', value='Seconde main')
+                    .form-group
+                        img.map-pin(src='assets/img/map/Recupel-electro-pin.png')
+                        label(for='GAC') title
+                        input.checkbox(id="GAC", name='GAC', type='checkbox', value='GAC')
+                    .form-group
+                        img.map-pin(src='assets/img/map/Waste2-pin.png')
+                        label(for='Magasin-vrac').text-left title
+                        input#Magasin-vrac.checkbox(name='Magasin-vrac', type='checkbox', value='Magasin-vrac')
+                    .form-group
+                        img.map-pin(src='assets/img/map/18-exchange-giving-pin.png')
+                        label(for='Producteurs-locaux') title
+                        input.checkbox(id='Producteurs-locaux', name='Producteurs-locaux', type='checkbox', value='Producteurs-locaux')
+                    .form-group
+                        img.map-pin(src='assets/img/map/11-renting-pin.png')
+                        label(for='Potager collectif') title
+                        input.checkbox(id='Potager collectif', name='Potager collectif', type='checkbox', value='Potager collectif')
+                    .form-group
+                        img.map-pin(src='assets/img/map/repair-pin.png')
+                        label(for='Seconde main') title
+                        input.checkbox(id='Seconde main', name='Seconde main', type='checkbox', value='Seconde main')
+
+        #map-tab-3.tab-pane.fade(role='tabpanel')
+            .tab-pane-header
+                h4.tab-pane-title.text-uppercase Economie locale
+            form#form.list-group(action="blog.html")
+                fieldset
+                    .form-group
+                        img.map-pin(src='assets/img/map/Magasin-vrac-pin.png')
                         label(for='Magasin-vrac').text-left Magasin vrac
                         input#Magasin-vrac.checkbox(name='Magasin-vrac', type='checkbox', value='Magasin-vrac')
                     .form-group
-                        img.map-pin(src='assets/img/map/map-pin-02.png')
+                        img.map-pin(src='assets/img/map/local-producer-pin.png')
                         label(for='Producteurs-locaux') Producteurs-locaux
                         input.checkbox(id='Producteurs-locaux', name='Producteurs-locaux', type='checkbox', value='Producteurs-locaux')
                     .form-group
-                        img.map-pin(src='assets/img/map/map-pin-03.png')
+                        img.map-pin(src='assets/img/map/13-local-producer-2-pin.png')
                         label(for='Potager collectif') Potager collectif
-                        input.checkbox(id='Potager collectif', name='Potager collectif', type='checkbox', value='Potager collectif' checked)
+                        input.checkbox(id='Potager collectif', name='Potager collectif', type='checkbox', value='Potager collectif')
                     .form-group
-                        img.map-pin(src='assets/img/map/map-pin-04.png')
+                        img.map-pin(src='assets/img/map/12-second-hand-pin.png')
                         label(for='Seconde main') Seconde main
                         input.checkbox(id='Seconde main', name='Seconde main', type='checkbox', value='Seconde main')
                     .form-group
-                        img.map-pin(src='assets/img/map/map-pin-05.png')
+                        img.map-pin(src='assets/img/map/13-local-producer-pin.png')
                         label(for='GAC') GAC
                         input.checkbox(id="GAC", name='GAC', type='checkbox', value='GAC')
 
         #map-tab-4.tab-pane.fade(role='tabpanel')
             .tab-pane-header
-                h4.tab-pane-title Dolor
-                .d-flex.bg-light.flex-column
-                    p
-                        | Aliquam hendrerit nunc vitae nisi efficitur, eu porta sem aliquam. Aenean tincidunt mi sed mi sodales bibendum. Proin dolor ipsum, mollis venenatis velit eu, iaculis laoreet mi. Mauris eget egestas felis, sit amet finibus nunc. Aliquam non dui sit amet erat auctor mollis ac eget ante. Quisque at quam augue. Nulla dignissim, augue nec cursus consequat, mi nulla efficitur augue, vel fringilla turpis quam eu nunc. Quisque rutrum vehicula lacus sodales molestie. Mauris vel felis sit amet erat maximus cursus ut a velit. In hac habitasse platea dictumst. Vestibulum vel neque sit amet nisl finibus fermentum.
+                h4.tab-pane-title.text-uppercase Dolor
+            form#form.list-group(action="blog.html")
+                fieldset
+                    .form-group
+                        img.map-pin(src='assets/img/map/Bebat-pile-pin.png')
+                        label(for='Magasin-vrac').text-left title
+                        input#Magasin-vrac.checkbox(name='Magasin-vrac', type='checkbox', value='Magasin-vrac')
+                    .form-group
+                        img.map-pin(src='assets/img/map/Bulle-a-verre-pin.png')
+                        label(for='Producteurs-locaux') title
+                        input.checkbox(id='Producteurs-locaux', name='Producteurs-locaux', type='checkbox', value='Producteurs-locaux')
+                    .form-group
+                        img.map-pin(src='assets/img/map/Bulle-a-vetement-pin.png')
+                        label(for='Potager collectif') title
+                        input.checkbox(id='Potager collectif', name='Potager collectif', type='checkbox', value='Potager collectif')
+                    .form-group
+                        img.map-pin(src='assets/img/map/12-second-hand-pin.png')
+                        label(for='Seconde main') title
+                        input.checkbox(id='Seconde main', name='Seconde main', type='checkbox', value='Seconde main')
+                    .form-group
+                        img.map-pin(src='assets/img/map/13-local-producer-pin.png')
+                        label(for='GAC') title
+                        input.checkbox(id="GAC", name='GAC', type='checkbox', value='GAC')

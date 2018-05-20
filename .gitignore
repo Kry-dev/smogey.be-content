@@ -32,3 +32,4 @@ temp/*
 .idea
 .idea
 /package-lock.json
+package-lock.json

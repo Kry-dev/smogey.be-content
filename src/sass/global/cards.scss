@@ -1,26 +1,39 @@
-.card-list{
-	display: flex;
+.panel-list{
+	display: block;
 	width: 100%;
+	overflow: hidden;
+	@media (max-width: $screen-sm-max){
+		h1,
+		h2,
+		h3,
+		h4,
+		h5{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			font-size: 1rem;
+		}
+		.panel-title{
+			text-align: center;
+			width: 100%;
+		}
+	}
 }
-.card{
+.panel{
 	border-radius: 0;
 	border: 0;
-	background: $gray;
-	//min-height: 300px;
+	background-color: $gray;
+	min-height: 280px;
 	&-header{
 		border-bottom: 0;
 	}
-	&-title{
-		margin-bottom: 0;
-	}
 	&-body{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+		display: block;
+		text-align: center;
 		img{
-			display: flex;
-			max-height: 110px;
+			display: block;
+			min-height: 130px;
+			max-height: 130px;
+			margin: 0 auto;
 		}
 	}
 	&-header,
@@ -32,13 +45,14 @@
 	}
 	.btn{
 		color: $white;
-		font-size: 14px;
 		text-transform: capitalize;
-		justify-content: center;
+		height: 40px;
+		text-align: center;
 	}
 	&-img-overlay{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		display: block;
+	}
+	&-img-top{
+		width: 100%;
 	}
 }
